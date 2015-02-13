@@ -10,7 +10,7 @@
             <h1><a href="index.php">Tea Advisory Panel</a></h1>
             <div class="search-and-social">
                 <form action="#" method="" id="">
-                    <input type="text" class="text" value="" />
+                    <input type="text" class="text-input" value="" />
                     <button><i class="fa fa-fw"></i></button>
                 </form>
                 <ul>

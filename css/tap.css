@@ -9,7 +9,119 @@ body {
   position: relative;
 }
 
+/* resets */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0 0 12px 0;
+  line-height: 130%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cboth {
+  clear: both;
+}
+
+.cleft {
+  clear: left;
+}
+
+img {
+  border: none;
+}
+
+* {
+  outline: none;
+}
+
+#home {
+  background: url("../images/bg-home.jpg") top center no-repeat;
+}
+
+@font-face {
+  font-family: 'CoconLight';
+  src: url("fonts/CoconLight.eot");
+  src: local("fonts/CoconLight"), url("fonts/CoconLight.woff") format("woff"), url("fonts/CoconLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .page {
   width: 982px;
   margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  height: 192px;
+}
+.header .site-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+}
+.header .site-navigation ul li {
+  display: inline;
+  padding-left: 30px;
+}
+.header .site-navigation ul li a {
+  font-family: 'CoconLight';
+  font-size: 1.5em;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header .search-and-social {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.header .search-and-social form {
+  float: left;
+  margin-top: -3px;
+}
+.header .search-and-social form .text-input {
+  border: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 1.0em;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  width: 200px;
+  display: inline-block;
+  float: left;
+  font-family: 'CoconLight';
+}
+.header .search-and-social form button {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 4px;
+  margin-left: 10px;
+  float: left;
+}
+.header .search-and-social form button i {
+  font-size: 1.4em;
+}
+.header .search-and-social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+.header .search-and-social ul li {
+  display: inline;
+  padding-left: 5px;
+}
+.header .search-and-social ul li a {
+  font-family: 'CoconLight';
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
 }
