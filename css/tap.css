@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #fafafa;
+  background: #ffffff;
   color: #666666;
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
@@ -33,10 +33,6 @@ img {
   outline: none;
 }
 
-#home {
-  background: url("../images/bg-home.jpg") top center no-repeat;
-}
-
 @font-face {
   font-family: 'CoconLight';
   src: url("fonts/CoconLight.eot");
@@ -45,22 +41,59 @@ img {
   font-style: normal;
 }
 
-.page {
-  width: 982px;
-  margin: 0 auto;
+@font-face {
+  font-family: 'FranchiseBold';
+  src: url("fonts/FranchiseBold.eot");
+  src: local("FranchiseBold"), url("fonts/FranchiseBold.woff") format("woff"), url("fonts/FranchiseBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.header {
+#home .header {
+  background: url("../images/bg-home.jpg") bottom center no-repeat;
+}
+#home .faqs .title {
+  float: right;
+}
+#home .faqs .copy {
+  float: left;
+  margin-top: 17px;
+}
+#home .faqs .copy .question {
+  max-width: 600px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.container {
+  width: 982px;
+  margin: 0 auto;
   position: relative;
-  height: 192px;
+}
+
+.header h1 {
+  float: left;
+  margin: 20px;
+  padding: 0;
+}
+.header h1 a {
+  display: block;
+  text-decoration: none;
+  text-indent: -9000px;
+  background: url("../images/logo.png") 0 0 no-repeat;
+  width: 196px;
+  height: 145px;
+}
+.header .site-navigation {
+  position: absolute;
+  right: 20px;
+  top: 145px;
 }
 .header .site-navigation ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  position: absolute;
-  bottom: 30px;
-  right: 15px;
 }
 .header .site-navigation ul li {
   display: inline;
@@ -74,34 +107,44 @@ img {
   text-transform: uppercase;
 }
 .header .search-and-social {
-  position: absolute;
-  top: 15px;
-  right: 15px;
+  float: right;
+  margin: 20px;
 }
 .header .search-and-social form {
   float: left;
-  margin-top: -3px;
 }
 .header .search-and-social form .text-input {
   border: 0;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  padding: 6px 8px;
-  font-size: 1.0em;
+  padding: 0;
+  font-size: 1.5em;
   -webkit-appearance: none;
   box-sizing: border-box;
-  width: 200px;
+  width: 70px;
   display: inline-block;
   float: left;
   font-family: 'CoconLight';
+  color: #ffffff;
+  background-color: transparent;
+}
+.header .search-and-social form .text-input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.header .search-and-social form .text-input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ffffff;
+}
+.header .search-and-social form .text-input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ffffff;
+}
+.header .search-and-social form .text-input:-ms-input-placeholder {
+  color: #ffffff;
 }
 .header .search-and-social form button {
   background: transparent;
   border: none;
   color: #ffffff;
   cursor: pointer;
-  margin-top: 4px;
   margin-left: 10px;
   float: left;
 }
@@ -124,4 +167,103 @@ img {
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
+}
+.header .carousel {
+  clear: both;
+  background: #ffffff;
+  height: 380px;
+  padding: 11px 11px 0 11px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.header .carousel .imagery {
+  float: left;
+  width: 660px;
+}
+.header .carousel .imagery img {
+  width: 100%;
+}
+.header .carousel .copy {
+  width: 290px;
+  background: #666666;
+  position: relative;
+  height: 100%;
+  float: right;
+}
+.header .carousel .copy .pagination {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.header .carousel .copy .pagination ul {
+  margin: 0;
+  padding: 0 10px 12px 0;
+  list-style: none;
+}
+.header .carousel .copy .pagination ul li {
+  display: inline;
+  padding: 0 3px;
+}
+.header .carousel .copy .pagination ul li a {
+  background: #e8e8e8;
+  width: 18px;
+  height: 18px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-decoration: none;
+  text-indent: -9000px;
+  display: inline-block;
+  border: 1px solid #666666;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.header .carousel .copy .pagination ul li a:hover {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.body .faqs {
+  font-family: 'FranchiseBold';
+  font-size: 4.2em;
+  padding: 10px 20px;
+}
+.body .faqs .title {
+  background: url("../images/bg-faq-title.png") center center no-repeat;
+  width: 250px;
+  height: 86px;
+  text-align: center;
+}
+.body .faqs .title h2 {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 1.4em;
+  line-height: 86px;
+  color: #f5a021;
+  -ms-transform: rotate(350deg);
+  -webkit-transform: rotate(350deg);
+  transform: rotate(350deg);
+}
+.body .faqs .copy {
+  display: block;
+}
+.body .faqs .count {
+  color: lightgrey;
+  float: left;
+  padding-right: 10px;
+}
+.body .faqs .question {
+  float: left;
+  text-transform: uppercase;
+  color: #231f20;
+}
+.body .grey-bar {
+  background-color: #e9eeea;
+  height: 420px;
 }
