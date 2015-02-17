@@ -275,7 +275,7 @@ img {
 }
 .header .carousel .copy .pagination ul li {
   display: inline;
-  padding: 0 3px;
+  padding: 0 2px;
 }
 .header .carousel .copy .pagination ul li a {
   background: #e8e8e8;
@@ -287,15 +287,15 @@ img {
   text-decoration: none;
   text-indent: -9000px;
   display: inline-block;
-  border: 1px solid #666666;
+  border: 3px solid #666666;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-.header .carousel .copy .pagination ul li a:hover {
+.header .carousel .copy .pagination ul li a:hover, .header .carousel .copy .pagination ul li a.active {
   background: #ffffff;
-  border: 1px solid #ffffff;
+  border: 3px solid #ffffff;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
@@ -416,51 +416,93 @@ img {
 .body .carousel {
   background: #ffffff;
   width: 660px;
-  height: 390px;
   margin: 40px auto 0 auto;
-  overflow: hidden;
 }
-.body .carousel ul {
-  float: left;
+.body .carousel .item {
   width: 660px;
-  height: 390px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.body .carousel ul li {
-  width: 660px;
-  height: 390px;
   float: left;
 }
-.body .carousel ul li .imagery {
+.body .carousel .item .imagery {
   float: left;
   width: 47%;
 }
-.body .carousel ul li .copy {
+.body .carousel .item .copy {
   float: right;
   width: 47%;
   padding-top: 15px;
 }
-.body .carousel ul li .copy h2 {
+.body .carousel .item .copy h2 {
   font-family: "FranchiseBold";
   color: #f5a021;
   font-size: 4.3em;
   text-transform: uppercase;
 }
-.body .carousel ul li .copy .sub-title {
+.body .carousel .item .copy .sub-title {
   font-size: 1.4em;
   padding-bottom: 6px;
 }
-.body .carousel ul li .copy p {
+.body .carousel .item .copy p {
   font-size: 1.1em;
   line-height: 120%;
 }
-.body .carousel ul li .copy .buttons {
+.body .carousel .item .copy .buttons {
   padding-top: 15px;
 }
-.body .carousel ul li .copy .buttons a {
+.body .carousel .item .copy .buttons a {
   display: inline-block;
   margin-bottom: 5px;
   text-decoration: none;
+}
+
+/* carousel overrides */
+.tap-prev {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 19.5px 35px 19.5px 0;
+  border-color: transparent #f5a021 transparent transparent;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.tap-next {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 19.5px 0 19.5px 35px;
+  border-color: transparent transparent transparent #f5a021;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.tap-carousel-link {
+  background: #f5a021;
+  width: 18px;
+  height: 18px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-decoration: none;
+  text-indent: -9000px;
+  display: inline-block;
+  border: 3px solid #ffffff;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  margin: 0 2px;
+  opacity: 0.5;
+}
+.tap-carousel-link:hover, .tap-carousel-link.active {
+  background: #f5a021;
+  border: 3px solid #f5a021;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  opacity: 1.0;
 }

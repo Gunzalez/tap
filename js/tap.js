@@ -56,6 +56,31 @@
         }
     };
 
+    tap.homepage = {
+
+        body: {
+            carousel:{
+                $html: $('#body-carousel'),
+
+                init: function(){
+                    if(this.$html.length > 0){
+                        this.$html.bxSlider({
+                            auto: false,
+                            autoControls: false,
+                            infiniteLoop: true,
+                            slideWidth: 660
+                        });
+
+                        //this.$html.append($('.tap-button'));
+                    }
+                }
+            }
+        },
+
+        init: function(){
+            this.body.carousel.init();
+        }
+    };
 
 	tap.init = function(){
 
@@ -86,6 +111,7 @@
     // main init
 	$(document).ready(function(){
 		tap.init();
+        tap.homepage.init();
 	});
 
 }(jQuery, window));

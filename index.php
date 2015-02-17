@@ -3,6 +3,7 @@
 <head>
     <title>Tea Advisory Panel</title>
     <?php include_once('includes/resources.php'); ?>
+    <link href="js/vendors/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
 </head>
 <body id="home">
     <div class="header">
@@ -98,27 +99,68 @@
             </div>
         </div>
         <div class="container">
-            <div class="carousel">
-                <ul>
-                    <li>
-                        <div class="slide">
-                            <div class="imagery">
-                                <img src="uploaded/dr-catherine-hood.png" width="284" height="337" />
-                            </div>
-                            <div class="copy">
-                                <h2>Who we are</h2>
-                                <p class="sub-title">Dr Catherine Hood</p>
-                                <p>Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five’s prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
-                                <div class="buttons">
-                                    <a href="#" class="button next">Read more</a><br />
-                                    <a href="#" class="button next">Other members</a>
-                                </div>
-                            </div>
+            <ul id="body-carousel" class="carousel">
+                <li class="item">
+                    <div class="imagery">
+                        <img src="uploaded/dr-catherine-hood.png" width="284" height="337" />
+                    </div>
+                    <div class="copy">
+                        <h2>Who we are</h2>
+                        <p class="sub-title">Dr Catherine Hood</p>
+                        <p>Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five’s prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
+                        <div class="buttons">
+                            <a href="#" class="button next">Read more</a><br />
+                            <a href="#" class="button next">Other members</a>
                         </div>
-                        <div class="cboth"></div>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                    <div class="cboth"></div>
+                </li>
+                <li class="item">
+                    <div class="imagery">
+                        <img src="uploaded/dr-pretty-woman.png" width="284" height="337" />
+                    </div>
+                    <div class="copy">
+                        <h2>Who we are</h2>
+                        <p class="sub-title">Dr Pretty Lady</p>
+                        <p>Dr Pretty Lady is an exercise physiologist with a scientific research background. She is currently a Professor in Ageing and Health at Glasgow Caledonian University.  She is Deputy Lead of the Later Life Research Group and also the Scottish Centre for Evidence Based Care. </p>
+                        <div class="buttons">
+                            <a href="#" class="button next">Read more</a><br />
+                            <a href="#" class="button next">Other members</a>
+                        </div>
+                    </div>
+                    <div class="cboth"></div>
+                </li>
+                <li class="item">
+                    <div class="imagery">
+                        <img src="uploaded/dr-who.png" width="284" height="337" />
+                    </div>
+                    <div class="copy">
+                        <h2>Who we are</h2>
+                        <p class="sub-title">Dr Who</p>
+                        <p>Doctor Who is a British science-fiction television programme produced by the BBC from 1963 to the present day. The programme depicts the adventures of the Doctor, a Time Lord—a time-travelling humanoid alien. He explores the universe in his TARDIS, a sentient time-travelling space ship.</p>
+                        <div class="buttons">
+                            <a href="#" class="button next">Read more</a><br />
+                            <a href="#" class="button next">Other members</a>
+                        </div>
+                    </div>
+                    <div class="cboth"></div>
+                </li>
+                <li class="item">
+                    <div class="imagery">
+                        <img src="uploaded/dr-typical-hood.png" width="284" height="337" />
+                    </div>
+                    <div class="copy">
+                        <h2>Who we are</h2>
+                        <p class="sub-title">Dr Typical Doctor</p>
+                        <p>Dr Typical Doctor is a fictional character, a mercenary and anti-hero appearing in comic books published by Marvel Comics. Created by writer and artist Rob Liefeld and scripted by Fabian Nicieza.</p>
+                        <div class="buttons">
+                            <a href="#" class="button next">Read more</a><br />
+                            <a href="#" class="button next">Other members</a>
+                        </div>
+                    </div>
+                    <div class="cboth"></div>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="footer">
@@ -126,5 +168,6 @@
     </div>
 
     <?php include_once('includes/footer.php'); ?>
+    <script src="js/vendors/jquery.bxslider/jquery.bxslider.js"></script>
 </body>
 </html>
