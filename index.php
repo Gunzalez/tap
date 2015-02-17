@@ -32,8 +32,8 @@
                 </div>
                 <div class="copy">
                     <div class="description">
-                        <h2>Stuff</h2>
-                        <p>More stuff.</p>
+                        <h2>Is it important?</h2>
+                        <p>Tea is the most commonly consumed beverage in the world after water. In the UK it has been drunk for over 350 years. Today, 77% of British adults drink tea and of the tea consumed in the UK, 95% is black tea.</p>
                     </div>
                     <div class="pagination">
                         <ul>
@@ -55,17 +55,70 @@
                     <h2>FAQs</h2>
                 </div>
                 <a href="#" class="copy">
+                    <span class="question">
                     <span class="count">
                         01:
-                    </span>
-                    <span class="question">Is drinking tea bad for the bones, is it really, no, really is it?</span>
+                    </span>Is drinking tea bad for the bones, is it really, no, really is it?</span>
                     <div class="cleft"></div>
                 </a>
                 <div class="cboth"></div>
             </div>
         </div>
         <div class="grey-bar">
-
+            <div class="container">
+                <h2 class="title">What we do.</h2>
+                <p>The Tea Advisory Panel is an expert organisation which can:</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="item">
+                                <span class="icon"><i class="fa fa-fw"></i></span>
+                                <p class="intro">Provide independent and objective information about the latest health benefits regarding black tea.</p>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="item">
+                                <span class="icon"><i class="fa fa-fw"></i></span>
+                                <p class="intro">Answer all of your nutrition and hydration questions about black tea.</p>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="item">
+                                <span class="icon"><i class="fa fa-fw"></i></span>
+                                <p class="intro">Set the record straight on ‘science’ myths associated with black tea.</p>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="cleft"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="carousel">
+                <ul>
+                    <li>
+                        <div class="slide">
+                            <div class="imagery">
+                                <img src="uploaded/dr-catherine-hood.png" width="284" height="337" />
+                            </div>
+                            <div class="copy">
+                                <h2>Who we are</h2>
+                                <p class="sub-title">Dr Catherine Hood</p>
+                                <p>Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five’s prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
+                                <div class="buttons">
+                                    <a href="#" class="button next">Read more</a><br />
+                                    <a href="#" class="button next">Other members</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cboth"></div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="footer">

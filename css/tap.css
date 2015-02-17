@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #ffffff;
-  color: #666666;
+  color: #111111;
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
   -webkit-text-size-adjust: none;
@@ -49,21 +49,83 @@ img {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'chunkfiveroman';
+  src: url("fonts/chunkfive-webfont.eot");
+  src: url("fonts/chunkfive-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/chunkfive-webfont.woff2") format("woff2"), url("fonts/chunkfive-webfont.woff") format("woff"), url("fonts/chunkfive-webfont.ttf") format("truetype"), url("fonts/chunkfive-webfont.svg#chunkfiveroman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* -------------- */
+.button {
+  position: relative;
+  margin: 0;
+  padding: 2.8px 14px;
+  background: #f5a021;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+.button:hover {
+  background: #d9860a;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* Arrow Buttons */
+/* ------------- */
+.next::after {
+  border-style: solid;
+}
+
+/* Next Button */
+/* ----------- */
+.next::after {
+  right: -22px;
+  border-width: 11px;
+  border-color: transparent transparent transparent #f5a021;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.next:hover::after {
+  border-left-color: #d9860a;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 #home .header {
   background: url("../images/bg-home.jpg") bottom center no-repeat;
 }
 #home .faqs .title {
   float: right;
+  display: none;
 }
 #home .faqs .copy {
-  float: left;
-  margin-top: 17px;
+  text-align: center;
+  margin: 10px 60px;
 }
-#home .faqs .copy .question {
-  max-width: 600px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+#home .faqs .copy .question .count {
+  float: none;
 }
 
 .container {
@@ -100,7 +162,7 @@ img {
   padding-left: 30px;
 }
 .header .site-navigation ul li a {
-  font-family: 'CoconLight';
+  font-family: "CoconLight";
   font-size: 1.5em;
   color: #ffffff;
   text-decoration: none;
@@ -122,7 +184,7 @@ img {
   width: 70px;
   display: inline-block;
   float: left;
-  font-family: 'CoconLight';
+  font-family: "CoconLight";
   color: #ffffff;
   background-color: transparent;
 }
@@ -162,7 +224,7 @@ img {
   padding-left: 5px;
 }
 .header .search-and-social ul li a {
-  font-family: 'CoconLight';
+  font-family: "CoconLight";
   font-size: 1.6em;
   font-weight: bold;
   color: #ffffff;
@@ -189,6 +251,17 @@ img {
   position: relative;
   height: 100%;
   float: right;
+}
+.header .carousel .copy .description {
+  padding: 20px;
+  color: #ffffff;
+}
+.header .carousel .copy .description h2 {
+  font-size: 1.8em;
+}
+.header .carousel .copy .description p {
+  font-size: 1.1em;
+  line-height: 120%;
 }
 .header .carousel .copy .pagination {
   position: absolute;
@@ -230,7 +303,7 @@ img {
 }
 
 .body .faqs {
-  font-family: 'FranchiseBold';
+  font-family: "FranchiseBold";
   font-size: 4.2em;
   padding: 10px 20px;
 }
@@ -265,5 +338,129 @@ img {
 }
 .body .grey-bar {
   background-color: #e9eeea;
-  height: 420px;
+  text-align: center;
+  padding: 30px 0 0 0;
+  border-top: 1px solid #dedede;
+}
+.body .grey-bar h2 {
+  font-family: "chunkfiveroman";
+  text-transform: uppercase;
+  font-size: 4.6em;
+  font-weight: normal;
+  color: #916083;
+  line-height: 80%;
+}
+.body .grey-bar p {
+  font-size: 1.1em;
+}
+.body .grey-bar ul {
+  margin: 0;
+  padding: 10px 0 0 0;
+  list-style: none;
+  float: left;
+}
+.body .grey-bar ul li {
+  float: left;
+  width: 33.33333337%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.body .grey-bar ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #231f20;
+  height: 135px;
+  background: #e9eeea;
+  background: -moz-linear-gradient(top, #e9eeea 0%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e9eeea), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #e9eeea 0%, white 100%);
+  background: -o-linear-gradient(top, #e9eeea 0%, white 100%);
+  background: -ms-linear-gradient(top, #e9eeea 0%, white 100%);
+  background: linear-gradient(to bottom, #e9eeea 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9eeea', endColorstr='#ffffff',GradientType=0 );
+}
+.body .grey-bar ul li a span {
+  display: block;
+  text-align: center;
+}
+.body .grey-bar ul li a span.icon {
+  background: #916083;
+  width: 54px;
+  height: 54px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.body .grey-bar ul li a span.icon i {
+  font-size: 2.9em;
+  color: #ffffff;
+  line-height: 54px;
+}
+.body .grey-bar ul li a .intro {
+  padding: 0 10px;
+}
+.body .grey-bar ul li a:hover span.icon {
+  background: #111111;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.body .carousel {
+  background: #ffffff;
+  width: 660px;
+  height: 390px;
+  margin: 40px auto 0 auto;
+  overflow: hidden;
+}
+.body .carousel ul {
+  float: left;
+  width: 660px;
+  height: 390px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.body .carousel ul li {
+  width: 660px;
+  height: 390px;
+  float: left;
+}
+.body .carousel ul li .imagery {
+  float: left;
+  width: 47%;
+}
+.body .carousel ul li .copy {
+  float: right;
+  width: 47%;
+  padding-top: 15px;
+}
+.body .carousel ul li .copy h2 {
+  font-family: "FranchiseBold";
+  color: #f5a021;
+  font-size: 4.3em;
+  text-transform: uppercase;
+}
+.body .carousel ul li .copy .sub-title {
+  font-size: 1.4em;
+  padding-bottom: 6px;
+}
+.body .carousel ul li .copy p {
+  font-size: 1.1em;
+  line-height: 120%;
+}
+.body .carousel ul li .copy .buttons {
+  padding-top: 15px;
+}
+.body .carousel ul li .copy .buttons a {
+  display: inline-block;
+  margin-bottom: 5px;
+  text-decoration: none;
 }
