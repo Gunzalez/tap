@@ -29,22 +29,47 @@
             </div>
             <div class="carousel">
                 <div class="imagery">
-                    <img src="uploaded/carousel-slide-1.jpg">
+                    <ul id="header-carousel">
+                        <li>
+                            <img src="uploaded/carousel-slide-1.jpg">
+                            <div class="slide-copy">
+                                <h2>Is it important?</h2>
+                                <p>Tea is the most commonly consumed beverage in the world after water. In the UK it has been drunk for over 350 years. Today, 77% of British adults drink tea and of the tea consumed in the UK, 95% is black tea.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="uploaded/carousel-slide-2.jpg">
+                            <div class="slide-copy">
+                                <h2>I like to dance</h2>
+                                <p>Sunday morning, I'm out in th street dancing like a mad man, until the police come to take me away, I hate it when they do that.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="uploaded/carousel-slide-3.jpg">
+                            <div class="slide-copy">
+                                <h2>Buy loud speakers!</h2>
+                                <p>Morbi lectus riis, luctus non, massa. Fusce ac turpis quis ligsus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="uploaded/carousel-slide-4.jpg">
+                            <div class="slide-copy">
+                                <h2>My pony, do do you want it?</h2>
+                                <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="uploaded/carousel-slide-5.jpg">
+                            <div class="slide-copy">
+                                <h2>Quisque volutpat</h2>
+                                <p>Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. </p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="copy">
-                    <div class="description">
-                        <h2>Is it important?</h2>
-                        <p>Tea is the most commonly consumed beverage in the world after water. In the UK it has been drunk for over 350 years. Today, 77% of British adults drink tea and of the tea consumed in the UK, 95% is black tea.</p>
-                    </div>
-                    <div class="pagination">
-                        <ul>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                        </ul>
-                    </div>
+                    <div id="carousel-description" class="description"></div>
+                    <div id="carousel-pagination" class="pagination"></div>
                 </div>
             </div>
         </div>

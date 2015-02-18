@@ -238,12 +238,27 @@ img {
   box-sizing: border-box;
   overflow: hidden;
 }
+.header .carousel #header-carousel {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+.header .carousel #header-carousel li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .carousel #header-carousel li .slide-copy {
+  display: none;
+}
 .header .carousel .imagery {
   float: left;
   width: 660px;
 }
 .header .carousel .imagery img {
   width: 100%;
+  display: block;
 }
 .header .carousel .copy {
   width: 290px;

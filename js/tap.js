@@ -57,11 +57,84 @@
     };
 
     tap.homepage = {
+        header: {
+            carousel: {
+                loop: '',
+                $html: $('#header-carousel'),
+                $pagination: $('#carousel-pagination'),
+                $description: $('#carousel-description'),
+                init: function(){
+                    var self = this,
+                        $dotList = $('<ul />');
+
+                    // create pagination
+                    $('img',this.$html).each(function(i, obj){
+                        $dotList.append($('<li><a href="#">'+i+'</a></li>'));
+                    });
+                    this.$pagination.append($dotList);
+
+                    // set first item
+                    $('li', this.$html).css('display','none');
+                    $('li', this.$html).eq(0).css('display','block');
+
+                    // set description of first item
+                    var cloneCopy = $('li', this.$html).eq(0).find('.slide-copy').clone();
+                    this.$description.html(cloneCopy.html());
+
+                    // set first link to active
+                    $('li', $dotList).eq(0).find('a').addClass('active');
+
+                    // attach actions
+                    $('a',$dotList).on('click', function(evt){
+                        evt.preventDefault();
+                        self.fadeIn($(this).text());
+                    });
+
+                    //auto start the slide show
+                    this.autoStart();
+
+                    // attach pause actions
+                    this.$html.parents('.carousel').on('mouseenter', function(){
+                        clearInterval(self.loop);
+                    });
+                    this.$html.parents('.carousel').on('mouseleave', function(){
+                        self.autoStart();
+                    });
+
+                    // TODO swipe events
+
+                },
+
+                fadeIn: function(index){
+                    $('a', this.$pagination).removeClass('active');
+                    $('a', this.$pagination).eq(index).addClass('active');
+
+                    $('li', this.$html).fadeOut('slow');
+                    $('li', this.$html).eq(index).fadeIn('slow');
+
+                    var cloneCopy = $('li', this.$html).eq(index).find('.slide-copy').clone();
+                    this.$description.html(cloneCopy.html());
+                },
+
+                autoStart: function(){
+                    var self = this;
+                    this.loop = setInterval(function(){
+
+                        var $curSlide = $('.active', self.$pagination),
+                            newIndex = $('a',self.$pagination).index($curSlide) + 1;
+                        if(newIndex == $('a',self.$pagination).length){
+                            newIndex = 0
+                        }
+                        self.fadeIn(newIndex);
+
+                    }, 6000);
+                }
+            }
+        },
 
         body: {
-            carousel:{
+            carousel: {
                 $html: $('#body-carousel'),
-
                 init: function(){
                     if(this.$html.length > 0){
                         this.$html.bxSlider({
@@ -70,8 +143,6 @@
                             infiniteLoop: true,
                             slideWidth: 660
                         });
-
-                        //this.$html.append($('.tap-button'));
                     }
                 }
             }
@@ -79,6 +150,7 @@
 
         init: function(){
             this.body.carousel.init();
+            this.header.carousel.init();
         }
     };
 
@@ -113,5 +185,8 @@
 		tap.init();
         tap.homepage.init();
 	});
+
+    $(window).load(function(){
+    });
 
 }(jQuery, window));
