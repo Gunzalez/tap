@@ -141,7 +141,7 @@
                             auto: false,
                             autoControls: false,
                             infiniteLoop: true,
-                            slideWidth: 660
+                            slideWidth: 800
                         });
                     }
                 }

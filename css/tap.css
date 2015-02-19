@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #ffffff;
-  color: #111111;
+  color: #231f20;
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
   -webkit-text-size-adjust: none;
@@ -107,6 +107,38 @@ img {
 
 .next:hover::after {
   border-left-color: #d9860a;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.forums .buttons {
+  text-align: right;
+  padding-right: 15px;
+}
+.forums .button {
+  background: #22b62a;
+  text-decoration: none;
+}
+.forums .button:hover {
+  background: #16761b;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.forums .next::after {
+  right: -22px;
+  border-width: 11px;
+  border-color: transparent transparent transparent #22b62a;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.forums .next:hover::after {
+  border-left-color: #16761b;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -273,6 +305,8 @@ img {
 }
 .header .carousel .copy .description h2 {
   font-size: 1.8em;
+  font-family: "CoconLight";
+  font-weight: normal;
 }
 .header .carousel .copy .description p {
   font-size: 1.1em;
@@ -290,7 +324,7 @@ img {
 }
 .header .carousel .copy .pagination ul li {
   display: inline;
-  padding: 0 2px;
+  padding: 0 4px;
 }
 .header .carousel .copy .pagination ul li a {
   background: #e8e8e8;
@@ -340,6 +374,14 @@ img {
 }
 .body .faqs .copy {
   display: block;
+  text-decoration: none;
+}
+.body .faqs .copy:hover .question {
+  color: #666666;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .body .faqs .count {
   color: lightgrey;
@@ -350,6 +392,10 @@ img {
   float: left;
   text-transform: uppercase;
   color: #231f20;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .body .grey-bar {
   background-color: #e9eeea;
@@ -419,10 +465,11 @@ img {
   line-height: 54px;
 }
 .body .grey-bar ul li a .intro {
+  font-size: 1.1em;
   padding: 0 10px;
 }
 .body .grey-bar ul li a:hover span.icon {
-  background: #111111;
+  background: #231f20;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -430,7 +477,7 @@ img {
 }
 .body .carousel {
   background: #ffffff;
-  width: 660px;
+  width: 800px;
   margin: 40px auto 0 auto;
 }
 .body .carousel .item {
@@ -449,12 +496,14 @@ img {
 .body .carousel .item .copy h2 {
   font-family: "FranchiseBold";
   color: #f5a021;
-  font-size: 4.3em;
+  font-size: 4.5em;
   text-transform: uppercase;
 }
 .body .carousel .item .copy .sub-title {
   font-size: 1.4em;
   padding-bottom: 6px;
+  font-family: "CoconLight";
+  font-weight: bold;
 }
 .body .carousel .item .copy p {
   font-size: 1.1em;
@@ -509,7 +558,7 @@ img {
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
-  margin: 0 2px;
+  margin: 0 4px;
   opacity: 0.5;
 }
 .tap-carousel-link:hover, .tap-carousel-link.active {
@@ -520,4 +569,169 @@ img {
   -o-transition: all 0.25s;
   transition: all 0.25s;
   opacity: 1.0;
+}
+
+.forums {
+  background: url("../images/bg-forums.gif") top center repeat-y;
+  margin-bottom: 30px;
+}
+.forums h3 {
+  text-transform: uppercase;
+  color: #22b62a;
+  font-size: 3.0em;
+  font-family: "FranchiseBold";
+  line-height: 100%;
+  padding-bottom: 20px;
+}
+.forums ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.forums ul li {
+  padding-bottom: 10px;
+  min-height: 40px;
+  position: relative;
+}
+.forums ul li a {
+  position: relative;
+  color: #231f20;
+  display: block;
+  text-decoration: none;
+}
+.forums ul li a:hover {
+  color: #22b62a;
+}
+.forums ul li a:hover .bubble {
+  background: #16761b;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.forums ul li a:hover .bubble:after {
+  border-color: #16761b transparent;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.forums ul li a.read-more {
+  display: inline;
+  color: #22b62a;
+}
+.forums ul li a.read-more:hover {
+  color: #16761b;
+  text-decoration: underline;
+}
+.forums ul li:hover .icon i {
+  color: #16761b;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.forums .forum-chats {
+  float: left;
+  width: 42%;
+  padding: 0 20px;
+}
+.forums .forum-info {
+  float: right;
+  width: 42%;
+  padding: 0 20px;
+}
+.forums .icon {
+  position: absolute;
+  width: 43px;
+  height: 36px;
+}
+.forums .icon i {
+  color: #22b62a;
+  font-size: 2.8em;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.forums .bubble {
+  position: absolute;
+  width: 43px;
+  height: 36px;
+  background: #22b62a;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-right: 15px;
+}
+.forums .bubble i {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+.forums .bubble:after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 12px;
+  border-style: solid;
+  border-width: 7px 4px 0;
+  border-color: #22b62a transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.forums .copy {
+  margin-left: 56px;
+}
+
+.footer {
+  background: #e9eeea;
+  padding-bottom: 60px;
+}
+.footer .tea-cups-count {
+  float: left;
+  padding-left: 120px;
+  padding-top: 10px;
+  background: url("../images/bg-tea-count.png") 0 0 no-repeat;
+  min-height: 100px;
+}
+.footer .tea-cups-count .figure {
+  font-family: "chunkfiveroman";
+  font-size: 3.5em;
+  color: #d8d835;
+}
+.footer .tea-cups-count p {
+  font-family: "CoconLight";
+}
+.footer .site-map {
+  float: right;
+}
+.footer .site-map ul {
+  margin: 0;
+  padding: 15px 0 0 0;
+  list-style: none;
+}
+.footer .site-map ul li {
+  display: inline;
+  padding-left: 15px;
+}
+.footer .site-map ul li a {
+  color: #666666;
+  text-decoration: none;
+  font-family: "CoconLight";
+  font-size: 1.1em;
+}
+.footer .site-map ul li a:hover {
+  color: #22b62a;
 }
