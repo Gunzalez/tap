@@ -88,26 +88,18 @@
                     // attach click actions
                     $('a',$dotList).on('click', function(evt){
                         evt.preventDefault();
-                        self.fadeIn($(this).text());
+                        if(!$(this).hasClass('active')){
+                            self.fadeIn($(this).text());
+                        }
                     });
 
                     // attach swipe actions
                     this.$html.parents('.carousel').swipe({
                         swipeRight:function(event, direction, distance, duration, fingerCount) {
-                            var $curSlide = $('.active', self.$pagination),
-                                newIndex = $('a',self.$pagination).index($curSlide) - 1;
-                            if(newIndex == -1){
-                                newIndex = $('a',self.$pagination).length -1;
-                            }
-                            $('a',self.$pagination).eq(newIndex).trigger('click');
+                            self.swipe('right');
                         },
                         swipeLeft:function(event, direction, distance, duration, fingerCount) {
-                            var $curSlide = $('.active', self.$pagination),
-                                newIndex = $('a',self.$pagination).index($curSlide) + 1;
-                            if(newIndex == $('a',self.$pagination).length){
-                                newIndex = 0
-                            }
-                            $('a',self.$pagination).eq(newIndex).trigger('click');
+                            self.swipe('left');
                         }
                     });
 
@@ -121,6 +113,27 @@
 
                     // start the slide show
                     this.playShow();
+                },
+
+                swipe: function(direction){
+                    var $curSlide = $('.active', self.$pagination),
+                        newIndex;
+
+                    if(direction == 'right'){
+                        newIndex = $('a',self.$pagination).index($curSlide) - 1;
+                        if(newIndex == -1){
+                            newIndex = $('a',self.$pagination).length -1;
+                        }
+                    } else if(direction == 'left'){
+                        newIndex = $('a',self.$pagination).index($curSlide) + 1;
+                        if(newIndex == $('a',self.$pagination).length){
+                            newIndex = 0
+                        }
+                    }
+                    $('a',self.$pagination).eq(newIndex).trigger('click');
+
+                    clearInterval(self.loop); // stops
+                    self.playShow(); // starts
                 },
 
                 fadeIn: function(index){
@@ -158,8 +171,7 @@
                         this.$html.bxSlider({
                             auto: false,
                             autoControls: false,
-                            infiniteLoop: true,
-                            slideWidth: 800
+                            infiniteLoop: true
                         });
                     }
                 }
@@ -170,6 +182,7 @@
             this.body.carousel.init();
             this.header.carousel.init();
         }
+
     };
 
 	tap.init = function(){

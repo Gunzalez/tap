@@ -17,7 +17,7 @@
 ===================================*/
 .bx-wrapper {
         position: relative;
-        margin: 0 auto 60px;
+        margin: 0 auto 30px;
         padding: 0;
         *zoom: 1;
 }
@@ -48,8 +48,6 @@
 
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
-	position: absolute;
-	bottom: -30px;
 	width: 100%;
 }
 
@@ -60,6 +58,7 @@
 	font-family: Arial;
 	font-weight: bold;
 	color: #666;
+        padding-top: 10px;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,
@@ -89,12 +88,10 @@
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
-	left: -60px;
-        opacity: 0.5;
-}
+         opacity: 0.5;
+ }
 
 .bx-wrapper .bx-next {
-	right: -60px;
         opacity: 0.5;
 }
 

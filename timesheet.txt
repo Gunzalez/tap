@@ -8,6 +8,10 @@ Completes bottom carousel on desktop                                           3
 Completes top carousel on desktop                                              2.0 hrs   - 17.02.2015
 Finishes homepage (minus dd menu and responsive)                               4.0 hrs   - 18.02.2015
 Added swipe events                                                             1.0 hr    - 20.02.2015
+Responsive on tablet devices                                                   3.0 hrs   - 20.02.2015
+
+
+
 
 TODO - Issues
 ================================

@@ -377,7 +377,7 @@
 				height +=	parseFloat(slider.viewport.css('padding-top')) + parseFloat(slider.viewport.css('padding-bottom'));
 			}
 
-			return height + 55;
+			return height; // + 55;
 		}
 
 		/**
@@ -636,8 +636,8 @@
 		 * Appends prev / next controls to the controls element
 		 */
 		var appendControls = function(){
-			slider.controls.next = $('<a class="bx-next tap-next" href="">' + slider.settings.nextText + '</a>');
-			slider.controls.prev = $('<a class="bx-prev tap-prev" href="">' + slider.settings.prevText + '</a>');
+			slider.controls.next = $('<a class="bx-next tap-next" href="#"><span>' + slider.settings.nextText + '</span></a>');
+			slider.controls.prev = $('<a class="bx-prev tap-prev" href="#"><span>' + slider.settings.prevText + '</span></a>');
 			// bind click actions to the controls
 			slider.controls.next.bind('click', clickNextBind);
 			slider.controls.prev.bind('click', clickPrevBind);

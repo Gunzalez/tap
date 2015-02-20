@@ -38,6 +38,13 @@
                             </div>
                         </li>
                         <li>
+                            <img src="uploaded/carousel-slide-3.jpg">
+                            <div class="slide-copy">
+                                <h2>Golden!</h2>
+                                <p>Morbi lectus riis, luctus non, massa. Fusce ac turpis quis ligsus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.</p>
+                            </div>
+                        </li>
+                        <li>
                             <img src="uploaded/carousel-slide-2.jpg">
                             <div class="slide-copy">
                                 <h2>Tea With Love</h2>
@@ -45,24 +52,17 @@
                             </div>
                         </li>
                         <li>
-                            <img src="uploaded/carousel-slide-3.jpg">
-                            <div class="slide-copy">
-                                <h2>Nice warm cup, mmm.</h2>
-                                <p>Morbi lectus riis, luctus non, massa. Fusce ac turpis quis ligsus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.</p>
-                            </div>
-                        </li>
-                        <li>
                             <img src="uploaded/carousel-slide-4.jpg">
                             <div class="slide-copy">
-                                <h2>Girls At Tea</h2>
-                                <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.</p>
+                                <h2>He drinks it too</h2>
+                                <p>And then he reads your emails, jst kidding  Suspendisse potenti. Nunc feugiat mi a equat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.</p>
                             </div>
                         </li>
                         <li>
                             <img src="uploaded/carousel-slide-5.jpg">
                             <div class="slide-copy">
-                                <h2>This is how we do it!</h2>
-                                <p>Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. </p>
+                                <h2>Fields of green!</h2>
+                                <p>Not that green you naughty boy, I mean tea. Green fields of tea plants everywhere. tra auctor, sem massa mattis sem, at interdum magna augue eget diam. </p>
                             </div>
                         </li>
                     </ul>
@@ -127,7 +127,7 @@
             <ul id="body-carousel" class="carousel">
                 <li class="item">
                     <div class="imagery">
-                        <img src="uploaded/dr-catherine-hood.png" width="284" height="337" />
+                        <img src="uploaded/dr-catherine-hood.png" />
                     </div>
                     <div class="copy">
                         <h2>Who we are</h2>
@@ -142,7 +142,7 @@
                 </li>
                 <li class="item">
                     <div class="imagery">
-                        <img src="uploaded/dr-pretty-woman.png" width="284" height="337" />
+                        <img src="uploaded/dr-pretty-woman.png" />
                     </div>
                     <div class="copy">
                         <h2>Who we are</h2>
@@ -157,7 +157,7 @@
                 </li>
                 <li class="item">
                     <div class="imagery">
-                        <img src="uploaded/dr-who.png" width="284" height="337" />
+                        <img src="uploaded/dr-who.png" />
                     </div>
                     <div class="copy">
                         <h2>Who we are</h2>
@@ -172,7 +172,7 @@
                 </li>
                 <li class="item">
                     <div class="imagery">
-                        <img src="uploaded/dr-typical-hood.png" width="284" height="337" />
+                        <img src="uploaded/dr-typical-hood.png" />
                     </div>
                     <div class="copy">
                         <h2>Who we are</h2>

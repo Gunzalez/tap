@@ -146,7 +146,7 @@ img {
 }
 
 #home .header {
-  background: url("../images/bg-home.jpg") bottom center no-repeat;
+  background: url("../images/bg-home.jpg") bottom center no-repeat #cec11f;
 }
 #home .faqs .title {
   float: right;
@@ -310,7 +310,6 @@ img {
 }
 .header .carousel .copy .description p {
   font-size: 1.1em;
-  line-height: 120%;
 }
 .header .carousel .copy .pagination {
   position: absolute;
@@ -354,7 +353,7 @@ img {
 .body .faqs {
   font-family: "FranchiseBold";
   font-size: 4.2em;
-  padding: 10px 20px;
+  padding: 10px 11px;
 }
 .body .faqs .title {
   background: url("../images/bg-faq-title.png") center center no-repeat;
@@ -401,7 +400,6 @@ img {
   background-color: #e9eeea;
   text-align: center;
   padding: 30px 0 0 0;
-  border-top: 1px solid #dedede;
 }
 .body .grey-bar h2 {
   font-family: "chunkfiveroman";
@@ -477,27 +475,30 @@ img {
 }
 .body .carousel {
   background: #ffffff;
-  width: 800px;
   margin: 40px auto 0 auto;
 }
 .body .carousel .item {
-  width: 660px;
   float: left;
 }
 .body .carousel .item .imagery {
   float: left;
   width: 47%;
+  padding-left: 110px;
+  box-sizing: border-box;
 }
 .body .carousel .item .copy {
   float: right;
   width: 47%;
   padding-top: 15px;
+  padding-right: 110px;
+  box-sizing: border-box;
 }
 .body .carousel .item .copy h2 {
   font-family: "FranchiseBold";
   color: #f5a021;
   font-size: 4.5em;
   text-transform: uppercase;
+  line-height: 100%;
 }
 .body .carousel .item .copy .sub-title {
   font-size: 1.4em;
@@ -507,10 +508,9 @@ img {
 }
 .body .carousel .item .copy p {
   font-size: 1.1em;
-  line-height: 120%;
 }
 .body .carousel .item .copy .buttons {
-  padding-top: 15px;
+  padding-top: 5px;
 }
 .body .carousel .item .copy .buttons a {
   display: inline-block;
@@ -569,6 +569,18 @@ img {
   -o-transition: all 0.25s;
   transition: all 0.25s;
   opacity: 1.0;
+}
+
+.bx-viewport {
+  height: auto !important;
+}
+
+.bx-wrapper .bx-prev {
+  left: 40px;
+}
+
+.bx-wrapper .bx-next {
+  right: 40px;
 }
 
 .forums {
@@ -697,7 +709,7 @@ img {
 
 .footer {
   background: #e9eeea;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 .footer .tea-cups-count {
   float: left;
@@ -734,4 +746,180 @@ img {
 }
 .footer .site-map ul li a:hover {
   color: #22b62a;
+}
+
+/* responsive break points */
+@media only screen and (max-width: 1015px) {
+  .container {
+    width: 682px;
+  }
+
+  .header .site-navigation {
+    position: absolute;
+    right: 20px;
+    top: 145px;
+    display: none;
+  }
+  .header .site-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .header .site-navigation ul li {
+    display: inline;
+    padding-left: 30px;
+  }
+  .header .site-navigation ul li a {
+    font-family: "CoconLight";
+    font-size: 1.5em;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .header .carousel {
+    clear: both;
+    height: 545px;
+    padding: 11px 11px 0 11px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .header .carousel #header-carousel {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+  }
+  .header .carousel #header-carousel li {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .header .carousel #header-carousel li .slide-copy {
+    display: none;
+  }
+  .header .carousel .imagery {
+    float: none;
+    width: 660px;
+    height: 380px;
+  }
+  .header .carousel .copy {
+    width: auto;
+    position: relative;
+    height: 156px;
+    float: none;
+  }
+  .header .carousel .copy .description {
+    padding: 10px 15px;
+    height: 95px;
+    overflow: hidden;
+  }
+  .header .carousel .copy .description h2 {
+    font-size: 1.5em;
+  }
+  .header .carousel .copy .description p {
+    font-size: 1.1em;
+    line-height: 130%;
+  }
+  .header .carousel .copy .pagination {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+  }
+  .header .carousel .copy .pagination ul {
+    margin: 0;
+    padding: 0 10px 12px 0;
+  }
+
+  #home .faqs {
+    font-size: 3.6em;
+  }
+  #home .faqs .copy {
+    margin: 10px;
+  }
+
+  .body .grey-bar h2 {
+    font-size: 4.0em;
+  }
+  .body .grey-bar ul li a {
+    height: 165px;
+  }
+  .body .carousel {
+    background: #ffffff;
+    margin: 40px auto 0 auto;
+  }
+  .body .carousel .item {
+    float: left;
+  }
+  .body .carousel .item .imagery {
+    float: left;
+    width: 47%;
+    padding-left: 70px;
+  }
+  .body .carousel .item .copy {
+    float: right;
+    width: 47%;
+    padding-top: 15px;
+    padding-right: 70px;
+  }
+  .body .carousel .item .copy h2 {
+    font-size: 3.8em;
+  }
+  .body .carousel .item .copy .sub-title {
+    font-size: 1.3em;
+  }
+  .body .carousel .item .copy p {
+    font-size: 1.1em;
+  }
+
+  .forums h3 {
+    color: #22b62a;
+    font-size: 2.7em;
+    line-height: 100%;
+    padding-bottom: 20px;
+  }
+  .forums .forum-chats {
+    float: left;
+    width: 47%;
+    padding: 0 15px 0 0;
+  }
+  .forums .forum-info {
+    float: right;
+    width: 47%;
+    padding: 0 0 0 15px;
+  }
+  .forums .icon i {
+    font-size: 2.6em;
+  }
+
+  .footer {
+    text-align: center;
+  }
+  .footer .tea-cups-count {
+    float: none;
+    padding-left: 80px;
+    background: url("../images/bg-tea-count-small.png") 0 0 no-repeat;
+    min-height: 80px;
+    display: inline-block;
+    text-align: left;
+  }
+  .footer .tea-cups-count .figure {
+    font-size: 3.0em;
+  }
+  .footer .tea-cups-count p {
+    font-size: 0.9em;
+  }
+  .footer .site-map {
+    float: none;
+  }
+  .footer .site-map ul {
+    padding: 15px 0 0 0;
+  }
+
+  .bx-wrapper .bx-prev {
+    left: 10px;
+  }
+
+  .bx-wrapper .bx-next {
+    right: 10px;
+  }
 }
