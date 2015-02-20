@@ -66,7 +66,7 @@
 		// AUTO
 		auto: false,
 		pause: 4000,
-		autoStart: true,
+		playShow: true,
 		autoDirection: 'next',
 		autoHover: false,
 		autoDelay: 0,
@@ -312,7 +312,7 @@
 			// bind the resize call to the window
 			if (slider.settings.responsive) $(window).bind('resize', resizeWindow);
 			// if auto is true and has more than 1 page, start the show
-			if (slider.settings.auto && slider.settings.autoStart && (getPagerQty() > 1 || slider.settings.autoSlideForOnePage)) initAuto();
+			if (slider.settings.auto && slider.settings.playShow && (getPagerQty() > 1 || slider.settings.autoSlideForOnePage)) initAuto();
 			// if ticker is true, start the ticker
 			if (slider.settings.ticker) initTicker();
 			// if pager is requested, make the appropriate pager link active
@@ -686,7 +686,7 @@
 				slider.controls.el.addClass('bx-has-controls-auto').append(slider.controls.autoEl);
 			}
 			// update the auto controls
-			updateAutoControls(slider.settings.autoStart ? 'stop' : 'start');
+			updateAutoControls(slider.settings.playShow ? 'stop' : 'start');
 		}
 
 		/**

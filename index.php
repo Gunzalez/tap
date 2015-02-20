@@ -258,5 +258,6 @@
 
     <?php include_once('includes/footer.php'); ?>
     <script src="js/vendors/jquery.bxslider/jquery.bxslider.js"></script>
+    <script src="js/vendors/jquery-swipe/jquery.touchSwipe.min.js"></script>
 </body>
 </html>

@@ -63,6 +63,7 @@
                 $html: $('#header-carousel'),
                 $pagination: $('#carousel-pagination'),
                 $description: $('#carousel-description'),
+
                 init: function(){
                     var self = this,
                         $dotList = $('<ul />');
@@ -73,7 +74,7 @@
                     });
                     this.$pagination.append($dotList);
 
-                    // set first item
+                    // show first image item
                     $('li', this.$html).css('display','none');
                     $('li', this.$html).eq(0).css('display','block');
 
@@ -84,25 +85,42 @@
                     // set first link to active
                     $('li', $dotList).eq(0).find('a').addClass('active');
 
-                    // attach actions
+                    // attach click actions
                     $('a',$dotList).on('click', function(evt){
                         evt.preventDefault();
                         self.fadeIn($(this).text());
                     });
 
-                    //auto start the slide show
-                    this.autoStart();
+                    // attach swipe actions
+                    this.$html.parents('.carousel').swipe({
+                        swipeRight:function(event, direction, distance, duration, fingerCount) {
+                            var $curSlide = $('.active', self.$pagination),
+                                newIndex = $('a',self.$pagination).index($curSlide) - 1;
+                            if(newIndex == -1){
+                                newIndex = $('a',self.$pagination).length -1;
+                            }
+                            $('a',self.$pagination).eq(newIndex).trigger('click');
+                        },
+                        swipeLeft:function(event, direction, distance, duration, fingerCount) {
+                            var $curSlide = $('.active', self.$pagination),
+                                newIndex = $('a',self.$pagination).index($curSlide) + 1;
+                            if(newIndex == $('a',self.$pagination).length){
+                                newIndex = 0
+                            }
+                            $('a',self.$pagination).eq(newIndex).trigger('click');
+                        }
+                    });
 
-                    // attach pause actions
+                    // attach pause on hover actions
                     this.$html.parents('.carousel').on('mouseenter', function(){
-                        clearInterval(self.loop);
+                        clearInterval(self.loop); // stops
                     });
                     this.$html.parents('.carousel').on('mouseleave', function(){
-                        self.autoStart();
+                        self.playShow(); // starts
                     });
 
-                    // TODO swipe events
-
+                    // start the slide show
+                    this.playShow();
                 },
 
                 fadeIn: function(index){
@@ -116,7 +134,7 @@
                     this.$description.html(cloneCopy.html());
                 },
 
-                autoStart: function(){
+                playShow: function(){
                     var self = this;
                     this.loop = setInterval(function(){
 
