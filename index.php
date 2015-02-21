@@ -82,9 +82,7 @@
                 </div>
                 <a href="#" class="copy">
                     <span class="question">
-                    <span class="count">
-                        01:
-                    </span>Is drinking tea bad for the bones, is it really, no, really is it?</span>
+                    <span class="quotes">&ldquo;</span>&nbsp;<span class="text">Is drinking tea bad for the bones?</span>&nbsp;<span class="quotes">&rdquo;</span>
                     <div class="cleft"></div>
                 </a>
                 <div class="cboth"></div>
@@ -132,7 +130,7 @@
                     <div class="copy">
                         <h2>Who we are</h2>
                         <p class="sub-title">Dr Catherine Hood</p>
-                        <p>Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five’s prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
+                        <p class="details">Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five’s prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
                         <div class="buttons">
                             <a href="#" class="button next">Read&nbsp;More</a><br />
                             <a href="#" class="button next">Other&nbsp;Members</a>
@@ -147,7 +145,7 @@
                     <div class="copy">
                         <h2>Who we are</h2>
                         <p class="sub-title">Dr Pretty Lady</p>
-                        <p>Dr Pretty Lady is an exercise physiologist with a scientific research background. She is currently a Professor in Ageing and Health at Glasgow Caledonian University.  She is Deputy Lead of the Later Life Research Group and also the Scottish Centre for Evidence Based Care. </p>
+                        <p class="details">Dr Pretty Lady is an exercise physiologist with a scientific research background. She is currently a Professor in Ageing and Health at Glasgow Caledonian University.  She is Deputy Lead of the Later Life Research Group and also the Scottish Centre for Evidence Based Care. </p>
                         <div class="buttons">
                             <a href="#" class="button next">Read&nbsp;More</a><br />
                             <a href="#" class="button next">Other&nbsp;Members</a>
@@ -162,7 +160,7 @@
                     <div class="copy">
                         <h2>Who we are</h2>
                         <p class="sub-title">Dr Who</p>
-                        <p>Doctor Who is a British science-fiction television programme produced by the BBC from 1963 to the present day. The programme depicts the adventures of the Doctor, a Time Lord—a time-travelling humanoid alien. He explores the universe in his TARDIS, a sentient time-travelling space ship.</p>
+                        <p class="details">Doctor Who is a British science-fiction television programme produced by the BBC from 1963 to the present day. The programme depicts the adventures of the Doctor, a Time Lord—a time-travelling humanoid alien. He explores the universe in his TARDIS, a sentient time-travelling space ship.</p>
                         <div class="buttons">
                             <a href="#" class="button next">Read&nbsp;More</a><br />
                             <a href="#" class="button next">Other&nbsp;Members</a>
@@ -177,7 +175,7 @@
                     <div class="copy">
                         <h2>Who we are</h2>
                         <p class="sub-title">Dr Typical Doctor</p>
-                        <p>Dr Typical Doctor is a fictional character, a mercenary and anti-hero appearing in comic books published by Marvel Comics. Created by writer and artist Rob Liefeld and scripted by Fabian Nicieza.</p>
+                        <p class="details">Dr Typical Doctor is a fictional character, a mercenary and anti-hero appearing in comic books published by Marvel Comics. Created by writer and artist Rob Liefeld and scripted by Fabian Nicieza.</p>
                         <div class="buttons">
                             <a href="#" class="button next">Read&nbsp;More</a><br />
                             <a href="#" class="button next">Other&nbsp;Members</a>

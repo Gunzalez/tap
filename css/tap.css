@@ -64,7 +64,7 @@ img {
   padding: 2.8px 14px;
   background: #f5a021;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 15px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -147,17 +147,6 @@ img {
 
 #home .header {
   background: url("../images/bg-home.jpg") bottom center no-repeat #cec11f;
-}
-#home .faqs .title {
-  float: right;
-  display: none;
-}
-#home .faqs .copy {
-  text-align: center;
-  margin: 10px 60px;
-}
-#home .faqs .copy .question .count {
-  float: none;
 }
 
 .container {
@@ -354,16 +343,18 @@ img {
   font-family: "FranchiseBold";
   font-size: 4.2em;
   padding: 10px 11px;
+  text-align: center;
 }
 .body .faqs .title {
   background: url("../images/bg-faq-title.png") center center no-repeat;
-  width: 250px;
   height: 86px;
   text-align: center;
+  margin-top: 10px;
 }
 .body .faqs .title h2 {
   display: inline-block;
   margin: 0 auto;
+  padding: 0;
   font-size: 1.4em;
   line-height: 86px;
   color: #f5a021;
@@ -375,26 +366,26 @@ img {
   display: block;
   text-decoration: none;
 }
-.body .faqs .copy:hover .question {
-  color: #666666;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.body .faqs .count {
-  color: lightgrey;
-  float: left;
-  padding-right: 10px;
-}
-.body .faqs .question {
-  float: left;
-  text-transform: uppercase;
+.body .faqs .copy:hover .quotes {
   color: #231f20;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+}
+.body .faqs .copy:hover .question {
+  color: #231f20;
+}
+.body .faqs .quotes {
+  color: lightgrey;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.body .faqs .text {
+  text-transform: uppercase;
+  color: #333333;
 }
 .body .grey-bar {
   background-color: #e9eeea;
@@ -530,6 +521,13 @@ img {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+.tap-prev.sliding {
+  opacity: 0 !important;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
 
 .tap-next {
   width: 0;
@@ -541,6 +539,13 @@ img {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+}
+.tap-next.sliding {
+  opacity: 0 !important;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .tap-carousel-link {
@@ -789,11 +794,6 @@ img {
     list-style: none;
     position: relative;
   }
-  .header .carousel #header-carousel li {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
   .header .carousel #header-carousel li .slide-copy {
     display: none;
   }
@@ -821,9 +821,7 @@ img {
     line-height: 130%;
   }
   .header .carousel .copy .pagination {
-    position: absolute;
     bottom: 2px;
-    right: 0;
   }
   .header .carousel .copy .pagination ul {
     margin: 0;
@@ -834,7 +832,7 @@ img {
     font-size: 3.6em;
   }
   #home .faqs .copy {
-    margin: 10px;
+    margin: 10px 10px 0 10px;
   }
 
   .body .grey-bar h2 {
@@ -866,9 +864,6 @@ img {
   }
   .body .carousel .item .copy .sub-title {
     font-size: 1.3em;
-  }
-  .body .carousel .item .copy p {
-    font-size: 1.1em;
   }
 
   .forums h3 {
@@ -921,5 +916,126 @@ img {
 
   .bx-wrapper .bx-next {
     right: 10px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .container {
+    width: 480px;
+  }
+
+  .header .carousel {
+    height: auto;
+  }
+  .header .carousel .imagery {
+    width: 458px;
+    height: 268px;
+  }
+  .header .carousel .copy {
+    background: none;
+    height: auto;
+  }
+  .header .carousel .copy .description {
+    display: none;
+  }
+  .header .carousel .copy .pagination {
+    position: static;
+    text-align: center;
+  }
+  .header .carousel .copy .pagination ul li a {
+    background: #cec11f;
+    border-color: #ffffff;
+  }
+  .header .carousel .copy .pagination ul li a.active, .header .carousel .copy .pagination ul li a:hover {
+    background: #cec11f;
+    border-color: #cec11f;
+  }
+
+  #home .header {
+    padding-bottom: 10px;
+  }
+
+  .body .faqs {
+    padding: 0 12px;
+  }
+  .body .faqs .title {
+    height: 56px;
+  }
+  .body .faqs .title h2 {
+    font-size: 1.0em;
+    line-height: 56px;
+  }
+  .body .faqs .copy {
+    font-size: 0.7em;
+    margin: 0 !important;
+  }
+  .body .grey-bar h2 {
+    font-size: 2.8em;
+    padding-bottom: 5px;
+  }
+  .body .grey-bar ul li {
+    width: 100%;
+    float: none;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .body .grey-bar ul li a {
+    background: #ffffff;
+    height: auto;
+    padding: 10px;
+  }
+  .body .grey-bar ul li a span {
+    text-align: left;
+  }
+  .body .grey-bar ul li a span.item {
+    position: relative;
+    min-height: 40px;
+  }
+  .body .grey-bar ul li a span .icon {
+    text-align: center;
+    margin-bottom: 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .body .grey-bar ul li a span .icon i {
+    font-size: 2.2em;
+    line-height: 40px;
+  }
+  .body .grey-bar ul li a span .intro {
+    padding: 0 0 0 55px;
+  }
+  .body .carousel .item .copy h2 {
+    font-size: 2.8em;
+  }
+  .body .carousel .item .copy .details {
+    display: none;
+  }
+  .body .carousel .item .copy .buttons {
+    padding-top: 20px;
+  }
+
+  .forums {
+    background: none;
+  }
+  .forums .forum-chats,
+  .forums .forum-info {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .forums .forum-chats h3,
+  .forums .forum-info h3 {
+    padding-bottom: 15px;
+  }
+  .forums .forum-chats {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #dedede;
+  }
+
+  .bx-wrapper {
+    margin-bottom: 20px !important;
   }
 }

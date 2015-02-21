@@ -133,7 +133,7 @@
                     $('a',self.$pagination).eq(newIndex).trigger('click');
 
                     clearInterval(self.loop); // stops
-                    self.playShow(); // starts
+                    //self.playShow(); // starts
                 },
 
                 fadeIn: function(index){
@@ -171,7 +171,13 @@
                         this.$html.bxSlider({
                             auto: false,
                             autoControls: false,
-                            infiniteLoop: true
+                            infiniteLoop: true,
+                            onSlideAfter: function(){
+                                $('.bx-controls-direction a').removeClass('sliding');
+                            },
+                            onSlideBefore: function(){
+                                $('.bx-controls-direction a').addClass('sliding');
+                            }
                         });
                     }
                 }
