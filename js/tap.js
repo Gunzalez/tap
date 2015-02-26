@@ -59,106 +59,33 @@
     tap.homepage = {
         header: {
             carousel: {
-                loop: '',
                 $html: $('#header-carousel'),
                 $pagination: $('#carousel-pagination'),
                 $description: $('#carousel-description'),
-
-                init: function(){
-                    var self = this,
-                        $dotList = $('<ul />');
-
-                    // create pagination
-                    $('img',this.$html).each(function(i, obj){
-                        $dotList.append($('<li><a href="#">'+i+'</a></li>'));
-                    });
-                    this.$pagination.append($dotList);
-
-                    // show first image item
-                    $('li', this.$html).css('display','none');
-                    $('li', this.$html).eq(0).css('display','block');
-
-                    // set description of first item
-                    var cloneCopy = $('li', this.$html).eq(0).find('.slide-copy').clone();
-                    this.$description.html(cloneCopy.html());
-
-                    // set first link to active
-                    $('li', $dotList).eq(0).find('a').addClass('active');
-
-                    // attach click actions
-                    $('a',$dotList).on('click', function(evt){
-                        evt.preventDefault();
-                        if(!$(this).hasClass('active')){
-                            self.fadeIn($(this).text());
-                        }
-                    });
-
-                    // attach swipe actions
-                    this.$html.parents('.carousel').swipe({
-                        swipeRight:function(event, direction, distance, duration, fingerCount) {
-                            self.swipe('right');
-                        },
-                        swipeLeft:function(event, direction, distance, duration, fingerCount) {
-                            self.swipe('left');
-                        }
-                    });
-
-                    // attach pause on hover actions
-                    this.$html.parents('.carousel').on('mouseenter', function(){
-                        clearInterval(self.loop); // stops
-                    });
-                    this.$html.parents('.carousel').on('mouseleave', function(){
-                        self.playShow(); // starts
-                    });
-
-                    // start the slide show
-                    this.playShow();
-                },
-
-                swipe: function(direction){
-                    var $curSlide = $('.active', self.$pagination),
-                        newIndex;
-
-                    if(direction == 'right'){
-                        newIndex = $('a',self.$pagination).index($curSlide) - 1;
-                        if(newIndex == -1){
-                            newIndex = $('a',self.$pagination).length -1;
-                        }
-                    } else if(direction == 'left'){
-                        newIndex = $('a',self.$pagination).index($curSlide) + 1;
-                        if(newIndex == $('a',self.$pagination).length){
-                            newIndex = 0
-                        }
-                    }
-                    $('a',self.$pagination).eq(newIndex).trigger('click');
-
-                    clearInterval(self.loop); // stops
-                    //self.playShow(); // starts
-                },
-
-                fadeIn: function(index){
-                    $('a', this.$pagination).removeClass('active');
-                    $('a', this.$pagination).eq(index).addClass('active');
-
-                    $('li', this.$html).fadeOut('slow');
-                    $('li', this.$html).eq(index).fadeIn('slow');
-
-                    var cloneCopy = $('li', this.$html).eq(index).find('.slide-copy').clone();
-                    this.$description.html(cloneCopy.html());
-                },
-
-                playShow: function(){
+                updateDetails: function(index){
                     var self = this;
-                    this.loop = setInterval(function(){
-
-                        var $curSlide = $('.active', self.$pagination),
-                            newIndex = $('a',self.$pagination).index($curSlide) + 1;
-                        if(newIndex == $('a',self.$pagination).length){
-                            newIndex = 0
-                        }
-                        self.fadeIn(newIndex);
-
-                    }, 6000);
+                    var cloneCopy = $('li', self.$html).eq(index).find('.slide-copy').clone();
+                    self.$description.html(cloneCopy.html());
+                },
+                init: function(){
+                    var self = this;
+                    if(this.$html.length > 0){
+                        this.$html.bxSlider({
+                            mode: 'fade',
+                            auto: true,
+                            autoControls: false,
+                            infiniteLoop: true,
+                            randomStart: true,
+                            controls: false,
+                            autoHover: true,
+                            onSlideBefore: function($slideElement, oldIndex, newIndex){
+                                self.updateDetails(newIndex);
+                            },
+                            onSliderLoad:function(currentIndex){
+                                self.updateDetails(currentIndex);
+                            }
+                        });
+                    }
                 }
             }
         },

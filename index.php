@@ -69,7 +69,6 @@
                 </div>
                 <div class="copy">
                     <div id="carousel-description" class="description"></div>
-                    <div id="carousel-pagination" class="pagination"></div>
                 </div>
             </div>
         </div>
@@ -82,7 +81,7 @@
                 </div>
                 <a href="#" class="copy">
                     <span class="question">
-                    <span class="quotes">&ldquo;</span>&nbsp;<span class="text">Is drinking tea bad for the bones?</span>&nbsp;<span class="quotes">&rdquo;</span>
+                    <span class="quotes">&ldquo;</span><span class="text">Is drinking tea bad for the bones?</span><span class="quotes">&rdquo;</span>
                     <div class="cleft"></div>
                 </a>
                 <div class="cboth"></div>

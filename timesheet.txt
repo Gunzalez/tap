@@ -10,7 +10,7 @@ Finishes homepage (minus dd menu and responsive)                               4
 Added swipe events                                                             1.0 hr    - 20.02.2015
 Responsive on tablet devices                                                   4.0 hrs   - 20.02.2015
 Responsive on mobile landscape                                                 3.0 hrs   - 21.02.2015
-
+Responsive mobile portrait                                                     4.0 hrs   - 25.02.2015
 
 
 TODO - Issues

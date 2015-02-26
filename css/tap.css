@@ -61,10 +61,10 @@ img {
 .button {
   position: relative;
   margin: 0;
-  padding: 2.8px 14px;
+  padding: 2.8px 12px;
   background: #f5a021;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 14px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -157,14 +157,14 @@ img {
 
 .header h1 {
   float: left;
-  margin: 20px;
-  padding: 0;
+  padding: 20px;
 }
 .header h1 a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   text-indent: -9000px;
   background: url("../images/logo.png") 0 0 no-repeat;
+  background-size: cover;
   width: 196px;
   height: 145px;
 }
@@ -254,21 +254,15 @@ img {
 .header .carousel {
   clear: both;
   background: #ffffff;
-  height: 380px;
   padding: 11px 11px 0 11px;
   box-sizing: border-box;
   overflow: hidden;
 }
 .header .carousel #header-carousel {
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
-  position: relative;
-}
-.header .carousel #header-carousel li {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .header .carousel #header-carousel li .slide-copy {
   display: none;
@@ -281,40 +275,18 @@ img {
   width: 100%;
   display: block;
 }
-.header .carousel .copy {
-  width: 290px;
-  background: #666666;
-  position: relative;
-  height: 100%;
-  float: right;
-}
-.header .carousel .copy .description {
-  padding: 20px;
-  color: #ffffff;
-}
-.header .carousel .copy .description h2 {
-  font-size: 1.8em;
-  font-family: "CoconLight";
-  font-weight: normal;
-}
-.header .carousel .copy .description p {
-  font-size: 1.1em;
-}
-.header .carousel .copy .pagination {
+.header .carousel .bx-controls {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -290px;
+  z-index: 2;
 }
-.header .carousel .copy .pagination ul {
-  margin: 0;
-  padding: 0 10px 12px 0;
-  list-style: none;
+.header .carousel .bx-controls .bx-pager {
+  padding: 12px 10px;
 }
-.header .carousel .copy .pagination ul li {
+.header .carousel .bx-controls .bx-pager .bx-pager-link {
   display: inline;
-  padding: 0 4px;
-}
-.header .carousel .copy .pagination ul li a {
+  margin: 0 4px;
   background: #e8e8e8;
   width: 18px;
   height: 18px;
@@ -330,13 +302,41 @@ img {
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-.header .carousel .copy .pagination ul li a:hover, .header .carousel .copy .pagination ul li a.active {
+.header .carousel .bx-controls .bx-pager .bx-pager-link:hover, .header .carousel .bx-controls .bx-pager .bx-pager-link.active {
   background: #ffffff;
   border: 3px solid #ffffff;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
+}
+.header .carousel .bx-controls ul {
+  margin: 0;
+  padding: 0 10px 12px 0;
+  list-style: none;
+}
+.header .carousel .bx-controls ul li {
+  display: inline;
+  padding: 0 4px;
+}
+.header .carousel .copy {
+  width: 290px;
+  background: #666666;
+  position: relative;
+  height: 369px;
+  float: right;
+}
+.header .carousel .copy .description {
+  padding: 20px;
+  color: #ffffff;
+}
+.header .carousel .copy .description h2 {
+  font-size: 1.8em;
+  font-family: "CoconLight";
+  font-weight: normal;
+}
+.header .carousel .copy .description p {
+  font-size: 1.1em;
 }
 
 .body .faqs {
@@ -365,6 +365,11 @@ img {
 .body .faqs .copy {
   display: block;
   text-decoration: none;
+}
+.body .faqs .copy .question {
+  line-height: 100%;
+  padding-bottom: 10px;
+  display: block;
 }
 .body .faqs .copy:hover .quotes {
   color: #231f20;
@@ -402,6 +407,7 @@ img {
 }
 .body .grey-bar p {
   font-size: 1.1em;
+  padding: 0 20px;
 }
 .body .grey-bar ul {
   margin: 0;
@@ -508,9 +514,14 @@ img {
   margin-bottom: 5px;
   text-decoration: none;
 }
+.body .bx-wrapper {
+  margin-bottom: 30px;
+}
 
-/* carousel overrides */
-.tap-prev {
+.body {
+  /* carousel overrides */
+}
+.body .tap-prev {
   width: 0;
   height: 0;
   border-style: solid;
@@ -521,15 +532,14 @@ img {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-.tap-prev.sliding {
+.body .tap-prev.sliding {
   opacity: 0 !important;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-
-.tap-next {
+.body .tap-next {
   width: 0;
   height: 0;
   border-style: solid;
@@ -540,15 +550,14 @@ img {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-.tap-next.sliding {
+.body .tap-next.sliding {
   opacity: 0 !important;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-
-.tap-carousel-link {
+.body .tap-carousel-link {
   background: #f5a021;
   width: 18px;
   height: 18px;
@@ -566,7 +575,7 @@ img {
   margin: 0 4px;
   opacity: 0.5;
 }
-.tap-carousel-link:hover, .tap-carousel-link.active {
+.body .tap-carousel-link:hover, .body .tap-carousel-link.active {
   background: #f5a021;
   border: 3px solid #f5a021;
   -webkit-transition: all 0.25s;
@@ -575,16 +584,13 @@ img {
   transition: all 0.25s;
   opacity: 1.0;
 }
-
-.bx-viewport {
+.body .bx-viewport {
   height: auto !important;
 }
-
-.bx-wrapper .bx-prev {
+.body .bx-wrapper .bx-prev {
   left: 40px;
 }
-
-.bx-wrapper .bx-next {
+.body .bx-wrapper .bx-next {
   right: 40px;
 }
 
@@ -781,30 +787,17 @@ img {
     text-decoration: none;
     text-transform: uppercase;
   }
-  .header .carousel {
-    clear: both;
-    height: 545px;
-    padding: 11px 11px 0 11px;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  .header .carousel #header-carousel {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
-  }
-  .header .carousel #header-carousel li .slide-copy {
-    display: none;
-  }
   .header .carousel .imagery {
     float: none;
-    width: 660px;
-    height: 380px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .header .carousel .bx-controls {
+    bottom: -163px;
+    right: 11px;
   }
   .header .carousel .copy {
     width: auto;
-    position: relative;
     height: 156px;
     float: none;
   }
@@ -819,13 +812,6 @@ img {
   .header .carousel .copy .description p {
     font-size: 1.1em;
     line-height: 130%;
-  }
-  .header .carousel .copy .pagination {
-    bottom: 2px;
-  }
-  .header .carousel .copy .pagination ul {
-    margin: 0;
-    padding: 0 10px 12px 0;
   }
 
   #home .faqs {
@@ -851,19 +837,22 @@ img {
   .body .carousel .item .imagery {
     float: left;
     width: 47%;
-    padding-left: 70px;
+    padding-left: 40px;
   }
   .body .carousel .item .copy {
     float: right;
     width: 47%;
     padding-top: 15px;
-    padding-right: 70px;
+    padding-right: 40px;
   }
   .body .carousel .item .copy h2 {
     font-size: 3.8em;
   }
   .body .carousel .item .copy .sub-title {
     font-size: 1.3em;
+  }
+  .body .bx-wrapper .bx-controls-direction {
+    display: none;
   }
 
   .forums h3 {
@@ -891,7 +880,7 @@ img {
   }
   .footer .tea-cups-count {
     float: none;
-    padding-left: 80px;
+    padding-left: 70px;
     background: url("../images/bg-tea-count-small.png") 0 0 no-repeat;
     min-height: 80px;
     display: inline-block;
@@ -906,8 +895,8 @@ img {
   .footer .site-map {
     float: none;
   }
-  .footer .site-map ul {
-    padding: 15px 0 0 0;
+  .footer .site-map ul li {
+    padding: 0 7px;
   }
 
   .bx-wrapper .bx-prev {
@@ -926,28 +915,30 @@ img {
   .header .carousel {
     height: auto;
   }
-  .header .carousel .imagery {
-    width: 458px;
-    height: 268px;
+  .header .carousel #header-carousel {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
   }
-  .header .carousel .copy {
-    background: none;
-    height: auto;
-  }
-  .header .carousel .copy .description {
-    display: none;
-  }
-  .header .carousel .copy .pagination {
+  .header .carousel .bx-controls {
     position: static;
-    text-align: center;
+    bottom: -163px;
+    right: 11px;
   }
-  .header .carousel .copy .pagination ul li a {
+  .header .carousel .bx-controls .bx-pager {
+    padding: 12px 0 2px 0;
+  }
+  .header .carousel .bx-controls .bx-pager .bx-pager-link {
     background: #cec11f;
     border-color: #ffffff;
   }
-  .header .carousel .copy .pagination ul li a.active, .header .carousel .copy .pagination ul li a:hover {
+  .header .carousel .bx-controls .bx-pager .bx-pager-link.active, .header .carousel .bx-controls .bx-pager .bx-pager-link:hover {
     background: #cec11f;
     border-color: #cec11f;
+  }
+  .header .carousel .copy {
+    display: none;
   }
 
   #home .header {
@@ -1006,6 +997,13 @@ img {
   .body .grey-bar ul li a span .intro {
     padding: 0 0 0 55px;
   }
+  .body .carousel .item .imagery {
+    padding-left: 15px;
+  }
+  .body .carousel .item .copy {
+    padding-top: 15px;
+    padding-right: 15px;
+  }
   .body .carousel .item .copy h2 {
     font-size: 2.8em;
   }
@@ -1034,8 +1032,57 @@ img {
     margin-bottom: 25px;
     border-bottom: 1px solid #dedede;
   }
+}
+@media only screen and (max-width: 540px) {
+  .container {
+    width: 100%;
+  }
 
-  .bx-wrapper {
-    margin-bottom: 20px !important;
+  .header h1 {
+    padding: 15px;
+  }
+  .header h1 a {
+    width: 140px;
+    height: 104px;
+  }
+  .header .search-and-social {
+    margin: 15px 15px 0 0;
+  }
+  .header .search-and-social ul {
+    display: none;
+  }
+  .header .container {
+    text-align: center;
+  }
+  .header .carousel {
+    clear: both;
+    height: auto;
+    padding: 0;
+    background: none;
+  }
+  .header .carousel .imagery .bx-wrapper .bx-viewport {
+    padding: 1px 0 1px 0;
+    background: #cccccc;
+  }
+  .header .carousel .imagery .bx-wrapper .bx-pager .bx-pager-link {
+    background: #ffffff;
+    border: 3px solid #E9E627;
+  }
+  .header .carousel .imagery .bx-wrapper .bx-pager .bx-pager-link:hover, .header .carousel .imagery .bx-wrapper .bx-pager .bx-pager-link.active {
+    background: #ffffff;
+    border: 3px solid #ffffff;
+  }
+
+  .body .grey-bar ul li {
+    margin-bottom: 1px;
+  }
+
+  .forums {
+    padding: 0 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer .tea-cups-count .figure {
+    font-size: 2.2em;
   }
 }
