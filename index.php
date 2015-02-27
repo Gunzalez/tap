@@ -20,10 +20,33 @@
                 </ul>
             </div>
             <div class="site-navigation">
-                <ul>
-                    <li><a href="#">Members</a></li>
-                    <li><a href="#">Tea &amp; Health</a></li>
-                    <li><a href="#">Media Centre</a></li>
+                <ul id="site-navigation-list" class="top-level">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Members</a>
+                        <ul class="sub-level">
+                            <li><a href="/members/profile/19">Dr Carrie Ruxton</a></li>
+                            <li><a href="/members/profile/18">Dr Catherine Hood</a></li>
+                            <li><a href="/members/profile/20">Dr Chris Steele</a></li>
+                            <li><a href="/members/profile/24">Dr Christopher Etheridge</a></li>
+                            <li><a href="/members/profile/22">Dr Tim Bond</a></li>
+                            <li><a href="/members/profile/17">Lynne Garton</a></li>
+                            <li><a href="/members/profile/23">Professor Robin Seymour</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tea &amp; Health</a>
+                        <ul class="sub-level">
+                            <li><a href="/research_documents">Research</a></li>
+                            <li><a href="/facts">Health Facts</a></li>
+                            <li><a href="/myths">Myths &amp; Truths</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Media Centre</a>
+                        <ul class="sub-level">
+                            <li><a href="/bulletins">Bulletins</a></li>
+                            <li><a href="/video">Videos</a></li>
+                            <li><a href="/links">Links</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
@@ -255,6 +278,5 @@
 
     <?php include_once('includes/footer.php'); ?>
     <script src="js/vendors/jquery.bxslider/jquery.bxslider.js"></script>
-    <script src="js/vendors/jquery-swipe/jquery.touchSwipe.min.js"></script>
 </body>
 </html>

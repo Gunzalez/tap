@@ -18,6 +18,8 @@
 
         resize : function(){
             // null
+            var self = tap;
+            self.siteNavigation.reszie();
         },
 
         init: function(){
@@ -56,6 +58,30 @@
         }
     };
 
+    tap.siteNavigation = {
+        $html: $('#site-navigation-list'),
+        reszie: function(){
+
+
+
+        },
+        init: function(){
+            var self = this;
+            if(self.$html.length > 0){
+                var $topLevel = $('> li', self.$html);
+                console.log($topLevel)
+                $topLevel.each(function(){
+                    $(this).on('mouseenter', function(){
+                        $('.sub-level', $(this)).css('display','block');
+                    });
+                    $(this).on('mouseleave', function(){
+                        $('.sub-level', $(this)).css('display','none');
+                    });
+                });
+            }
+        }
+    };
+
     tap.homepage = {
         header: {
             carousel: {
@@ -73,6 +99,7 @@
                         this.$html.bxSlider({
                             mode: 'fade',
                             auto: true,
+                            speed: 1000,
                             autoControls: false,
                             infiniteLoop: true,
                             randomStart: true,
@@ -122,6 +149,8 @@
 
         // all init
         tap.environment.init();
+        tap.homepage.init();
+        tap.siteNavigation.init();
 
         // resize triggers
 		$(window).on('resize',function(){
@@ -147,10 +176,10 @@
     // main init
 	$(document).ready(function(){
 		tap.init();
-        tap.homepage.init();
 	});
 
     $(window).load(function(){
+        // nowt for now
     });
 
 }(jQuery, window));

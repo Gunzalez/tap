@@ -170,24 +170,58 @@ img {
 }
 .header .site-navigation {
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: 145px;
+  z-index: 60;
 }
 .header .site-navigation ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.header .site-navigation ul li {
-  display: inline;
-  padding-left: 30px;
-}
-.header .site-navigation ul li a {
+.header .site-navigation ul a {
   font-family: "CoconLight";
   font-size: 1.5em;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+}
+.header .site-navigation ul.top-level > li {
+  position: relative;
+  display: inline;
+}
+.header .site-navigation ul.top-level > li > a {
+  padding: 0 10px;
+}
+.header .site-navigation ul.sub-level {
+  position: absolute;
+  left: 0;
+  min-width: 100%;
+  background-color: #cec11f;
+  padding-top: 5px;
+  display: none;
+  border: 3px solid #cec11f;
+}
+.header .site-navigation ul.sub-level li {
+  border-top: 1px solid whitesmoke;
+}
+.header .site-navigation ul.sub-level a {
+  display: block;
+  font-size: 1.1em;
+  padding: 6px 10px;
+  white-space: nowrap;
+  background-color: #cec11f;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+}
+.header .site-navigation ul.sub-level a:hover {
+  background-color: #908715;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
 }
 .header .search-and-social {
   float: right;
@@ -959,15 +993,21 @@ img {
     font-size: 0.7em;
     margin: 0 !important;
   }
+  .body .grey-bar {
+    padding-top: 15px;
+  }
   .body .grey-bar h2 {
     font-size: 2.8em;
     padding-bottom: 5px;
+  }
+  .body .grey-bar ul {
+    padding-bottom: 15px;
   }
   .body .grey-bar ul li {
     width: 100%;
     float: none;
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
   }
   .body .grey-bar ul li a {
     background: #ffffff;
@@ -998,11 +1038,11 @@ img {
     padding: 0 0 0 55px;
   }
   .body .carousel .item .imagery {
-    padding-left: 15px;
+    padding-left: 20px;
   }
   .body .carousel .item .copy {
     padding-top: 15px;
-    padding-right: 15px;
+    padding-right: 20px;
   }
   .body .carousel .item .copy h2 {
     font-size: 2.8em;
@@ -1062,7 +1102,7 @@ img {
   }
   .header .carousel .imagery .bx-wrapper .bx-viewport {
     padding: 1px 0 1px 0;
-    background: #cccccc;
+    background: #ffffff;
   }
   .header .carousel .imagery .bx-wrapper .bx-pager .bx-pager-link {
     background: #ffffff;
@@ -1073,8 +1113,14 @@ img {
     border: 3px solid #ffffff;
   }
 
-  .body .grey-bar ul li {
-    margin-bottom: 1px;
+  .body .grey-bar h2 {
+    font-size: 2.2em;
+  }
+  .body .grey-bar ul {
+    padding-bottom: 0;
+  }
+  .body .grey-bar ul li a {
+    padding: 10px 20px;
   }
 
   .forums {

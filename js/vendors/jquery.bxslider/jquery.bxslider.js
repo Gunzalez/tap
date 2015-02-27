@@ -65,7 +65,7 @@
 
 		// AUTO
 		auto: false,
-		pause: 4000,
+		pause: 6000,
 		playShow: true,
 		autoDirection: 'next',
 		autoHover: false,

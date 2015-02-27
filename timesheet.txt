@@ -11,7 +11,7 @@ Added swipe events                                                             1
 Responsive on tablet devices                                                   4.0 hrs   - 20.02.2015
 Responsive on mobile landscape                                                 3.0 hrs   - 21.02.2015
 Responsive mobile portrait                                                     4.0 hrs   - 25.02.2015
-
+Drop-down menu (complete on desktop)                                           3.0 hrs   - 27.02.2015
 
 TODO - Issues
 ================================
