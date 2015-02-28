@@ -149,6 +149,28 @@ img {
   background: url("../images/bg-home.jpg") bottom center no-repeat #cec11f;
 }
 
+#mobileNavButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+#mobileNavButton i {
+  color: #ffffff;
+  font-size: 2.0em;
+}
+
+#mobileNav a {
+  color: #ffffff;
+  font-family: "CoconLight";
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.narrowScreen {
+  display: none;
+}
+
 .container {
   width: 982px;
   margin: 0 auto;
@@ -225,18 +247,21 @@ img {
 }
 .header .search-and-social {
   float: right;
-  margin: 20px;
+  padding: 20px;
 }
 .header .search-and-social form {
   float: left;
 }
 .header .search-and-social form .text-input {
-  border: 0;
-  padding: 0;
-  font-size: 1.5em;
+  border: 1px solid #ffffff;
+  font-size: 1.1em;
+  padding: 2px 5px;
   -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   box-sizing: border-box;
-  width: 70px;
+  width: 140px;
   display: inline-block;
   float: left;
   font-family: "CoconLight";
@@ -262,8 +287,8 @@ img {
   border: none;
   color: #ffffff;
   cursor: pointer;
-  margin-left: 10px;
   float: left;
+  margin-left: 5px;
 }
 .header .search-and-social form button i {
   font-size: 1.4em;
@@ -800,26 +825,14 @@ img {
   }
 
   .header .site-navigation {
-    position: absolute;
-    right: 20px;
-    top: 145px;
-    display: none;
+    top: 148px;
   }
-  .header .site-navigation ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  .header .site-navigation ul.top-level > li > a {
+    padding: 0 4px;
+    font-size: 1.2em;
   }
-  .header .site-navigation ul li {
-    display: inline;
-    padding-left: 30px;
-  }
-  .header .site-navigation ul li a {
-    font-family: "CoconLight";
-    font-size: 1.5em;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
+  .header .site-navigation ul.sub-level a {
+    font-size: 1.0em;
   }
   .header .carousel .imagery {
     float: none;
@@ -916,7 +929,7 @@ img {
     float: none;
     padding-left: 70px;
     background: url("../images/bg-tea-count-small.png") 0 0 no-repeat;
-    min-height: 80px;
+    min-height: 60px;
     display: inline-block;
     text-align: left;
   }
@@ -946,6 +959,25 @@ img {
     width: 480px;
   }
 
+  .narrowScreen {
+    display: block;
+  }
+
+  #mobileNavButton {
+    display: block;
+  }
+
+  .header .site-navigation {
+    display: none;
+  }
+  .header .search-and-social {
+    position: absolute;
+    top: 121px;
+    right: 0;
+  }
+  .header .search-and-social ul {
+    display: none;
+  }
   .header .carousel {
     height: auto;
   }
@@ -1086,10 +1118,8 @@ img {
     height: 104px;
   }
   .header .search-and-social {
-    margin: 15px 15px 0 0;
-  }
-  .header .search-and-social ul {
-    display: none;
+    top: 82px;
+    padding: 15px 15px 0 0;
   }
   .header .container {
     text-align: center;
@@ -1130,5 +1160,38 @@ img {
 
   .footer .tea-cups-count .figure {
     font-size: 2.2em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .header .container h1 {
+    float: none;
+  }
+  .header .search-and-social {
+    position: static;
+    float: none;
+    padding: 0 15px 15px 15px;
+  }
+  .header .search-and-social form {
+    float: none;
+    position: relative;
+  }
+  .header .search-and-social form .text-input {
+    width: 100%;
+    float: none;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    background: #908715;
+  }
+  .header .search-and-social form .input-box {
+    margin-right: 40px;
+    display: block;
+  }
+  .header .search-and-social form button {
+    position: absolute;
+    top: 5px;
+    right: -5px;
+  }
+  .header .search-and-social form button i {
+    font-size: 1.7em;
   }
 }

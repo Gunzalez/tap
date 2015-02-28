@@ -6,3 +6,5 @@
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/tap.css">
+<link href="js/vendors/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
+<link href="js/vendors/jquery.mmenu/jquery.mmenu.all.css" rel="stylesheet">

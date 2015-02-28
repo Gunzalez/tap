@@ -60,16 +60,24 @@
 
     tap.siteNavigation = {
         $html: $('#site-navigation-list'),
+        $htmlMobile: $('nav#mobileNav'),
         reszie: function(){
-
-
-
+            var self = this;
+            self.$htmlMobile.trigger("close.mm");
+        },
+        mobile: {
+            init: function(){
+                tap.siteNavigation.$htmlMobile.mmenu({
+                    offCanvas: {
+                        position: "right"
+                    }
+                });
+            }
         },
         init: function(){
             var self = this;
             if(self.$html.length > 0){
                 var $topLevel = $('> li', self.$html);
-                console.log($topLevel)
                 $topLevel.each(function(){
                     $(this).on('mouseenter', function(){
                         $('.sub-level', $(this)).css('display','block');
@@ -78,6 +86,8 @@
                         $('.sub-level', $(this)).css('display','none');
                     });
                 });
+
+                self.mobile.init();
             }
         }
     };
@@ -141,6 +151,28 @@
         init: function(){
             this.body.carousel.init();
             this.header.carousel.init();
+
+            // fun stuff
+            // ========================================================= //
+            var addCommas = function(val){
+                while (/(\d+)(\d{3})/.test(val.toString())){
+                    val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+                }
+                return val;
+            };
+
+            setInterval(function(){
+                var $cups = $('.tea-cups-count');
+                var figure = $('.figure', $cups).html(),
+                    newFigure;
+
+                figure = figure.replace(/,/g , "");
+                newFigure = parseInt(figure)+1;
+                newFigure = addCommas(newFigure);
+
+                $('.figure', $cups).html(newFigure);
+            }, 300);
+            // ========================================================= //
         }
 
     };

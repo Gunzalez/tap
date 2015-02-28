@@ -1,18 +1,21 @@
 <!doctype html>
 <html>
 <head>
+
     <title>Tea Advisory Panel (TAP)</title>
     <?php include_once('includes/resources.php'); ?>
-    <link href="js/vendors/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
+
 </head>
 <body id="home">
     <div class="header">
         <div class="container">
+            <a href="#mobileNav" id="mobileNavButton"><i class="fa fa-fw"></i></a>
             <h1><a href="index.php">Tea Advisory Panel</a></h1>
             <div class="search-and-social">
                 <form id="frmSearch" name="frmSearch" action="some-page.php" method="post" novalidate="novalidate">
-                    <input type="text"name="" class="text-input" value="" placeholder="Search" />
+                    <span class="input-box"><input type="text"name="" class="text-input" value="" placeholder="Search" /></span>
                     <button><i class="fa fa-fw"></i></button>
+                    <div class="cleft"></div>
                 </form>
                 <ul>
                     <li><a href="#"><i class="fa fa-fw"></i></a></li>
@@ -35,16 +38,18 @@
                     </li>
                     <li><a href="#">Tea &amp; Health</a>
                         <ul class="sub-level">
-                            <li><a href="/research_documents">Research</a></li>
-                            <li><a href="/facts">Health Facts</a></li>
-                            <li><a href="/myths">Myths &amp; Truths</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Health Facts</a></li>
+                            <li><a href="#">Research</a></li>
+                            <li><a href="#">Little Book of Tea</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Media Centre</a>
                         <ul class="sub-level">
-                            <li><a href="/bulletins">Bulletins</a></li>
-                            <li><a href="/video">Videos</a></li>
-                            <li><a href="/links">Links</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Images</a></li>
+                            <li><a href="#">Links</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Contact</a></li>
@@ -271,12 +276,50 @@
                     <li><a href="#">Privacy</a></li>
                     <li><a href="#">Cookies</a></li>
                 </ul>
+                <ul class="narrowScreen">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
             </div>
             <div class="cboth"></div>
         </div>
     </div>
 
+    <nav id="mobileNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Members</a>
+                <ul>
+                    <li><a href="#">Dr Carrie Ruxton</a></li>
+                    <li><a href="#">Dr Catherine Hood</a></li>
+                    <li><a href="#">Dr Chris Steele</a></li>
+                    <li><a href="#">Dr Christopher Etheridge</a></li>
+                    <li><a href="#">Dr Tim Bond</a></li>
+                    <li><a href="#">Lynne Garton</a></li>
+                    <li><a href="#">Professor Robin Seymour</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tea &amp; Health</a>
+                <ul>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Health Facts</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Little Book of Tea</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Media Centre</a>
+                <ul class="sub-level">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Images</a></li>
+                    <li><a href="#">Links</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
     <?php include_once('includes/footer.php'); ?>
-    <script src="js/vendors/jquery.bxslider/jquery.bxslider.js"></script>
+
 </body>
 </html>
