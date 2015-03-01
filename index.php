@@ -24,8 +24,8 @@
             </div>
             <div class="site-navigation">
                 <ul id="site-navigation-list" class="top-level">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Members</a>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="/members/">Members</a>
                         <ul class="sub-level">
                             <li><a href="/members/profile/19">Dr Carrie Ruxton</a></li>
                             <li><a href="/members/profile/18">Dr Catherine Hood</a></li>
@@ -36,23 +36,23 @@
                             <li><a href="/members/profile/23">Professor Robin Seymour</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Tea &amp; Health</a>
+                    <li><a href="/tea-and-health/">Tea &amp; Health</a>
                         <ul class="sub-level">
-                            <li><a href="#">FAQ's</a></li>
-                            <li><a href="#">Health Facts</a></li>
-                            <li><a href="#">Research</a></li>
-                            <li><a href="#">Little Book of Tea</a></li>
+                            <li><a href="/FAQs/">FAQs</a></li>
+                            <li><a href="/health-facts/">Health Facts</a></li>
+                            <li><a href="/research/">Research</a></li>
+                            <li><a href="/book/">Little Book of Tea</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Media Centre</a>
+                    <li><a href="/media-centre/">Media Centre</a>
                         <ul class="sub-level">
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Videos</a></li>
-                            <li><a href="#">Images</a></li>
-                            <li><a href="#">Links</a></li>
+                            <li><a href="/news/">News</a></li>
+                            <li><a href="/videos/">Videos</a></li>
+                            <li><a href="/images/">Images</a></li>
+                            <li><a href="/links/">Links</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/contact/">Contact</a></li>
                 </ul>
             </div>
             <div class="carousel">
@@ -287,35 +287,35 @@
 
     <nav id="mobileNav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Members</a>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="/members/">Members</a>
                 <ul>
-                    <li><a href="#">Dr Carrie Ruxton</a></li>
-                    <li><a href="#">Dr Catherine Hood</a></li>
-                    <li><a href="#">Dr Chris Steele</a></li>
-                    <li><a href="#">Dr Christopher Etheridge</a></li>
-                    <li><a href="#">Dr Tim Bond</a></li>
-                    <li><a href="#">Lynne Garton</a></li>
-                    <li><a href="#">Professor Robin Seymour</a></li>
+                    <li><a href="/members/profile/19">Dr Carrie Ruxton</a></li>
+                    <li><a href="/members/profile/18">Dr Catherine Hood</a></li>
+                    <li><a href="/members/profile/20">Dr Chris Steele</a></li>
+                    <li><a href="/members/profile/24">Dr Christopher Etheridge</a></li>
+                    <li><a href="/members/profile/22">Dr Tim Bond</a></li>
+                    <li><a href="/members/profile/17">Lynne Garton</a></li>
+                    <li><a href="/members/profile/23">Professor Robin Seymour</a></li>
                 </ul>
             </li>
-            <li><a href="#">Tea &amp; Health</a>
+            <li><a href="/tea-and-health/">Tea &amp; Health</a>
                 <ul>
-                    <li><a href="#">FAQ's</a></li>
-                    <li><a href="#">Health Facts</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">Little Book of Tea</a></li>
+                    <li><a href="/FAQs/">FAQs</a></li>
+                    <li><a href="/health-facts/">Health Facts</a></li>
+                    <li><a href="/research/">Research</a></li>
+                    <li><a href="/book/">Little Book of Tea</a></li>
                 </ul>
             </li>
-            <li><a href="#">Media Centre</a>
-                <ul class="sub-level">
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Images</a></li>
-                    <li><a href="#">Links</a></li>
+            <li><a href="/media-centre/">Media Centre</a>
+                <ul>
+                    <li><a href="/news/">News</a></li>
+                    <li><a href="/videos/">Videos</a></li>
+                    <li><a href="/images/">Images</a></li>
+                    <li><a href="/links/">Links</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/contact/">Contact</a></li>
         </ul>
     </nav>
 

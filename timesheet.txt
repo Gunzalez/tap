@@ -13,11 +13,14 @@ Responsive on mobile landscape                                                 3
 Responsive mobile portrait                                                     4.0 hrs   - 25.02.2015
 Dropdown menu (complete on desktop)                                            3.0 hrs   - 27.02.2015
 Dropdown menu (complete on mobile)                                             3.0 hrs   - "
+Dropdown menu everything, oh yeah                                              3.0 hrs   - 28.02.2015
+
+
 
 
 TODO - Issues
 ================================
-Dropdown menu on tablet
+
 
 
 Better with PHP

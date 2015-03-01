@@ -16,14 +16,23 @@
             return check;
         },
 
+        isTouchDevice : function() {
+            return (('ontouchstart' in window)
+            || (navigator.MaxTouchPoints > 0)
+            || (navigator.msMaxTouchPoints > 0));
+        },
+
         resize : function(){
             // null
-            var self = tap;
-            self.siteNavigation.reszie();
+            tap.siteNavigation.reszie();
         },
 
         init: function(){
             var self = tap;
+
+            $('body').on('click', function(){
+                tap.siteNavigation.closeDropdowns();
+            });
 
             // window size
             self.properties.windowWidth = $(window).width();
@@ -36,6 +45,10 @@
                 self.environment.isDesktop = true;
                 $('html').addClass('desktop');
             }
+
+            $(window).on('scroll', function(){
+                self.siteNavigation.closeDropdowns();
+            });
 
             // sets up all back buttons
             $('.back-button').on('click', function(evt) {
@@ -64,6 +77,7 @@
         reszie: function(){
             var self = this;
             self.$htmlMobile.trigger("close.mm");
+            self.closeDropdowns();
         },
         mobile: {
             init: function(){
@@ -74,19 +88,60 @@
                 });
             }
         },
+        closeDropdowns: function(){
+            var self = this;
+            $('.sub-level', self.$html).removeAttr('style');
+            $('.isOpen').removeClass('isOpen');
+        },
         init: function(){
             var self = this;
             if(self.$html.length > 0){
                 var $topLevel = $('> li', self.$html);
-                $topLevel.each(function(){
-                    $(this).on('mouseenter', function(){
-                        $('.sub-level', $(this)).css('display','block');
-                    });
-                    $(this).on('mouseleave', function(){
-                        $('.sub-level', $(this)).css('display','none');
-                    });
-                });
 
+                if(tap.environment.isTouchDevice()){
+
+                    // touch devices
+                    $topLevel.each(function(){
+                        $('> a', $(this)).on('click', function(evt){
+                            evt.preventDefault();
+                            evt.stopPropagation();
+
+                            var $parentLi = $(this).parents('li'),
+                                locationHref = $(this).attr('href');
+
+                            if($('.sub-level', $parentLi).length > 0 ){
+
+                                // has dropdowns
+                                if($parentLi.hasClass('isOpen')){
+                                    location.assign(locationHref);
+                                } else {
+                                    self.closeDropdowns();
+                                    $('.sub-level', $parentLi).css('display','block');
+                                    $parentLi.addClass('isOpen');
+                                }
+
+                            } else {
+
+                                // has no dropdowns
+                                location.assign(locationHref);
+                            }
+                        });
+                    });
+
+                } else {
+
+                    // non touch devices
+                    $topLevel.each(function(){
+                        $(this).on('mouseenter', function(){
+                            $('.sub-level', $(this)).css('display','block');
+                        });
+                        $(this).on('mouseleave', function(){
+                            $('.sub-level', $(this)).css('display','none');
+                        });
+                    });
+                }
+
+                // initiate mobile navigation
                 self.mobile.init();
             }
         }
@@ -117,6 +172,7 @@
                             autoHover: true,
                             onSlideBefore: function($slideElement, oldIndex, newIndex){
                                 self.updateDetails(newIndex);
+                                tap.siteNavigation.closeDropdowns();
                             },
                             onSliderLoad:function(currentIndex){
                                 self.updateDetails(currentIndex);
