@@ -149,6 +149,10 @@ img {
   background: url("../images/bg-home.jpg") bottom center no-repeat #cec11f;
 }
 
+#members .header {
+  background: url("../images/bg-members.jpg") bottom center no-repeat #cec11f;
+}
+
 #mobileNavButton {
   position: absolute;
   top: 20px;
@@ -178,7 +182,6 @@ img {
 }
 
 .header h1 {
-  float: left;
   padding: 20px;
 }
 .header h1 a {
@@ -219,10 +222,8 @@ img {
   position: absolute;
   left: 0;
   min-width: 100%;
-  background-color: #cec11f;
   padding-top: 5px;
   display: none;
-  border: 3px solid #cec11f;
 }
 .header .site-navigation ul.sub-level li {
   border-top: 1px solid whitesmoke;
@@ -232,21 +233,21 @@ img {
   font-size: 1.1em;
   padding: 6px 10px;
   white-space: nowrap;
-  background-color: #cec11f;
   -webkit-transition: background 0.5s;
   -moz-transition: background 0.5s;
   -o-transition: background 0.5s;
   transition: background 0.5s;
 }
 .header .site-navigation ul.sub-level a:hover {
-  background-color: #908715;
   -webkit-transition: background 0.5s;
   -moz-transition: background 0.5s;
   -o-transition: background 0.5s;
   transition: background 0.5s;
 }
 .header .search-and-social {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   padding: 20px;
 }
 .header .search-and-social form {
@@ -400,6 +401,41 @@ img {
   font-size: 1.1em;
 }
 
+#home .site-navigation ul.sub-level {
+  background-color: #cec11f;
+  border: 3px solid #cec11f;
+}
+#home .site-navigation ul.sub-level a {
+  background-color: #cec11f;
+}
+#home .site-navigation ul.sub-level a:hover {
+  background-color: #908715;
+}
+
+#members .site-navigation ul.sub-level {
+  background-color: #ed991c;
+  border: 3px solid #ed991c;
+}
+#members .site-navigation ul.sub-level a {
+  background-color: #ed991c;
+}
+#members .site-navigation ul.sub-level a:hover {
+  background-color: #c67d10;
+}
+#members .page-padding .title {
+  color: #ed991c;
+}
+#members .page-padding h3 {
+  color: #ed991c;
+  font-family: "FranchiseBold";
+  text-transform: uppercase;
+  font-size: 2.7em;
+  line-height: 80%;
+}
+
+.body {
+  /* carousel overrides */
+}
 .body .faqs {
   font-family: "FranchiseBold";
   font-size: 4.2em;
@@ -456,7 +492,6 @@ img {
 .body .grey-bar {
   background-color: #e9eeea;
   text-align: center;
-  padding: 30px 0 0 0;
 }
 .body .grey-bar h2 {
   font-family: "chunkfiveroman";
@@ -465,6 +500,7 @@ img {
   font-weight: normal;
   color: #916083;
   line-height: 80%;
+  padding-top: 25px;
 }
 .body .grey-bar p {
   font-size: 1.1em;
@@ -575,13 +611,6 @@ img {
   margin-bottom: 5px;
   text-decoration: none;
 }
-.body .bx-wrapper {
-  margin-bottom: 30px;
-}
-
-.body {
-  /* carousel overrides */
-}
 .body .tap-prev {
   width: 0;
   height: 0;
@@ -618,6 +647,9 @@ img {
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
+.body .bx-wrapper {
+  margin-bottom: 30px;
+}
 .body .tap-carousel-link {
   background: #f5a021;
   width: 18px;
@@ -653,6 +685,71 @@ img {
 }
 .body .bx-wrapper .bx-next {
   right: 40px;
+}
+.body .members-list {
+  margin: 0;
+  padding: 0 0 10px 0;
+  list-style: none;
+  float: left;
+}
+.body .members-list li {
+  position: relative;
+  width: 25%;
+  float: left;
+  padding-bottom: 15px;
+}
+.body .members-list li a {
+  margin: 0 8px;
+  display: block;
+  position: relative;
+}
+.body .members-list li a img {
+  width: 100%;
+  display: block;
+}
+.body .members-list li a span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  background-color: #ed991c;
+  padding: 4px 6px;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.body .members-list li a:hover span {
+  background-color: #c67d10;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.bodyBorder {
+  background-color: #ffffff;
+  height: 24px;
+}
+
+.page-padding {
+  padding: 11px;
+}
+.page-padding .title {
+  font-family: "chunkfiveroman";
+  font-size: 2.8em;
+  text-transform: uppercase;
+  line-height: 80%;
+}
+.page-padding ul {
+  margin: 0;
+  padding: 0 0 10px 25px;
+  list-style-image: url("../images/bg-members-bullets.png");
+}
+.page-padding ul li {
+  padding-bottom: 4px;
 }
 
 .forums {
@@ -870,6 +967,27 @@ img {
     margin: 10px 10px 0 10px;
   }
 
+  .body .page-padding {
+    padding: 11px 20px;
+  }
+  .body .members-list {
+    margin: 0;
+    padding: 0 0 15px 0;
+    list-style: none;
+    float: left;
+  }
+  .body .members-list li {
+    position: relative;
+    width: 25%;
+    float: left;
+    padding-bottom: 0;
+  }
+  .body .members-list li a {
+    margin: 0;
+  }
+  .body .members-list li a span {
+    display: none;
+  }
   .body .grey-bar h2 {
     font-size: 4.0em;
   }
@@ -1013,6 +1131,9 @@ img {
     padding-bottom: 10px;
   }
 
+  .body .members-list li {
+    width: 50%;
+  }
   .body .faqs {
     padding: 0 12px;
   }
@@ -1027,10 +1148,8 @@ img {
     font-size: 0.7em;
     margin: 0 !important;
   }
-  .body .grey-bar {
-    padding-top: 15px;
-  }
   .body .grey-bar h2 {
+    padding-top: 15px;
     font-size: 2.8em;
     padding-bottom: 5px;
   }
@@ -1114,6 +1233,7 @@ img {
 
   .header h1 {
     padding: 15px;
+    float: left;
   }
   .header h1 a {
     width: 140px;
@@ -1185,7 +1305,6 @@ img {
   }
   .header .search-and-social form .text-input {
     padding: 8px 10px;
-    background: #908715;
   }
   .header .search-and-social form button {
     position: absolute;
@@ -1194,5 +1313,13 @@ img {
   }
   .header .search-and-social form button i {
     font-size: 1.7em;
+  }
+
+  #home .text-input {
+    background: #908715;
+  }
+
+  #members .text-input {
+    background: #c67d10;
   }
 }
