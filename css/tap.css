@@ -252,6 +252,10 @@ img {
 .header .search-and-social form {
   float: left;
 }
+.header .search-and-social form .input-box {
+  width: 140px;
+  float: left;
+}
 .header .search-and-social form .text-input {
   border: 1px solid #ffffff;
   font-size: 1.1em;
@@ -261,9 +265,8 @@ img {
   -moz-border-radius: 0;
   border-radius: 0;
   box-sizing: border-box;
-  width: 140px;
+  width: 100%;
   display: inline-block;
-  float: left;
   font-family: "CoconLight";
   color: #ffffff;
   background-color: transparent;
@@ -344,7 +347,6 @@ img {
   padding: 12px 10px;
 }
 .header .carousel .bx-controls .bx-pager .bx-pager-link {
-  display: inline;
   margin: 0 4px;
   background: #e8e8e8;
   width: 18px;
@@ -1175,16 +1177,15 @@ img {
     float: none;
     position: relative;
   }
-  .header .search-and-social form .text-input {
-    width: 100%;
-    float: none;
-    box-sizing: border-box;
-    padding: 8px 10px;
-    background: #908715;
-  }
   .header .search-and-social form .input-box {
+    width: auto;
+    float: none;
     margin-right: 40px;
     display: block;
+  }
+  .header .search-and-social form .text-input {
+    padding: 8px 10px;
+    background: #908715;
   }
   .header .search-and-social form button {
     position: absolute;

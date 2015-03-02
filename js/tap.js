@@ -31,7 +31,9 @@
             var self = tap;
 
             $('body').on('click', function(){
-                tap.siteNavigation.closeDropdowns();
+                if(tap.environment.isTouchDevice()){
+                    tap.siteNavigation.closeDropdowns();
+                }
             });
 
             // window size
@@ -172,7 +174,6 @@
                             autoHover: true,
                             onSlideBefore: function($slideElement, oldIndex, newIndex){
                                 self.updateDetails(newIndex);
-                                tap.siteNavigation.closeDropdowns();
                             },
                             onSliderLoad:function(currentIndex){
                                 self.updateDetails(currentIndex);

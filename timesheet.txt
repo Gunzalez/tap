@@ -14,7 +14,7 @@ Responsive mobile portrait                                                     4
 Dropdown menu (complete on desktop)                                            3.0 hrs   - 27.02.2015
 Dropdown menu (complete on mobile)                                             3.0 hrs   - "
 Dropdown menu everything, oh yeah                                              3.0 hrs   - 28.02.2015
-
+Fixes, form on mobile issue + other minor bugs                                 0.5 hrs   - 2.03.2015
 
 
 

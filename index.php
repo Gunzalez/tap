@@ -13,7 +13,7 @@
             <h1><a href="index.php">Tea Advisory Panel</a></h1>
             <div class="search-and-social">
                 <form id="frmSearch" name="frmSearch" action="some-page.php" method="post" novalidate="novalidate">
-                    <span class="input-box"><input type="text"name="" class="text-input" value="" placeholder="Search" /></span>
+                    <span class="input-box"><input type="text" name="" class="text-input" value="" placeholder="Search" /></span>
                     <button><i class="fa fa-fw"></i></button>
                     <div class="cleft"></div>
                 </form>
@@ -59,35 +59,35 @@
                 <div class="imagery">
                     <ul id="header-carousel">
                         <li>
-                            <img src="uploaded/carousel-slide-1.jpg">
+                            <img src="uploaded/carousel-slide-1.jpg" alt="slide 1" />
                             <div class="slide-copy">
                                 <h2>Is it important?</h2>
                                 <p>Tea is the most commonly consumed beverage in the world after water. In the UK it has been drunk for over 350 years. Today, 77% of British adults drink tea and of the tea consumed in the UK, 95% is black tea.</p>
                             </div>
                         </li>
                         <li>
-                            <img src="uploaded/carousel-slide-3.jpg">
+                            <img src="uploaded/carousel-slide-3.jpg" alt="slide 2" />
                             <div class="slide-copy">
                                 <h2>Golden!</h2>
                                 <p>Morbi lectus riis, luctus non, massa. Fusce ac turpis quis ligsus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.</p>
                             </div>
                         </li>
                         <li>
-                            <img src="uploaded/carousel-slide-2.jpg">
+                            <img src="uploaded/carousel-slide-2.jpg" alt="slide 3" />
                             <div class="slide-copy">
                                 <h2>Tea With Love</h2>
                                 <p>Sunday morning, I'm out in th street dancing like a mad man, until the police come to take me away, I hate it when they do that.</p>
                             </div>
                         </li>
                         <li>
-                            <img src="uploaded/carousel-slide-4.jpg">
+                            <img src="uploaded/carousel-slide-4.jpg" alt="slide 4" />
                             <div class="slide-copy">
                                 <h2>He drinks it too</h2>
-                                <p>And then he reads your emails, jst kidding  Suspendisse potenti. Nunc feugiat mi a equat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.</p>
+                                <p>And then he reads your emails, only kidding  Suspendisse potenti. Nunc feugiat mi a equat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.</p>
                             </div>
                         </li>
                         <li>
-                            <img src="uploaded/carousel-slide-5.jpg">
+                            <img src="uploaded/carousel-slide-5.jpg" alt="slide 5" />
                             <div class="slide-copy">
                                 <h2>Fields of green!</h2>
                                 <p>Not that green you naughty boy, I mean tea. Green fields of tea plants everywhere. tra auctor, sem massa mattis sem, at interdum magna augue eget diam. </p>
@@ -109,8 +109,8 @@
                 </div>
                 <a href="#" class="copy">
                     <span class="question">
-                    <span class="quotes">&ldquo;</span><span class="text">Is drinking tea bad for the bones?</span><span class="quotes">&rdquo;</span>
-                    <div class="cleft"></div>
+                        <span class="quotes">&ldquo;</span><span class="text">Is drinking tea bad for the bones?</span><span class="quotes">&rdquo;</span>
+                    </span>
                 </a>
                 <div class="cboth"></div>
             </div>
@@ -152,7 +152,7 @@
             <ul id="body-carousel" class="carousel">
                 <li class="item">
                     <div class="imagery">
-                        <img src="uploaded/dr-catherine-hood.png" />
+                        <img src="uploaded/dr-catherine-hood.png" alt="" />
                     </div>
                     <div class="copy">
                         <h2>Who we are</h2>
@@ -167,7 +167,7 @@
                 </li>
                 <li class="item">
                     <div class="imagery">
-                        <img src="uploaded/dr-pretty-woman.png" />
+                        <img src="uploaded/dr-pretty-woman.png" alt="" />
                     </div>
                     <div class="copy">
                         <h2>Who we are</h2>
@@ -182,7 +182,7 @@
                 </li>
                 <li class="item">
                     <div class="imagery">
-                        <img src="uploaded/dr-who.png" />
+                        <img src="uploaded/dr-who.png" alt="" />
                     </div>
                     <div class="copy">
                         <h2>Who we are</h2>
@@ -197,7 +197,7 @@
                 </li>
                 <li class="item">
                     <div class="imagery">
-                        <img src="uploaded/dr-typical-hood.png" />
+                        <img src="uploaded/dr-typical-hood.png" alt="" />
                     </div>
                     <div class="copy">
                         <h2>Who we are</h2>
@@ -286,6 +286,7 @@
     </div>
 
     <nav id="mobileNav">
+        <!-- TODO: Mr Curle, please repeat nav in PHP, js library not working on DOM just HTML :( -->
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="/members/">Members</a>
