@@ -160,8 +160,8 @@
                         <p class="sub-title">Dr Catherine Hood</p>
                         <p class="details">Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five’s prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
                         <div class="buttons">
-                            <a href="#" class="button next">Read&nbsp;More</a><br />
-                            <a href="#" class="button next">Other&nbsp;Members</a>
+                            <a href="#" class="button next orange">Read&nbsp;More</a><br />
+                            <a href="#" class="button next orange">Other&nbsp;Members</a>
                         </div>
                     </div>
                     <div class="cboth"></div>
@@ -175,8 +175,8 @@
                         <p class="sub-title">Dr Pretty Lady</p>
                         <p class="details">Dr Pretty Lady is an exercise physiologist with a scientific research background. She is currently a Professor in Ageing and Health at Glasgow Caledonian University.  She is Deputy Lead of the Later Life Research Group and also the Scottish Centre for Evidence Based Care. </p>
                         <div class="buttons">
-                            <a href="#" class="button next">Read&nbsp;More</a><br />
-                            <a href="#" class="button next">Other&nbsp;Members</a>
+                            <a href="#" class="button next orange">Read&nbsp;More</a><br />
+                            <a href="#" class="button next orange">Other&nbsp;Members</a>
                         </div>
                     </div>
                     <div class="cboth"></div>
@@ -190,8 +190,8 @@
                         <p class="sub-title">Dr Who</p>
                         <p class="details">Doctor Who is a British science-fiction television programme produced by the BBC from 1963 to the present day. The programme depicts the adventures of the Doctor, a Time Lord—a time-travelling humanoid alien. He explores the universe in his TARDIS, a sentient time-travelling space ship.</p>
                         <div class="buttons">
-                            <a href="#" class="button next">Read&nbsp;More</a><br />
-                            <a href="#" class="button next">Other&nbsp;Members</a>
+                            <a href="#" class="button next orange">Read&nbsp;More</a><br />
+                            <a href="#" class="button next orange">Other&nbsp;Members</a>
                         </div>
                     </div>
                     <div class="cboth"></div>
@@ -205,8 +205,8 @@
                         <p class="sub-title">Dr Typical Doctor</p>
                         <p class="details">Dr Typical Doctor is a fictional character, a mercenary and anti-hero appearing in comic books published by Marvel Comics. Created by writer and artist Rob Liefeld and scripted by Fabian Nicieza.</p>
                         <div class="buttons">
-                            <a href="#" class="button next">Read&nbsp;More</a><br />
-                            <a href="#" class="button next">Other&nbsp;Members</a>
+                            <a href="#" class="button next orange">Read&nbsp;More</a><br />
+                            <a href="#" class="button next orange">Other&nbsp;Members</a>
                         </div>
                     </div>
                     <div class="cboth"></div>
@@ -234,7 +234,7 @@
                         </li>
                     </ul>
                     <div class="buttons">
-                        <a href="#" class="button next">Join us on Twitter</a>
+                        <a href="#" class="button next green">Join us on Twitter</a>
                     </div>
                 </div>
                 <div class="forum-info">

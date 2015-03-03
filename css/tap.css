@@ -62,13 +62,19 @@ img {
   position: relative;
   margin: 0;
   padding: 2.8px 12px;
-  background: #f5a021;
   color: #ffffff;
   font-size: 14px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  text-decoration: none;
+}
+.button.orange {
+  background: #f5a021;
+}
+.button.purple {
+  background: #916083;
 }
 
 .button::after {
@@ -80,11 +86,16 @@ img {
 }
 
 .button:hover {
-  background: #d9860a;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+}
+.button:hover.orange {
+  background: #d9860a;
+}
+.button:hover.purple {
+  background: #65435b;
 }
 
 /* Arrow Buttons */
@@ -98,19 +109,41 @@ img {
 .next::after {
   right: -22px;
   border-width: 11px;
-  border-color: transparent transparent transparent #f5a021;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 
+.orange.next::after {
+  border-color: transparent transparent transparent #f5a021;
+}
+
+.purple.next::after {
+  border-color: transparent transparent transparent #916083;
+}
+
+.green.next::after {
+  border-color: transparent transparent transparent #22b62a;
+}
+
 .next:hover::after {
-  border-left-color: #d9860a;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.orange.next:hover::after {
+  border-left-color: #d9860a;
+}
+
+.green.next:hover::after {
+  border-left-color: #16761b;
+}
+
+.purple.next:hover::after {
+  border-left-color: #65435b;
 }
 
 .forums .buttons {
@@ -118,27 +151,29 @@ img {
   padding-right: 15px;
 }
 .forums .button {
-  background: #22b62a;
   text-decoration: none;
 }
+.forums .button.green {
+  background: #22b62a;
+}
 .forums .button:hover {
-  background: #16761b;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+.forums .button:hover.green {
+  background: #16761b;
+}
 .forums .next::after {
   right: -22px;
   border-width: 11px;
-  border-color: transparent transparent transparent #22b62a;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .forums .next:hover::after {
-  border-left-color: #16761b;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -150,7 +185,7 @@ img {
 }
 
 #members .header {
-  background: url("../images/bg-members.jpg") bottom center no-repeat #cec11f;
+  background: url("../images/bg-members.jpg") bottom center no-repeat #ed991c;
 }
 
 #mobileNavButton {
@@ -187,6 +222,16 @@ img {
   width: 982px;
   margin: 0 auto;
   position: relative;
+}
+
+.top-rule {
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding-top: 10px;
+  margin: 10px 0;
+}
+.top-rule p {
+  padding-left: 15px;
 }
 
 .header h1 {
@@ -447,14 +492,14 @@ img {
 .body .faqs {
   font-family: "FranchiseBold";
   font-size: 4.2em;
-  padding: 10px 11px;
-  text-align: center;
 }
 .body .faqs .title {
   background: url("../images/bg-faq-title.png") center center no-repeat;
   height: 86px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 249px;
 }
 .body .faqs .title h2 {
   display: inline-block;
@@ -472,8 +517,7 @@ img {
   text-decoration: none;
 }
 .body .faqs .copy .question {
-  line-height: 100%;
-  padding-bottom: 10px;
+  line-height: 90%;
   display: block;
 }
 .body .faqs .copy:hover .quotes {
@@ -574,6 +618,54 @@ img {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+}
+.body .grey-bar.form-bar {
+  border-bottom: 1px solid #dedede;
+  padding: 20px 15px;
+  text-align: left;
+}
+.body .grey-bar.form-bar #frmNewsletter {
+  float: left;
+  width: 100%;
+}
+.body .grey-bar.form-bar #frmNewsletter h3 {
+  font-family: "chunkfiveroman";
+  text-transform: uppercase;
+  font-size: 2.4em;
+  font-weight: normal;
+  color: #916083;
+  line-height: 90%;
+  padding-left: 15px;
+}
+.body .grey-bar.form-bar #frmNewsletter .row {
+  width: 48%;
+  float: left;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.body .grey-bar.form-bar #frmNewsletter .row.right {
+  float: right;
+  padding-left: 0;
+  padding-right: 15px;
+}
+.body .grey-bar.form-bar #frmNewsletter .row.submit {
+  clear: left;
+  float: none;
+  padding: 30px 0 10px 15px;
+  width: 100%;
+}
+.body .grey-bar.form-bar #frmNewsletter label {
+  display: block;
+  padding-bottom: 10px;
+  font-family: "CoconLight";
+  font-size: 1.4em;
+}
+.body .grey-bar.form-bar #frmNewsletter .text-input {
+  border: none;
+  padding: 6px 8px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "CoconLight";
 }
 .body .carousel {
   background: #ffffff;
@@ -696,7 +788,7 @@ img {
 }
 .body .members-list {
   margin: 0;
-  padding: 0 0 10px 0;
+  padding: 0;
   list-style: none;
   float: left;
 }
@@ -704,10 +796,10 @@ img {
   position: relative;
   width: 25%;
   float: left;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 .body .members-list li a {
-  margin: 0 8px;
+  margin: 0 15px;
   display: block;
   position: relative;
 }
@@ -722,19 +814,21 @@ img {
   right: 0;
   color: #ffffff;
   background-color: #ed991c;
-  padding: 4px 6px;
+  padding: 6px 8px;
   box-sizing: border-box;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  transition: all 0.25s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0.7;
 }
 .body .members-list li a:hover span {
   background-color: #c67d10;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  transition: all 0.25s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 1;
 }
 
 .bodyBorder {
@@ -743,7 +837,7 @@ img {
 }
 
 .page-padding {
-  padding: 11px;
+  padding: 11px 11px 0 11px;
 }
 .page-padding .title {
   font-family: "chunkfiveroman";
@@ -758,7 +852,10 @@ img {
   list-style-image: url("../images/bg-members-bullets.png");
 }
 .page-padding ul li {
-  padding-bottom: 4px;
+  padding-bottom: 5px;
+}
+.page-padding .objectives li {
+  padding-bottom: 15px;
 }
 
 .forums {
@@ -818,7 +915,8 @@ img {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-.forums .forum-chats {
+.forums .forum-chats,
+.forums .forum-faqs {
   float: left;
   width: 42%;
   padding: 0 20px;
@@ -880,6 +978,20 @@ img {
 }
 .forums .copy {
   margin-left: 56px;
+}
+.forums .faqs .copy {
+  margin-left: 0;
+}
+
+#home .faqs {
+  text-align: center;
+  padding: 10px 11px;
+}
+#home .faqs .title {
+  width: auto;
+}
+#home .faqs .copy .question {
+  line-height: 80%;
 }
 
 .footer {
@@ -970,7 +1082,7 @@ img {
     font-size: 3.6em;
   }
   #home .faqs .copy {
-    margin: 10px 10px 0 10px;
+    margin: 0 10px;
   }
 
   .body .page-padding {
@@ -1031,10 +1143,11 @@ img {
   .forums h3 {
     color: #22b62a;
     font-size: 2.7em;
-    line-height: 100%;
+    line-height: 80%;
     padding-bottom: 20px;
   }
-  .forums .forum-chats {
+  .forums .forum-chats,
+  .forums .forum-faqs {
     float: left;
     width: 47%;
     padding: 0 15px 0 0;
@@ -1149,10 +1262,12 @@ img {
     width: 50%;
   }
   .body .faqs {
-    padding: 0 12px;
+    text-align: center;
+    font-size: 3.6em;
   }
   .body .faqs .title {
     height: 56px;
+    width: auto;
   }
   .body .faqs .title h2 {
     font-size: 1.0em;
@@ -1212,7 +1327,7 @@ img {
     padding-right: 20px;
   }
   .body .carousel .item .copy h2 {
-    font-size: 2.8em;
+    font-size: 2.5em;
   }
   .body .carousel .item .copy .details {
     display: none;
@@ -1225,19 +1340,25 @@ img {
     background: none;
   }
   .forums .forum-chats,
-  .forums .forum-info {
+  .forums .forum-info,
+  .forums .forum-faqs {
     float: none;
     width: 100%;
     padding: 0;
   }
   .forums .forum-chats h3,
-  .forums .forum-info h3 {
+  .forums .forum-info h3,
+  .forums .forum-faqs h3 {
     padding-bottom: 15px;
   }
-  .forums .forum-chats {
+  .forums .forum-chats,
+  .forums .forum-faqs {
     padding-bottom: 25px;
     margin-bottom: 25px;
     border-bottom: 1px solid #dedede;
+  }
+  .forums .forum-faqs {
+    padding-bottom: 10px;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -1342,14 +1463,38 @@ img {
   #home .search-and-social form {
     background: #908715;
   }
-  #home .text-input {
+  #home .search-and-social .text-input {
     background: #908715;
   }
 
   #members .search-and-social form {
     background: #c67d10;
   }
-  #members .text-input {
+  #members .search-and-social .text-input {
     background: #c67d10;
+  }
+
+  .body .grey-bar.form-bar #frmNewsletter {
+    float: none;
+  }
+  .body .grey-bar.form-bar #frmNewsletter h3 {
+    font-size: 1.8em;
+    font-weight: normal;
+    line-height: 90%;
+    padding-left: 0;
+  }
+  .body .grey-bar.form-bar #frmNewsletter .row {
+    width: 100%;
+    float: none;
+    padding: 0 0 15px 0;
+    box-sizing: border-box;
+  }
+  .body .grey-bar.form-bar #frmNewsletter .row.right {
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .body .grey-bar.form-bar #frmNewsletter .row.submit {
+    padding: 10px 0;
   }
 }

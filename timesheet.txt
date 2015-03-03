@@ -16,6 +16,7 @@ Dropdown menu (complete on mobile)                                             3
 Dropdown menu everything, oh yeah                                              3.0 hrs   - 28.02.2015
 Fixes, form on mobile issue + other minor bugs                                 0.5 hrs   - 2.03.2015
 Minor refactor, Members page at 80% + tweaks                                   3.0 hrs   - "
+Members page all done                                                          3.0 hrs   - 3.03.2015
 
 
 TODO - Issues

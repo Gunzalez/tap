@@ -70,62 +70,64 @@
                 </ul>
                 <p>TAP is a novel health group, bringing together experts in the areas of public health, general practice, nutrition and diet. Its objective is to provide informed ‘advice’ about the essential health, hydration and dietary role that black tea can provide in our daily diets.</p>
                 <p>It also as a group will be commissioning a series of study reviews and market research initiatives investigating further the ‘natural’ well-being benefits associated with black tea. TAP is supported by an unrestricted educational grant from the UK Tea Council, the trade association for the UK tea industry.</p>
-                <p>TAP members include nutritionists, dieticians and doctors.</p>
             </div>
-            <ul class="members-list">
-                <li>
-                    <a href="#">
-                        <img src="uploaded/members-1.jpg" alt="" />
-                        <span>Dr Aku</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="uploaded/members-2.jpg" alt="" />
-                        <span>Dr Aku 2</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="uploaded/members-3.jpg" alt="" />
-                        <span>Mr Aku</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="uploaded/members-1.jpg" alt="" />
-                        <span>Master Aku</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="uploaded/members-3.jpg" alt="" />
-                        <span>Dr Aku</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="uploaded/members-2.jpg" alt="" />
-                        <span>Dr Aku 2</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="uploaded/members-1.jpg" alt="" />
-                        <span>Mr Aku</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="uploaded/members-3.jpg" alt="" />
-                        <span>Master Aku</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="cleft"></div>
+            <div class="top-rule">
+                <p>TAP members include nutritionists, dieticians and doctors.</p>
+                <ul class="members-list">
+                    <li>
+                        <a href="#">
+                            <img src="uploaded/members-1.jpg" alt="" />
+                            <span>Dr Aku</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="uploaded/members-2.jpg" alt="" />
+                            <span>Dr Aku 2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="uploaded/members-3.jpg" alt="" />
+                            <span>Mr Aku</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="uploaded/members-1.jpg" alt="" />
+                            <span>Master Aku</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="uploaded/members-3.jpg" alt="" />
+                            <span>Dr Aku</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="uploaded/members-2.jpg" alt="" />
+                            <span>Dr Aku 2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="uploaded/members-1.jpg" alt="" />
+                            <span>Mr Aku</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="uploaded/members-3.jpg" alt="" />
+                            <span>Master Aku</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="cleft"></div>
+            </div>
             <div class="page-padding">
                 <h3>Our objectives are</h3>
-                <ul>
+                <ul class="objectives">
                     <li>To be an independent and impartial source of information, focusing of the health and nutrition benefits associated with black tea</li>
                     <li>To explain the latest science findings in relation to black tea</li>
                     <li>To put into place and review new research investigating people’s general nutrition and lifestyle habits, plus the associated health outcomes of black tea consumption</li>
@@ -134,63 +136,65 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="forums">
-                <div class="forum-chats">
-                    <h3>Our chat...</h3>
-                    <ul>
-                        <li>
-                            <span href="#">
-                                <div class="bubble"><i class="fa fa-fw"></i></div>
-                                <div class="copy"><p><strong>Go put the kettle on</strong><br>
-                                    Much oh this knitted lynx crane gross suddenly jeez reined unsafely hence and some less oversold goodness far cringed up far advantageous and crane some anathematically severe</p></div>
-                            </span>
-                        </li>
-                        <li>
-                            <span href="#">
-                                <div class="bubble"><i class="fa fa-fw"></i></div>
-                                <div class="copy"><p><strong>Research reveals black tea can improve body weight</strong>
-                                unlocked exorbitant smooched. Much oh this knitted lynx crane gross suddenly jeez reined</p></div>
-                            </span>
-                        </li>
-                    </ul>
-                    <div class="buttons">
-                        <a href="#" class="button next">Join us on Twitter</a>
-                    </div>
-                </div>
-                <div class="forum-info">
-                    <h3>What you need to know</h3>
-                    <ul>
-                        <li>
-                            <div class="icon"><i class="fa fa-fw"></i></div>
-                            <div class="copy">
-                                <p><strong>Tea drinkers are a reduced risk of breast cancer</strong><br />lemming sank momentous much irrespective willful unlocked exorbitant smooched. <a href="#" class="read-more">Read&nbsp;More</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon"><i class="fa fa-fw"></i></div>
-                            <div class="copy">
-                                <p>Drinking tea is associated with reduced stiffness of the arteries - lemming sank momentous much irrespective willful unlocked exorbitant smooched. <a href="#" class="read-more">Read&nbsp;More</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon"><i class="fa fa-fw"></i></div>
-                            <div class="copy">
-                                <p><strong>Tea drinkers are a reduced risk of breast cancer</strong><br />Kicking footballs and smelling nice, check please! It's the hurt locker. <a href="#" class="read-more">Read&nbsp;More</a></p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="cboth"></div>
-            </div>
-        </div>
+<!--        <div class="container">-->
+<!--            <div class="forums">-->
+<!--                <div class="forum-faqs">-->
+<!--                    <div class="faqs">-->
+<!--                        <div class="title">-->
+<!--                            <h2>FAQs</h2>-->
+<!--                        </div>-->
+<!--                        <a href="#" class="copy">-->
+<!--                            <span class="question">-->
+<!--                                <span class="quotes">&ldquo;</span><span class="text">Is drinking tea bad for the bones?</span><span class="quotes">&rdquo;</span>-->
+<!--                            </span>-->
+<!--                        </a>-->
+<!--                        <div class="cboth"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="forum-info">-->
+<!--                    <h3>Latest news</h3>-->
+<!--                    <ul>-->
+<!--                        <li>-->
+<!--                            <div class="icon"><i class="fa fa-fw"></i></div>-->
+<!--                            <div class="copy">-->
+<!--                                <p><strong>Tea drinkers are a reduced risk of breast cancer</strong><br />lemming sank momentous much irrespective willful unlocked exorbitant smooched. <a href="#" class="read-more">Read&nbsp;More</a></p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <div class="icon"><i class="fa fa-fw"></i></div>-->
+<!--                            <div class="copy">-->
+<!--                                <p>Drinking tea is associated with reduced stiffness of the arteries - lemming sank momentous much irrespective willful unlocked exorbitant smooched. <a href="#" class="read-more">Read&nbsp;More</a></p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <div class="icon"><i class="fa fa-fw"></i></div>-->
+<!--                            <div class="copy">-->
+<!--                                <p><strong>Tea drinkers are a reduced risk of breast cancer</strong><br />Kicking footballs and smelling nice, check please! It's the hurt locker. <a href="#" class="read-more">Read&nbsp;More</a></p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="cboth"></div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="grey-bar">
+        <div class="grey-bar form-bar">
             <div class="container">
-
-
-
-
+                <form id="frmNewsletter" name="frmNewsletter" action="subscriptionBackEnd.php" method="post" class="form">
+                    <h3>Newsletter Signup</h3>
+                    <div class="row left">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" class="text-input" value="" placeholder="Your name" />
+                    </div>
+                    <div class="row right">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="text-input" value="" placeholder="Your email address" />
+                    </div>
+                    <div class="row submit">
+                        <a href="#" class="button next purple" id="submitButton">Join us on Twitter</a>
+                    </div>
+                </form>
+                <div class="cleft"></div>
             </div>
         </div>
 

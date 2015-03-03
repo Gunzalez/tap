@@ -23,7 +23,6 @@
         },
 
         resize : function(){
-            // null
             tap.siteNavigation.reszie();
         },
 
@@ -62,11 +61,12 @@
                 }
             });
 
-            // submitting forms with buttons
+            // submitting forms with buttons or links
             var $allForms = $('.form');
             $allForms.each(function(){
                 var $thisForm = $(this);
-                $('button.button', $thisForm).on('click', function(){
+                $('#submitButton', $thisForm).on('click', function(evt){
+                    evt.preventDefault();
                     $thisForm.trigger('submit');
                 });
             });
@@ -191,6 +191,7 @@
                     if(this.$html.length > 0){
                         this.$html.bxSlider({
                             auto: false,
+                            randomStart: true,
                             autoControls: false,
                             infiniteLoop: true,
                             onSlideAfter: function(){
