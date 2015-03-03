@@ -140,18 +140,18 @@
                     <h3>Our chat...</h3>
                     <ul>
                         <li>
-                            <a href="#">
+                            <span href="#">
                                 <div class="bubble"><i class="fa fa-fw"></i></div>
                                 <div class="copy"><p><strong>Go put the kettle on</strong><br>
                                     Much oh this knitted lynx crane gross suddenly jeez reined unsafely hence and some less oversold goodness far cringed up far advantageous and crane some anathematically severe</p></div>
-                            </a>
+                            </span>
                         </li>
                         <li>
-                            <a href="#">
+                            <span href="#">
                                 <div class="bubble"><i class="fa fa-fw"></i></div>
                                 <div class="copy"><p><strong>Research reveals black tea can improve body weight</strong>
                                 unlocked exorbitant smooched. Much oh this knitted lynx crane gross suddenly jeez reined</p></div>
-                            </a>
+                            </span>
                         </li>
                     </ul>
                     <div class="buttons">

@@ -155,8 +155,8 @@ img {
 
 #mobileNavButton {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 14px;
   display: none;
 }
 #mobileNavButton i {
@@ -165,10 +165,18 @@ img {
 }
 
 #mobileNav a {
-  color: #ffffff;
+  color: #e8e8e8;
   font-family: "CoconLight";
   font-size: 1.1em;
   text-transform: uppercase;
+}
+#mobileNav .mm-subtitle a {
+  text-align: right;
+  padding-right: 25px;
+  color: #ffffff;
+}
+#mobileNav a.mm-subclose:before {
+  border-color: white;
 }
 
 .narrowScreen {
@@ -742,6 +750,7 @@ img {
   font-size: 2.8em;
   text-transform: uppercase;
   line-height: 80%;
+  font-weight: normal;
 }
 .page-padding ul {
   margin: 0;
@@ -774,34 +783,31 @@ img {
   min-height: 40px;
   position: relative;
 }
-.forums ul li a {
+.forums ul li span {
   position: relative;
   color: #231f20;
   display: block;
   text-decoration: none;
 }
-.forums ul li a:hover {
-  color: #22b62a;
-}
-.forums ul li a:hover .bubble {
+.forums ul li span:hover .bubble {
   background: #16761b;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-.forums ul li a:hover .bubble:after {
+.forums ul li span:hover .bubble:after {
   border-color: #16761b transparent;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-.forums ul li a.read-more {
+.forums ul li .read-more {
   display: inline;
   color: #22b62a;
 }
-.forums ul li a.read-more:hover {
+.forums ul li .read-more:hover {
   color: #16761b;
   text-decoration: underline;
 }
@@ -1075,6 +1081,14 @@ img {
   }
 }
 @media only screen and (max-width: 730px) {
+  .bodyBorder {
+    height: 15px;
+  }
+
+  .page-padding .title {
+    font-size: 2.2em;
+  }
+
   .container {
     width: 480px;
   }
@@ -1227,8 +1241,16 @@ img {
   }
 }
 @media only screen and (max-width: 540px) {
+  .page-padding .title {
+    font-size: 1.8em;
+  }
+
   .container {
     width: 100%;
+  }
+
+  .bodyBorder {
+    height: 5px;
   }
 
   .header h1 {
@@ -1296,6 +1318,7 @@ img {
   .header .search-and-social form {
     float: none;
     position: relative;
+    border: 1px solid #ffffff;
   }
   .header .search-and-social form .input-box {
     width: auto;
@@ -1305,20 +1328,27 @@ img {
   }
   .header .search-and-social form .text-input {
     padding: 8px 10px;
+    border: none;
   }
   .header .search-and-social form button {
     position: absolute;
-    top: 5px;
-    right: -5px;
+    top: 4px;
+    right: -2px;
   }
   .header .search-and-social form button i {
     font-size: 1.7em;
   }
 
+  #home .search-and-social form {
+    background: #908715;
+  }
   #home .text-input {
     background: #908715;
   }
 
+  #members .search-and-social form {
+    background: #c67d10;
+  }
   #members .text-input {
     background: #c67d10;
   }
