@@ -3,7 +3,7 @@
 <head>
 
     <title>Tea Advisory Panel (TAP)</title>
-    <?php include_once('includes/resources.php'); ?>
+    <?php include_once('includes/header-resources.php'); ?>
 
 </head>
 <body id="home">
@@ -36,7 +36,7 @@
                             <li><a href="/members/profile/23">Professor Robin Seymour</a></li>
                         </ul>
                     </li>
-                    <li><a href="/tea-and-health/">Tea &amp; Health</a>
+                    <li><a href="tea-and-health.php">Tea &amp; Health</a>
                         <ul class="sub-level">
                             <li><a href="/FAQs/">FAQs</a></li>
                             <li><a href="/health-facts/">Health Facts</a></li>
@@ -264,64 +264,15 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="container">
-            <div class="tea-cups-count">
-                <div class="figure">165,000,000</div>
-                <p>Cups of tea drank in the UK so far today.</p>
-            </div>
-            <div class="site-map">
-                <ul>
-                    <li><a href="#">Sitemap</a></li>
-                    <li><a href="#">T&amp;Cs</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Cookies</a></li>
-                </ul>
-                <ul class="narrowScreen">
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                </ul>
-            </div>
-            <div class="cboth"></div>
-        </div>
-    </div>
+
+    <?php include_once('includes/footer-html.php'); ?>
 
     <nav id="mobileNav">
         <!-- TODO: Mr Curle, please repeat nav in PHP, js library not working on DOM just HTML :( -->
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="members.php">Members</a>
-                <ul>
-                    <li><a href="/members/profile/19">Dr Carrie Ruxton</a></li>
-                    <li><a href="/members/profile/18">Dr Catherine Hood</a></li>
-                    <li><a href="/members/profile/20">Dr Chris Steele</a></li>
-                    <li><a href="/members/profile/24">Dr Christopher Etheridge</a></li>
-                    <li><a href="/members/profile/22">Dr Tim Bond</a></li>
-                    <li><a href="/members/profile/17">Lynne Garton</a></li>
-                    <li><a href="/members/profile/23">Professor Robin Seymour</a></li>
-                </ul>
-            </li>
-            <li><a href="/tea-and-health/">Tea &amp; Health</a>
-                <ul>
-                    <li><a href="/FAQs/">FAQs</a></li>
-                    <li><a href="/health-facts/">Health Facts</a></li>
-                    <li><a href="/research/">Research</a></li>
-                    <li><a href="/book/">Little Book of Tea</a></li>
-                </ul>
-            </li>
-            <li><a href="/media-centre/">Media Centre</a>
-                <ul>
-                    <li><a href="/news/">News</a></li>
-                    <li><a href="/videos/">Videos</a></li>
-                    <li><a href="/images/">Images</a></li>
-                    <li><a href="/links/">Links</a></li>
-                </ul>
-            </li>
-            <li><a href="/contact/">Contact</a></li>
-        </ul>
+        <?php include_once('includes/mobile-nav.php'); ?>
     </nav>
 
-    <?php include_once('includes/footer.php'); ?>
+    <?php include_once('includes/footer-resources.php'); ?>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 
     <title>Tea Advisory Panel (TAP) - Members</title>
-    <?php include_once('includes/resources.php'); ?>
+    <?php include_once('includes/header-resources.php'); ?>
 
 </head>
 <body id="members">
@@ -36,7 +36,7 @@
                             <li><a href="/members/profile/23">Professor Robin Seymour</a></li>
                         </ul>
                     </li>
-                    <li><a href="/tea-and-health/">Tea &amp; Health</a>
+                    <li><a href="tea-and-health.php">Tea &amp; Health</a>
                         <ul class="sub-level">
                             <li><a href="/FAQs/">FAQs</a></li>
                             <li><a href="/health-facts/">Health Facts</a></li>
@@ -71,7 +71,7 @@
                 <p>TAP is a novel health group, bringing together experts in the areas of public health, general practice, nutrition and diet. Its objective is to provide informed ‘advice’ about the essential health, hydration and dietary role that black tea can provide in our daily diets.</p>
                 <p>It also as a group will be commissioning a series of study reviews and market research initiatives investigating further the ‘natural’ well-being benefits associated with black tea. TAP is supported by an unrestricted educational grant from the UK Tea Council, the trade association for the UK tea industry.</p>
             </div>
-            <div class="top-rule">
+            <div class="bordered-div">
                 <p>TAP members include nutritionists, dieticians and doctors.</p>
                 <ul class="members-list">
                     <li>
@@ -136,127 +136,19 @@
             </div>
         </div>
 
-<!--        <div class="container">-->
-<!--            <div class="forums">-->
-<!--                <div class="forum-faqs">-->
-<!--                    <div class="faqs">-->
-<!--                        <div class="title">-->
-<!--                            <h2>FAQs</h2>-->
-<!--                        </div>-->
-<!--                        <a href="#" class="copy">-->
-<!--                            <span class="question">-->
-<!--                                <span class="quotes">&ldquo;</span><span class="text">Is drinking tea bad for the bones?</span><span class="quotes">&rdquo;</span>-->
-<!--                            </span>-->
-<!--                        </a>-->
-<!--                        <div class="cboth"></div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="forum-info">-->
-<!--                    <h3>Latest news</h3>-->
-<!--                    <ul>-->
-<!--                        <li>-->
-<!--                            <div class="icon"><i class="fa fa-fw"></i></div>-->
-<!--                            <div class="copy">-->
-<!--                                <p><strong>Tea drinkers are a reduced risk of breast cancer</strong><br />lemming sank momentous much irrespective willful unlocked exorbitant smooched. <a href="#" class="read-more">Read&nbsp;More</a></p>-->
-<!--                            </div>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <div class="icon"><i class="fa fa-fw"></i></div>-->
-<!--                            <div class="copy">-->
-<!--                                <p>Drinking tea is associated with reduced stiffness of the arteries - lemming sank momentous much irrespective willful unlocked exorbitant smooched. <a href="#" class="read-more">Read&nbsp;More</a></p>-->
-<!--                            </div>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <div class="icon"><i class="fa fa-fw"></i></div>-->
-<!--                            <div class="copy">-->
-<!--                                <p><strong>Tea drinkers are a reduced risk of breast cancer</strong><br />Kicking footballs and smelling nice, check please! It's the hurt locker. <a href="#" class="read-more">Read&nbsp;More</a></p>-->
-<!--                            </div>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--                <div class="cboth"></div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-        <div class="grey-bar form-bar">
-            <div class="container">
-                <form id="frmNewsletter" name="frmNewsletter" action="subscriptionBackEnd.php" method="post" class="form">
-                    <h3>Newsletter Signup</h3>
-                    <div class="row left">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" class="text-input" value="" placeholder="Your name" />
-                    </div>
-                    <div class="row right">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" class="text-input" value="" placeholder="Your email address" />
-                    </div>
-                    <div class="row submit">
-                        <a href="#" class="button next purple" id="submitButton">Join us on Twitter</a>
-                    </div>
-                </form>
-                <div class="cleft"></div>
-            </div>
-        </div>
+        <?php include_once('includes/forum-bar.php'); ?>
+        <?php include_once('includes/subscription-bar.php'); ?>
 
     </div>
-    <div class="footer">
-        <div class="container">
-            <div class="tea-cups-count">
-                <div class="figure">165,000,000</div>
-                <p>Cups of tea drank in the UK so far today.</p>
-            </div>
-            <div class="site-map">
-                <ul>
-                    <li><a href="#">Sitemap</a></li>
-                    <li><a href="#">T&amp;Cs</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Cookies</a></li>
-                </ul>
-                <ul class="narrowScreen">
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                </ul>
-            </div>
-            <div class="cboth"></div>
-        </div>
-    </div>
+
+    <?php include_once('includes/footer-html.php'); ?>
 
     <nav id="mobileNav">
         <!-- TODO: Mr Curle, please repeat nav in PHP, js library not working on DOM just HTML :( -->
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="members.php">Members</a>
-                <ul>
-                    <li><a href="/members/profile/19">Dr Carrie Ruxton</a></li>
-                    <li><a href="/members/profile/18">Dr Catherine Hood</a></li>
-                    <li><a href="/members/profile/20">Dr Chris Steele</a></li>
-                    <li><a href="/members/profile/24">Dr Christopher Etheridge</a></li>
-                    <li><a href="/members/profile/22">Dr Tim Bond</a></li>
-                    <li><a href="/members/profile/17">Lynne Garton</a></li>
-                    <li><a href="/members/profile/23">Professor Robin Seymour</a></li>
-                </ul>
-            </li>
-            <li><a href="/tea-and-health/">Tea &amp; Health</a>
-                <ul>
-                    <li><a href="/FAQs/">FAQs</a></li>
-                    <li><a href="/health-facts/">Health Facts</a></li>
-                    <li><a href="/research/">Research</a></li>
-                    <li><a href="/book/">Little Book of Tea</a></li>
-                </ul>
-            </li>
-            <li><a href="/media-centre/">Media Centre</a>
-                <ul>
-                    <li><a href="/news/">News</a></li>
-                    <li><a href="/videos/">Videos</a></li>
-                    <li><a href="/images/">Images</a></li>
-                    <li><a href="/links/">Links</a></li>
-                </ul>
-            </li>
-            <li><a href="/contact/">Contact</a></li>
-        </ul>
+        <?php include_once('includes/mobile-nav.php'); ?>
     </nav>
 
-    <?php include_once('includes/footer.php'); ?>
+    <?php include_once('includes/footer-resources.php'); ?>
 
 </body>
 </html>

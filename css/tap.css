@@ -77,6 +77,13 @@ img {
   background: #916083;
 }
 
+.text-input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
 .button::after {
   content: '';
   position: absolute;
@@ -188,6 +195,10 @@ img {
   background: url("../images/bg-members.jpg") bottom center no-repeat #ed991c;
 }
 
+#tea-and-health .header {
+  background: url("../images/bg-tea-and-health.jpg") bottom center no-repeat #9a5d88;
+}
+
 #mobileNavButton {
   position: absolute;
   top: 15px;
@@ -224,14 +235,15 @@ img {
   position: relative;
 }
 
-.top-rule {
+.bordered-div {
   border-top: 1px solid #e8e8e8;
   border-bottom: 1px solid #e8e8e8;
   padding-top: 10px;
   margin: 10px 0;
 }
-.top-rule p {
-  padding-left: 15px;
+.bordered-div p {
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .header h1 {
@@ -314,10 +326,6 @@ img {
   border: 1px solid #ffffff;
   font-size: 1.1em;
   padding: 2px 5px;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
   box-sizing: border-box;
   width: 100%;
   display: inline-block;
@@ -480,10 +488,23 @@ img {
 }
 #members .page-padding h3 {
   color: #ed991c;
-  font-family: "FranchiseBold";
-  text-transform: uppercase;
-  font-size: 2.7em;
-  line-height: 80%;
+}
+
+#tea-and-health .site-navigation ul.sub-level {
+  background-color: #9a5d88;
+  border: 3px solid #9a5d88;
+}
+#tea-and-health .site-navigation ul.sub-level a {
+  background-color: #9a5d88;
+}
+#tea-and-health .site-navigation ul.sub-level a:hover {
+  background-color: #5c3751;
+}
+#tea-and-health .page-padding .title {
+  color: #9a5d88;
+}
+#tea-and-health .page-padding h3 {
+  color: #9a5d88;
 }
 
 .body {
@@ -621,12 +642,12 @@ img {
 }
 .body .grey-bar.form-bar {
   border-bottom: 1px solid #dedede;
-  padding: 20px 15px;
+  padding: 11px 18px;
   text-align: left;
 }
 .body .grey-bar.form-bar #frmNewsletter {
-  float: left;
-  width: 100%;
+  width: auto;
+  padding: 10px 18px;
 }
 .body .grey-bar.form-bar #frmNewsletter h3 {
   font-family: "chunkfiveroman";
@@ -635,30 +656,27 @@ img {
   font-weight: normal;
   color: #916083;
   line-height: 90%;
-  padding-left: 15px;
 }
 .body .grey-bar.form-bar #frmNewsletter .row {
   width: 48%;
   float: left;
-  padding-left: 15px;
   box-sizing: border-box;
 }
 .body .grey-bar.form-bar #frmNewsletter .row.right {
   float: right;
   padding-left: 0;
-  padding-right: 15px;
 }
 .body .grey-bar.form-bar #frmNewsletter .row.submit {
   clear: left;
   float: none;
-  padding: 30px 0 10px 15px;
+  padding: 25px 0 10px 0;
   width: 100%;
 }
 .body .grey-bar.form-bar #frmNewsletter label {
   display: block;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   font-family: "CoconLight";
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 .body .grey-bar.form-bar #frmNewsletter .text-input {
   border: none;
@@ -666,6 +684,7 @@ img {
   width: 100%;
   box-sizing: border-box;
   font-family: "CoconLight";
+  font-size: 1.1em;
 }
 .body .carousel {
   background: #ffffff;
@@ -799,7 +818,7 @@ img {
   padding-bottom: 30px;
 }
 .body .members-list li a {
-  margin: 0 15px;
+  margin: 0 18px;
   display: block;
   position: relative;
 }
@@ -837,7 +856,7 @@ img {
 }
 
 .page-padding {
-  padding: 11px 11px 0 11px;
+  padding: 11px 18px 0 18px;
 }
 .page-padding .title {
   font-family: "chunkfiveroman";
@@ -848,7 +867,7 @@ img {
 }
 .page-padding ul {
   margin: 0;
-  padding: 0 0 10px 25px;
+  padding: 0 0 10px 18px;
   list-style-image: url("../images/bg-members-bullets.png");
 }
 .page-padding ul li {
@@ -856,6 +875,12 @@ img {
 }
 .page-padding .objectives li {
   padding-bottom: 15px;
+}
+.page-padding h3 {
+  font-family: "FranchiseBold";
+  text-transform: uppercase;
+  font-size: 2.7em;
+  line-height: 80%;
 }
 
 .forums {
@@ -1004,6 +1029,7 @@ img {
   padding-top: 10px;
   background: url("../images/bg-tea-count.png") 0 0 no-repeat;
   min-height: 100px;
+  margin-left: 18px;
 }
 .footer .tea-cups-count .figure {
   font-family: "chunkfiveroman";
@@ -1015,6 +1041,7 @@ img {
 }
 .footer .site-map {
   float: right;
+  padding-right: 18px;
 }
 .footer .site-map ul {
   margin: 0;
@@ -1149,13 +1176,13 @@ img {
   .forums .forum-chats,
   .forums .forum-faqs {
     float: left;
-    width: 47%;
-    padding: 0 15px 0 0;
+    width: 42%;
+    padding: 0 18px;
   }
   .forums .forum-info {
     float: right;
-    width: 47%;
-    padding: 0 0 0 15px;
+    width: 42%;
+    padding: 0 18px;
   }
   .forums .icon i {
     font-size: 2.6em;
@@ -1171,15 +1198,17 @@ img {
     min-height: 60px;
     display: inline-block;
     text-align: left;
+    margin-left: 0;
   }
   .footer .tea-cups-count .figure {
-    font-size: 3.0em;
+    font-size: 2.6em;
   }
   .footer .tea-cups-count p {
     font-size: 0.9em;
   }
   .footer .site-map {
     float: none;
+    padding-right: 0;
   }
   .footer .site-map ul li {
     padding: 0 7px;
@@ -1199,7 +1228,7 @@ img {
   }
 
   .page-padding .title {
-    font-size: 2.2em;
+    font-size: 2.4em;
   }
 
   .container {
@@ -1363,7 +1392,7 @@ img {
 }
 @media only screen and (max-width: 540px) {
   .page-padding .title {
-    font-size: 1.8em;
+    font-size: 2.2em;
   }
 
   .container {
@@ -1417,17 +1446,20 @@ img {
   .body .grey-bar ul li a {
     padding: 10px 20px;
   }
-
-  .forums {
-    padding: 0 20px;
-    margin-bottom: 10px;
+  .body .grey-bar.form-bar #frmNewsletter {
+    padding: 10px 0;
   }
 
-  .footer .tea-cups-count .figure {
-    font-size: 2.2em;
+  .forums {
+    padding: 0 18px;
+    margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 400px) {
+  .page-padding .title {
+    font-size: 2.0em;
+  }
+
   .header .container h1 {
     float: none;
   }
@@ -1474,6 +1506,13 @@ img {
     background: #c67d10;
   }
 
+  #tea-and-health .search-and-social form {
+    background: #5c3751;
+  }
+  #tea-and-health .search-and-social .text-input {
+    background: #5c3751;
+  }
+
   .body .grey-bar.form-bar #frmNewsletter {
     float: none;
   }
@@ -1496,5 +1535,12 @@ img {
   }
   .body .grey-bar.form-bar #frmNewsletter .row.submit {
     padding: 10px 0;
+  }
+  .body .grey-bar.form-bar #frmNewsletter .row .text-input {
+    padding: 8px 10px;
+  }
+
+  .footer .tea-cups-count .figure {
+    font-size: 2.4em;
   }
 }

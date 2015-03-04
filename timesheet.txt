@@ -17,6 +17,7 @@ Dropdown menu everything, oh yeah                                              3
 Fixes, form on mobile issue + other minor bugs                                 0.5 hrs   - 2.03.2015
 Minor refactor, Members page at 80% + tweaks                                   3.0 hrs   - "
 Members page all done                                                          3.0 hrs   - 3.03.2015
+Refactor, starts Tea and Health                                                3.0 hrs   - 04.03.2015
 
 
 TODO - Issues
@@ -25,4 +26,12 @@ TODO - Issues
 
 
 Better with PHP
+================================
+
+
+
+
+
+
+Snippets
 ================================
