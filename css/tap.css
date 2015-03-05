@@ -199,6 +199,14 @@ img {
   background: url("../images/bg-tea-and-health.jpg") bottom center no-repeat #9a5d88;
 }
 
+#media-centre .header {
+  background: url("../images/bg-media-centre.jpg") bottom center no-repeat #1ad74a;
+}
+
+#contact .header {
+  background: url("../images/bg-contact.jpg") bottom center no-repeat #a37301;
+}
+
 #mobileNavButton {
   position: absolute;
   top: 15px;
@@ -505,6 +513,40 @@ img {
 }
 #tea-and-health .page-padding h3 {
   color: #9a5d88;
+}
+
+#media-centre .site-navigation ul.sub-level {
+  background-color: #1ad74a;
+  border: 3px solid #1ad74a;
+}
+#media-centre .site-navigation ul.sub-level a {
+  background-color: #1ad74a;
+}
+#media-centre .site-navigation ul.sub-level a:hover {
+  background-color: #14aa3a;
+}
+#media-centre .page-padding .title {
+  color: #1ad74a;
+}
+#media-centre .page-padding h3 {
+  color: #1ad74a;
+}
+
+#contact .site-navigation ul.sub-level {
+  background-color: #a37301;
+  border: 3px solid #a37301;
+}
+#contact .site-navigation ul.sub-level a {
+  background-color: #a37301;
+}
+#contact .site-navigation ul.sub-level a:hover {
+  background-color: #573d01;
+}
+#contact .page-padding .title {
+  color: #a37301;
+}
+#contact .page-padding h3 {
+  color: #a37301;
 }
 
 .body {
@@ -1379,6 +1421,7 @@ img {
   .forums .forum-info h3,
   .forums .forum-faqs h3 {
     padding-bottom: 15px;
+    font-size: 2.5em;
   }
   .forums .forum-chats,
   .forums .forum-faqs {
@@ -1511,6 +1554,20 @@ img {
   }
   #tea-and-health .search-and-social .text-input {
     background: #5c3751;
+  }
+
+  #media-centre .search-and-social form {
+    background: #14aa3a;
+  }
+  #media-centre .search-and-social .text-input {
+    background: #14aa3a;
+  }
+
+  #contact .search-and-social form {
+    background: #573d01;
+  }
+  #contact .search-and-social .text-input {
+    background: #573d01;
   }
 
   .body .grey-bar.form-bar #frmNewsletter {
