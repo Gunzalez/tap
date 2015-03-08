@@ -1605,11 +1605,17 @@ img {
   }
 
   /* profile */
-  .profile-content {
-    min-height: 250px;
+  .profile-content .profile-image {
+    left: 20px;
+    position: static;
+    float: left;
+    padding: 0 20px 10px 0;
   }
   .profile-content .profile-image img {
     width: 160px;
+  }
+  .profile-content .profile-copy {
+    margin-left: 0;
   }
 
   .video {
@@ -1672,6 +1678,14 @@ img {
 
   .profile-history h4 {
     font-size: 1.4em;
+  }
+  .profile-history ul {
+    padding-bottom: 20px;
+    list-style-image: url("../images/bg-profile-bullets.png");
+  }
+  .profile-history ul li {
+    line-height: 130%;
+    padding-bottom: 8px;
   }
 
   /* profile-end */
@@ -1746,9 +1760,7 @@ img {
     min-height: 0;
   }
   .profile-content .profile-image {
-    position: static;
-    float: left;
-    padding: 0 15px 15px 0;
+    padding: 0 15px 10px 0;
   }
   .profile-content .profile-image img {
     width: 100px;

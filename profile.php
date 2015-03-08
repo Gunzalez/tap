@@ -18,8 +18,8 @@
                     <h2 class="title uppercase">Tap member</h2>
                     <h3 class="name">Dr Catherine Hood</h3>
                     <p>Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five’s prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
-                    <p>Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.</p>
-                    <p>This is my boss, Jonathan Hart, a self-made millionaire, he's quite a guy. This is Mrs H., she's gorgeous, she's one lady who knows how to take care of herself. By the way, my name is Max. I take care of both of them, which ain't easy, 'cause when they met it was MURDER!</p>
+                    <p>Catherine also has a weekly health page in the Sunday Mirror and regularly answers questions for More magazine. She has written for Company, Men's Health, B and Good Housekeeping and co-authored The Rough Guide 'To me in my Twenties'.</p>
+                    <p>Catherine is an Associate Specialist at St George's Hospital, London, specialising particularly in woman’s health and psychosexual medicine. For seven years she was the Clinical Tutor in Communication at the University of Oxford where she lectured to the doctors of tomorrow and ran workshops to help them develop skills in talking to patients.</p>
                 </div>
             </div>
             <div class="bordered-div">
