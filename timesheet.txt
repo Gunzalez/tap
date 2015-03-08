@@ -19,6 +19,7 @@ Minor refactor, Members page at 80% + tweaks                                   3
 Members page all done                                                          3.0 hrs   - 3.03.2015
 Refactor, starts Tea and Health                                                3.0 hrs   - 04.03.2015
 Page stubs                                                                     1.5 hrs   - 05.03.2015
+Profile page, complete                                                         3.5 hrs   - 08.03.2015
 
 
 TODO - Issues

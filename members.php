@@ -13,7 +13,7 @@
     <div class="body">
         <div class="container">
             <div class="page-padding">
-                <h2 class="title">Tap members</h2>
+                <h2 class="title uppercase">Tap members</h2>
                 <ul>
                     <li>Provide independent and objective information about the latest health benefits regarding black tea</li>
                     <li>Answer all of your nutrition and hydration questions about black tea</li>
@@ -26,25 +26,25 @@
                 <p>TAP members include nutritionists, dieticians and doctors.</p>
                 <ul class="members-list">
                     <li>
-                        <a href="#">
+                        <a href="profile.php?member=1">
                             <img src="uploaded/members-1.jpg" alt="" />
                             <span>Dr Aku</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="profile.php?member=1">
                             <img src="uploaded/members-2.jpg" alt="" />
                             <span>Dr Aku 2</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="profile.php?member=1">
                             <img src="uploaded/members-3.jpg" alt="" />
                             <span>Mr Aku</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="profile.php?member=1">
                             <img src="uploaded/members-1.jpg" alt="" />
                             <span>Master Aku</span>
                         </a>
@@ -56,7 +56,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="profile.php?member=1">
                             <img src="uploaded/members-2.jpg" alt="" />
                             <span>Dr Aku 2</span>
                         </a>
@@ -68,7 +68,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="profile.php?member=1">
                             <img src="uploaded/members-3.jpg" alt="" />
                             <span>Master Aku</span>
                         </a>
@@ -77,7 +77,7 @@
                 <div class="cleft"></div>
             </div>
             <div class="page-padding">
-                <h3>Our objectives are</h3>
+                <h3 class="uppercase">Our objectives are</h3>
                 <ul class="objectives">
                     <li>To be an independent and impartial source of information, focusing of the health and nutrition benefits associated with black tea</li>
                     <li>To explain the latest science findings in relation to black tea</li>

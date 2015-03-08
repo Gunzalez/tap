@@ -17,13 +17,13 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="members.php">Members</a>
                 <ul class="sub-level">
-                    <li><a href="member.php?profile=19">Dr Carrie Ruxton</a></li>
-                    <li><a href="member.php?profile=18">Dr Catherine Hood</a></li>
-                    <li><a href="member.php?profile=20">Dr Chris Steele</a></li>
-                    <li><a href="member.php?profile=24">Dr Christopher Etheridge</a></li>
-                    <li><a href="member.php?profile=22">Dr Tim Bond</a></li>
-                    <li><a href="member.php?profile=17">Lynne Garton</a></li>
-                    <li><a href="member.php?profile=23">Professor Robin Seymour</a></li>
+                    <li><a href="profile.php?member=19">Dr Carrie Ruxton</a></li>
+                    <li><a href="profile.php?member=18">Dr Catherine Hood</a></li>
+                    <li><a href="profile.php?member=20">Dr Chris Steele</a></li>
+                    <li><a href="profile.php?member=24">Dr Christopher Etheridge</a></li>
+                    <li><a href="profile.php?member=22">Dr Tim Bond</a></li>
+                    <li><a href="profile.php?member=17">Lynne Garton</a></li>
+                    <li><a href="profile.php?member=23">Professor Robin Seymour</a></li>
                 </ul>
             </li>
             <li><a href="tea-and-health.php" class="active">Tea &amp; Health</a>

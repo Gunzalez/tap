@@ -27,13 +27,13 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="members.php">Members</a>
                         <ul class="sub-level">
-                            <li><a href="/members/profile/19">Dr Carrie Ruxton</a></li>
-                            <li><a href="/members/profile/18">Dr Catherine Hood</a></li>
-                            <li><a href="/members/profile/20">Dr Chris Steele</a></li>
-                            <li><a href="/members/profile/24">Dr Christopher Etheridge</a></li>
-                            <li><a href="/members/profile/22">Dr Tim Bond</a></li>
-                            <li><a href="/members/profile/17">Lynne Garton</a></li>
-                            <li><a href="/members/profile/23">Professor Robin Seymour</a></li>
+                            <li><a href="profile.php?member=19">Dr Carrie Ruxton</a></li>
+                            <li><a href="profile.php?member=18">Dr Catherine Hood</a></li>
+                            <li><a href="profile.php?member=20">Dr Chris Steele</a></li>
+                            <li><a href="profile.php?member=24">Dr Christopher Etheridge</a></li>
+                            <li><a href="profile.php?member=22">Dr Tim Bond</a></li>
+                            <li><a href="profile.php?member=17">Lynne Garton</a></li>
+                            <li><a href="profile.php?member=23">Professor Robin Seymour</a></li>
                         </ul>
                     </li>
                     <li><a href="tea-and-health.php">Tea &amp; Health</a>
@@ -108,7 +108,7 @@
                 <div class="title">
                     <h2>FAQs</h2>
                 </div>
-                <a href="#" class="copy">
+                <a href="#" class="copy uppercase">
                     <span class="question">
                         <span class="quotes">&ldquo;</span><span class="text">Is drinking tea bad for the bones?</span><span class="quotes">&rdquo;</span>
                     </span>
@@ -118,7 +118,7 @@
         </div>
         <div class="grey-bar">
             <div class="container">
-                <h2 class="title">What we do.</h2>
+                <h2 class="title uppercase">What we do.</h2>
                 <p>The Tea Advisory Panel is an expert organisation which can:</p>
                 <ul>
                     <li>
@@ -160,8 +160,8 @@
                         <p class="sub-title">Dr Catherine Hood</p>
                         <p class="details">Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five’s prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
                         <div class="buttons">
-                            <a href="#" class="button next orange">Read&nbsp;More</a><br />
-                            <a href="#" class="button next orange">Other&nbsp;Members</a>
+                            <a href="profile.php" class="button next orange">Read&nbsp;More</a><br />
+                            <a href="members.php" class="button next orange">Other&nbsp;Members</a>
                         </div>
                     </div>
                     <div class="cboth"></div>
@@ -175,8 +175,8 @@
                         <p class="sub-title">Dr Pretty Lady</p>
                         <p class="details">Dr Pretty Lady is an exercise physiologist with a scientific research background. She is currently a Professor in Ageing and Health at Glasgow Caledonian University.  She is Deputy Lead of the Later Life Research Group and also the Scottish Centre for Evidence Based Care. </p>
                         <div class="buttons">
-                            <a href="#" class="button next orange">Read&nbsp;More</a><br />
-                            <a href="#" class="button next orange">Other&nbsp;Members</a>
+                            <a href="profile.php" class="button next orange">Read&nbsp;More</a><br />
+                            <a href="members.php" class="button next orange">Other&nbsp;Members</a>
                         </div>
                     </div>
                     <div class="cboth"></div>
@@ -190,8 +190,8 @@
                         <p class="sub-title">Dr Who</p>
                         <p class="details">Doctor Who is a British science-fiction television programme produced by the BBC from 1963 to the present day. The programme depicts the adventures of the Doctor, a Time Lord—a time-travelling humanoid alien. He explores the universe in his TARDIS, a sentient time-travelling space ship.</p>
                         <div class="buttons">
-                            <a href="#" class="button next orange">Read&nbsp;More</a><br />
-                            <a href="#" class="button next orange">Other&nbsp;Members</a>
+                            <a href="profile.php" class="button next orange">Read&nbsp;More</a><br />
+                            <a href="members.php" class="button next orange">Other&nbsp;Members</a>
                         </div>
                     </div>
                     <div class="cboth"></div>
@@ -205,8 +205,8 @@
                         <p class="sub-title">Dr Typical Doctor</p>
                         <p class="details">Dr Typical Doctor is a fictional character, a mercenary and anti-hero appearing in comic books published by Marvel Comics. Created by writer and artist Rob Liefeld and scripted by Fabian Nicieza.</p>
                         <div class="buttons">
-                            <a href="#" class="button next orange">Read&nbsp;More</a><br />
-                            <a href="#" class="button next orange">Other&nbsp;Members</a>
+                            <a href="profile.php" class="button next orange">Read&nbsp;More</a><br />
+                            <a href="members.php" class="button next orange">Other&nbsp;Members</a>
                         </div>
                     </div>
                     <div class="cboth"></div>
@@ -216,7 +216,7 @@
         <div class="container">
             <div class="forums">
                 <div class="forum-chats">
-                    <h3>Our chat...</h3>
+                    <h3 class="uppercase">Our chat...</h3>
                     <ul>
                         <li>
                             <span href="#">
@@ -238,7 +238,7 @@
                     </div>
                 </div>
                 <div class="forum-info">
-                    <h3>What you need to know</h3>
+                    <h3 class="uppercase">What you need to know</h3>
                     <ul>
                         <li>
                             <div class="icon"><i class="fa fa-fw"></i></div>

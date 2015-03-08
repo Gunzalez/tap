@@ -1,7 +1,7 @@
 <div class="grey-bar form-bar">
     <div class="container">
         <form id="frmNewsletter" name="frmNewsletter" action="subscriptionBackEnd.php" method="post" class="form">
-            <h3>Newsletter Signup</h3>
+            <h3 class="uppercase">Newsletter Signup</h3>
             <div class="row left">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" class="text-input" value="" placeholder="Your name" />

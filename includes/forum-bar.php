@@ -5,16 +5,16 @@
                 <div class="title">
                     <h2>FAQs</h2>
                 </div>
-                <a href="#" class="copy">
-                            <span class="question">
-                                <span class="quotes">&ldquo;</span><span class="text">Is drinking tea bad for the bones?</span><span class="quotes">&rdquo;</span>
-                            </span>
+                <a href="#" class="copy uppercase">
+                    <span class="question">
+                        <span class="quotes">&ldquo;</span><span class="text">Is drinking tea bad for the bones?</span><span class="quotes">&rdquo;</span>
+                    </span>
                 </a>
                 <div class="cboth"></div>
             </div>
         </div>
         <div class="forum-info">
-            <h3>Latest news</h3>
+            <h3 class="uppercase">Latest news</h3>
             <ul>
                 <li>
                     <div class="icon"><i class="fa fa-fw"></i></div>

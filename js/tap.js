@@ -24,6 +24,7 @@
 
         resize : function(){
             tap.siteNavigation.reszie();
+            tap.video.resize();
         },
 
         init: function(){
@@ -70,6 +71,19 @@
                     $thisForm.trigger('submit');
                 });
             });
+        }
+    };
+
+    tap.video = {
+        $html: $('.video-frame'),
+        frameRatio: 240/433,
+        resize: function(){
+            var self = this;
+            if(tap.properties.windowWidth < 731){
+                self.$html.height(self.$html.width() * self.frameRatio);
+            } else {
+                self.$html.removeAttr('style');
+            }
         }
     };
 

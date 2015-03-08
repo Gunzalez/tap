@@ -233,6 +233,10 @@ img {
   border-color: white;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .narrowScreen {
   display: none;
 }
@@ -601,7 +605,6 @@ img {
   transition: all 0.5s;
 }
 .body .faqs .text {
-  text-transform: uppercase;
   color: #333333;
 }
 .body .grey-bar {
@@ -610,7 +613,6 @@ img {
 }
 .body .grey-bar h2 {
   font-family: "chunkfiveroman";
-  text-transform: uppercase;
   font-size: 4.6em;
   font-weight: normal;
   color: #916083;
@@ -693,7 +695,6 @@ img {
 }
 .body .grey-bar.form-bar #frmNewsletter h3 {
   font-family: "chunkfiveroman";
-  text-transform: uppercase;
   font-size: 2.4em;
   font-weight: normal;
   color: #916083;
@@ -752,8 +753,8 @@ img {
   font-family: "FranchiseBold";
   color: #f5a021;
   font-size: 4.5em;
-  text-transform: uppercase;
   line-height: 100%;
+  text-transform: uppercase;
 }
 .body .carousel .item .copy .sub-title {
   font-size: 1.4em;
@@ -903,7 +904,6 @@ img {
 .page-padding .title {
   font-family: "chunkfiveroman";
   font-size: 2.8em;
-  text-transform: uppercase;
   line-height: 80%;
   font-weight: normal;
 }
@@ -920,17 +920,113 @@ img {
 }
 .page-padding h3 {
   font-family: "FranchiseBold";
-  text-transform: uppercase;
   font-size: 2.7em;
   line-height: 80%;
 }
 
+/* profile */
+.profile-content {
+  min-height: 380px;
+  position: relative;
+}
+.profile-content .profile-image {
+  position: absolute;
+  top: 11px;
+  left: 38px;
+}
+.profile-content .profile-copy {
+  margin-left: 300px;
+}
+.profile-content .profile-copy .name {
+  font-family: "CoconLight";
+  color: #231f20 !important;
+  font-size: 1.5em;
+}
+
+.video {
+  float: left;
+  width: 45%;
+  padding-bottom: 30px;
+}
+.video .video-frame {
+  width: 433px;
+  height: 240px;
+}
+.video .title {
+  color: #ed991c;
+  font-family: "FranchiseBold";
+  font-size: 2.9em;
+  padding-bottom: 20px;
+}
+
+.twitter-box {
+  float: right;
+  width: 45%;
+  padding-bottom: 30px;
+}
+.twitter-box .title {
+  color: #ed991c;
+  font-family: "FranchiseBold";
+  font-size: 2.9em;
+  padding-bottom: 20px;
+}
+.twitter-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.twitter-box ul li span {
+  position: relative;
+  color: #231f20;
+  display: block;
+  text-decoration: none;
+}
+.twitter-box ul li:hover .bubble {
+  background: #c67d10;
+}
+.twitter-box ul li:hover .bubble:after {
+  border-color: #c67d10 transparent;
+}
+.twitter-box .bubble {
+  background: #ed991c;
+}
+.twitter-box .bubble:after {
+  border-color: #ed991c transparent;
+}
+.twitter-box .copy {
+  margin-left: 56px;
+}
+.twitter-box .copy p {
+  padding: 0 0 12px 0;
+}
+.twitter-box .buttons {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.profile-history {
+  padding-bottom: 10px;
+}
+.profile-history h4 {
+  font-family: "CoconLight";
+  font-size: 1.6em;
+  color: #d0c320;
+}
+.profile-history ul {
+  padding-bottom: 20px;
+  list-style-image: url("../images/bg-profile-bullets.png");
+}
+.profile-history ul li {
+  line-height: 130%;
+  padding-bottom: 8px;
+}
+
+/* profile-end */
 .forums {
   background: url("../images/bg-forums.gif") top center repeat-y;
   margin-bottom: 30px;
 }
 .forums h3 {
-  text-transform: uppercase;
   color: #22b62a;
   font-size: 3.0em;
   font-family: "FranchiseBold";
@@ -1007,10 +1103,22 @@ img {
   transition: all 0.5s;
 }
 .forums .bubble {
+  background: #22b62a;
+}
+.forums .bubble:after {
+  border-color: #22b62a transparent;
+}
+.forums .copy {
+  margin-left: 56px;
+}
+.forums .faqs .copy {
+  margin-left: 0;
+}
+
+.bubble {
   position: absolute;
   width: 43px;
   height: 36px;
-  background: #22b62a;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
   border-radius: 13px;
@@ -1023,18 +1131,18 @@ img {
   transition: all 0.5s;
   margin-right: 15px;
 }
-.forums .bubble i {
+.bubble i {
   color: #ffffff;
   font-size: 1.5em;
 }
-.forums .bubble:after {
+
+.bubble:after {
   content: "";
   position: absolute;
   bottom: -7px;
   left: 12px;
   border-style: solid;
   border-width: 7px 4px 0;
-  border-color: #22b62a transparent;
   display: block;
   width: 0;
   z-index: 1;
@@ -1042,12 +1150,6 @@ img {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-}
-.forums .copy {
-  margin-left: 56px;
-}
-.forums .faqs .copy {
-  margin-left: 0;
 }
 
 #home .faqs {
@@ -1095,13 +1197,13 @@ img {
   padding-left: 15px;
 }
 .footer .site-map ul li a {
-  color: #666666;
+  color: #999999;
   text-decoration: none;
   font-family: "CoconLight";
   font-size: 1.1em;
 }
 .footer .site-map ul li a:hover {
-  color: #22b62a;
+  color: #231f20;
 }
 
 /* responsive break points */
@@ -1256,6 +1358,75 @@ img {
     padding: 0 7px;
   }
 
+  /* profile */
+  .profile-content {
+    min-height: 250px;
+  }
+  .profile-content .profile-image {
+    left: 20px;
+  }
+  .profile-content .profile-image img {
+    width: 160px;
+  }
+  .profile-content .profile-copy {
+    margin-left: 180px;
+  }
+
+  .video {
+    float: none;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .video .title {
+    font-size: 2.9em;
+    padding-bottom: 20px;
+  }
+
+  .twitter-box {
+    float: none;
+    width: 100%;
+  }
+  .twitter-box .title {
+    color: #ed991c;
+    font-family: "FranchiseBold";
+    font-size: 2.9em;
+    padding-bottom: 20px;
+  }
+  .twitter-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .twitter-box ul li span {
+    position: relative;
+    color: #231f20;
+    display: block;
+    text-decoration: none;
+  }
+  .twitter-box ul li:hover .bubble {
+    background: #c67d10;
+  }
+  .twitter-box ul li:hover .bubble:after {
+    border-color: #c67d10 transparent;
+  }
+  .twitter-box .bubble {
+    background: #ed991c;
+  }
+  .twitter-box .bubble:after {
+    border-color: #ed991c transparent;
+  }
+  .twitter-box .copy {
+    margin-left: 56px;
+  }
+  .twitter-box .copy p {
+    padding: 0 0 12px 0;
+  }
+  .twitter-box .buttons {
+    text-align: right;
+    padding-right: 15px;
+  }
+
+  /* profile-end */
   .bx-wrapper .bx-prev {
     left: 10px;
   }
@@ -1432,6 +1603,78 @@ img {
   .forums .forum-faqs {
     padding-bottom: 10px;
   }
+
+  /* profile */
+  .profile-content {
+    min-height: 250px;
+  }
+  .profile-content .profile-image img {
+    width: 160px;
+  }
+
+  .video {
+    float: none;
+    padding-bottom: 30px;
+  }
+  .video .video-frame {
+    width: auto;
+    height: auto;
+  }
+  .video .title {
+    font-size: 2.9em;
+    padding-bottom: 20px;
+  }
+
+  .twitter-box {
+    float: none;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .twitter-box .title {
+    color: #ed991c;
+    font-family: "FranchiseBold";
+    font-size: 2.9em;
+    padding-bottom: 20px;
+  }
+  .twitter-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .twitter-box ul li span {
+    position: relative;
+    color: #231f20;
+    display: block;
+    text-decoration: none;
+  }
+  .twitter-box ul li:hover .bubble {
+    background: #c67d10;
+  }
+  .twitter-box ul li:hover .bubble:after {
+    border-color: #c67d10 transparent;
+  }
+  .twitter-box .bubble {
+    background: #ed991c;
+  }
+  .twitter-box .bubble:after {
+    border-color: #ed991c transparent;
+  }
+  .twitter-box .copy {
+    margin-left: 56px;
+  }
+  .twitter-box .copy p {
+    padding: 0 0 12px 0;
+  }
+  .twitter-box .buttons {
+    text-align: right;
+    padding-right: 15px;
+  }
+
+  .profile-history h4 {
+    font-size: 1.4em;
+  }
+
+  /* profile-end */
 }
 @media only screen and (max-width: 540px) {
   .page-padding .title {
@@ -1497,6 +1740,30 @@ img {
     padding: 0 18px;
     margin-bottom: 10px;
   }
+
+  /* profile */
+  .profile-content {
+    min-height: 0;
+  }
+  .profile-content .profile-image {
+    position: static;
+    float: left;
+    padding: 0 15px 15px 0;
+  }
+  .profile-content .profile-image img {
+    width: 100px;
+  }
+  .profile-content .profile-copy {
+    margin-left: 0;
+  }
+  .profile-content .profile-copy .title {
+    font-size: 1.8em;
+  }
+  .profile-content .profile-copy .name {
+    font-size: 1.2em;
+  }
+
+  /* profile-end */
 }
 @media only screen and (max-width: 400px) {
   .page-padding .title {
