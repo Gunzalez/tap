@@ -2,11 +2,11 @@
 <html>
 <head>
 
-    <title>Tea Advisory Panel (TAP) - Tea and Health</title>
+    <title>Tea Advisory Panel (TAP) - Little Book Of Tea</title>
     <?php include_once('includes/header-resources.php'); ?>
 
 </head>
-<body id="tea-and-health">
+<body id="tea-and-health" class="book">
     <div class="header">
         <?php include_once('includes/header-content.php'); ?>
     </div>
@@ -14,7 +14,7 @@
 
         <div class="container">
             <div class="page-padding">
-                <h2 class="title uppercase">Tea and Health</h2>
+                <h2 class="title uppercase">Little Book Of Tea</h2>
                 <div style="height: 600px"></div>
             </div>
         </div>

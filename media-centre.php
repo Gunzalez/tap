@@ -14,7 +14,7 @@
 
         <div class="container">
             <div class="page-padding">
-                <h2 class="title">Media Centre</h2>
+                <h2 class="title uppercase">Media Centre</h2>
                 <div style="height: 600px"></div>
             </div>
         </div>

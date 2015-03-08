@@ -6,7 +6,7 @@
     <?php include_once('includes/header-resources.php'); ?>
 
 </head>
-<body id="members">
+<body id="members" class="profile">
     <div class="header">
         <?php include_once('includes/header-content.php'); ?>
     </div>

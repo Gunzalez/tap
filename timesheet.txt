@@ -20,11 +20,15 @@ Members page all done                                                          3
 Refactor, starts Tea and Health                                                3.0 hrs   - 04.03.2015
 Page stubs                                                                     1.5 hrs   - 05.03.2015
 Profile page, complete                                                         3.5 hrs   - 08.03.2015
+Research page (50%) + Sibling studs                                            1.0 hr    - 08.03.2015 evening
+
+
+
 
 
 TODO - Issues
 ================================
-Green footer links?
+
 
 
 

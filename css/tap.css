@@ -17,6 +17,20 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  font-weight: bold;
+  color: #231f20;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.desktop .telephone-no {
+  font-weight: normal;
+  text-decoration: none;
+}
+
 .cboth {
   clear: both;
 }
@@ -551,6 +565,42 @@ img {
 }
 #contact .page-padding h3 {
   color: #a37301;
+}
+
+#tea-and-health.research .introduction {
+  width: 45%;
+  float: left;
+  padding-bottom: 15px;
+}
+#tea-and-health.research .imagery {
+  width: 45%;
+  float: right;
+  padding-bottom: 15px;
+}
+#tea-and-health.research .imagery img {
+  width: 100%;
+}
+#tea-and-health .research-and-reviews {
+  padding: 0 18px 20px 18px;
+}
+#tea-and-health .research-and-reviews .title {
+  font-family: "FranchiseBold";
+  font-size: 3.0em;
+  color: #9a5d88;
+  float: left;
+  line-height: 90%;
+}
+#tea-and-health .research-and-reviews .document-type {
+  float: right;
+  margin-top: 10px;
+}
+#tea-and-health .research-and-reviews .document-type label {
+  display: none;
+}
+#tea-and-health .research-and-reviews .document-type select {
+  min-width: 160px;
+  padding: 4px;
+  font-family: "CoconLight";
 }
 
 .body {
@@ -1689,6 +1739,22 @@ img {
   }
 
   /* profile-end */
+  #tea-and-health.research .introduction {
+    width: 100%;
+    float: none;
+    padding-bottom: 0;
+  }
+  #tea-and-health.research .imagery {
+    display: none;
+  }
+  #tea-and-health .research-and-reviews .title {
+    font-size: 2.5em;
+    float: none;
+  }
+  #tea-and-health .research-and-reviews .document-type {
+    float: none;
+    margin-top: 0;
+  }
 }
 @media only screen and (max-width: 540px) {
   .page-padding .title {
@@ -1704,7 +1770,7 @@ img {
   }
 
   .header h1 {
-    padding: 15px;
+    padding: 15px 20px;
     float: left;
   }
   .header h1 a {
@@ -1788,7 +1854,7 @@ img {
   .header .search-and-social {
     position: static;
     float: none;
-    padding: 0 15px 15px 15px;
+    padding: 0 18px 15px 18px;
   }
   .header .search-and-social form {
     float: none;
@@ -1878,5 +1944,13 @@ img {
 
   .footer .tea-cups-count .figure {
     font-size: 2.4em;
+  }
+
+  #tea-and-health .research-and-reviews .document-type {
+    float: none;
+    margin-top: 0;
+  }
+  #tea-and-health .research-and-reviews .document-type select {
+    width: 100%;
   }
 }

@@ -13,7 +13,7 @@
     </li>
     <li><a href="tea-and-health.php">Tea &amp; Health</a>
         <ul class="sub-level">
-            <li><a href="faq.php">FAQs</a></li>
+            <li><a href="faqs.php">FAQs</a></li>
             <li><a href="health-facts.php">Health Facts</a></li>
             <li><a href="research.php">Research</a></li>
             <li><a href="book.php">Little Book of Tea</a></li>
