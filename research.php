@@ -86,7 +86,6 @@
                         <a href="#" class="page-no">1</a> <a href="#" class="active page-no">2</a> <a href="#" class="page-no">3</a> <a href="#" class="page-no">4</a> <a href="#" class="page-no">5</a> <a href="#" class="page-no">6</a>
                         <a href="#" class="button next purple">Next</a>
                     </div>
-                    <div class="cboth"></div>
                 </div>
                 <div class="cleft"></div>
             </div>

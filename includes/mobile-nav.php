@@ -23,7 +23,7 @@
         <ul class="sub-level">
             <li><a href="news.php">News</a></li>
             <li><a href="videos.php">Videos</a></li>
-            <li><a href="image.php">Images</a></li>
+            <li><a href="images.php">Images</a></li>
             <li><a href="links.php">Links</a></li>
         </ul>
     </li>

@@ -506,8 +506,7 @@ img {
   color: #ffffff;
 }
 .header .carousel .copy .description h2 {
-  font-size: 1.8em;
-  font-family: "CoconLight";
+  font-size: 1.6em;
 }
 .header .carousel .copy .description p {
   font-size: 1.1em;
@@ -573,6 +572,28 @@ img {
 }
 #media-centre .page-padding h3 {
   color: #1ad74a;
+}
+#media-centre.images .sub-title {
+  font-size: 1.2em;
+}
+#media-centre.images .images-list {
+  margin: 0;
+  padding: 0 0 10px 0;
+  list-style: none;
+  float: left;
+}
+#media-centre.images .images-list li {
+  float: left;
+  width: 20%;
+  padding-bottom: 36px;
+}
+#media-centre.images .images-list a {
+  display: block;
+  margin: 0 18px;
+}
+#media-centre.images .images-list img {
+  display: block;
+  width: 100%;
 }
 
 #contact .site-navigation ul.sub-level {
@@ -891,7 +912,6 @@ img {
 .body .carousel .item .copy .sub-title {
   font-size: 1.4em;
   padding-bottom: 6px;
-  font-family: "CoconLight";
 }
 .body .carousel .item .copy p {
   font-size: 1.1em;
@@ -1564,6 +1584,17 @@ img {
   .bx-wrapper .bx-next {
     right: 10px;
   }
+
+  #media-centre.images .images-list {
+    padding: 0 5px 10px 5px;
+  }
+  #media-centre.images .images-list li {
+    width: 25%;
+    padding-bottom: 26px;
+  }
+  #media-centre.images .images-list a {
+    margin: 0 13px;
+  }
 }
 @media only screen and (max-width: 730px) {
   .bodyBorder {
@@ -1872,6 +1903,13 @@ img {
     line-height: 200%;
     padding: 0 10px !important;
   }
+
+  #media-centre.images .images-list {
+    padding: 0 5px 10px 5px;
+  }
+  #media-centre.images .images-list li {
+    width: 33.3337%;
+  }
 }
 @media only screen and (max-width: 540px) {
   .page-padding .title {
@@ -1959,6 +1997,16 @@ img {
   }
 
   /* profile-end */
+  #media-centre.images .images-list {
+    padding: 0 8px 10px 8px;
+  }
+  #media-centre.images .images-list li {
+    width: 50%;
+    padding-bottom: 20px;
+  }
+  #media-centre.images .images-list a {
+    margin: 0 10px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .page-padding .title {

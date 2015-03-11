@@ -20,16 +20,17 @@ Members page all done                                                          3
 Refactor, starts Tea and Health                                                3.0 hrs   - 04.03.2015
 Page stubs                                                                     1.5 hrs   - 05.03.2015
 Profile page, complete                                                         3.5 hrs   - 08.03.2015
-Research page (50%) + Sibling studs                                            1.0 hr    - 08.03.2015 evening
+Research page (50%) + sibling stubs                                            1.0 hr    - 08.03.2015 evening
 Research page (100%)                                                           3.5 hrs   - 11.03.2015
-
+Images page (100%) + sibling stubs                                             1.5 hrs    - 11.03.2015
 
 
 
 TODO - Issues
 ================================
-webkit issue with select
-padding on reviews and research section
+back to top button
+Ask about light box or image detail pages
+change members images to have padding, like images on images page, = more consistent
 
 
 
