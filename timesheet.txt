@@ -21,13 +21,15 @@ Refactor, starts Tea and Health                                                3
 Page stubs                                                                     1.5 hrs   - 05.03.2015
 Profile page, complete                                                         3.5 hrs   - 08.03.2015
 Research page (50%) + Sibling studs                                            1.0 hr    - 08.03.2015 evening
-
+Research page (100%)                                                           3.5 hrs   - 11.03.2015
 
 
 
 
 TODO - Issues
 ================================
+webkit issue with select
+padding on reviews and research section
 
 
 
