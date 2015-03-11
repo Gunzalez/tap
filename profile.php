@@ -16,7 +16,7 @@
                 <div class="profile-image"><img src="uploaded/profile-1.jpg" alt="" /></div>
                 <div class="profile-copy">
                     <h2 class="title uppercase">Tap member</h2>
-                    <h3 class="name">Dr Catherine Hood</h3>
+                    <h2 class="name">Dr Catherine Hood</h2>
                     <p>Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five’s prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
                     <p>Catherine also has a weekly health page in the Sunday Mirror and regularly answers questions for More magazine. She has written for Company, Men's Health, B and Good Housekeeping and co-authored The Rough Guide 'To me in my Twenties'.</p>
                     <p>Catherine is an Associate Specialist at St George's Hospital, London, specialising particularly in woman’s health and psychosexual medicine. For seven years she was the Clinical Tutor in Communication at the University of Oxford where she lectured to the doctors of tomorrow and ran workshops to help them develop skills in talking to patients.</p>

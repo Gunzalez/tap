@@ -5,11 +5,36 @@
                 <div class="title">
                     <h2>FAQs</h2>
                 </div>
+
+                <?php
+                $rand = rand(1,3);
+                ?>
+
+                <?php if ($rand == 1){ ?>
                 <a href="#" class="copy uppercase">
                     <span class="question">
                         <span class="quotes">&ldquo;</span><span class="text">Is drinking tea bad for the bones?</span><span class="quotes">&rdquo;</span>
                     </span>
                 </a>
+                <?php } ?>
+
+                <?php if ($rand == 2){ ?>
+                <a href="#" class="copy uppercase">
+                    <span class="question">
+                        <span class="quotes">&ldquo;</span><span class="text">Does tea contain nearly as much caffeine as coffee?</span><span class="quotes">&rdquo;</span>
+                    </span>
+                </a>
+                <?php } ?>
+
+                <?php if ($rand == 3){ ?>
+                <a href="#" class="copy uppercase">
+                    <span class="question">
+                        <span class="quotes">&ldquo;</span><span class="text">Does your tea count to your 8 cups of fluid a day?</span><span class="quotes">&rdquo;</span>
+                    </span>
+                </a>
+                <?php } ?>
+
+
                 <div class="cboth"></div>
             </div>
         </div>

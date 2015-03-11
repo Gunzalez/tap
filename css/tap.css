@@ -27,7 +27,9 @@ a:hover {
 }
 
 .desktop .telephone-no {
+  cursor: text;
   text-decoration: none;
+  color: #231f20 !important;
 }
 
 .cboth {
@@ -89,6 +91,9 @@ img {
 .button.purple {
   background: #916083;
 }
+.button.brown {
+  background: #a37301;
+}
 
 .text-input {
   -webkit-appearance: none;
@@ -124,6 +129,9 @@ img {
 }
 .button:hover.purple {
   background: #65435b;
+}
+.button:hover.brown {
+  background: #573d01;
 }
 
 /* Arrow Buttons */
@@ -168,6 +176,10 @@ img {
   border-color: transparent transparent transparent #916083;
 }
 
+.brown.next::after {
+  border-color: transparent transparent transparent #a37301;
+}
+
 .green.next::after {
   border-color: transparent transparent transparent #22b62a;
 }
@@ -192,6 +204,10 @@ img {
 }
 .purple.prev:hover::before {
   border-right-color: #65435b;
+}
+
+.brown.next:hover::after {
+  border-left-color: #573d01;
 }
 
 .forums .buttons {
@@ -246,6 +262,10 @@ img {
 
 #contact .header {
   background: url("../images/bg-contact.jpg") bottom center no-repeat #a37301;
+}
+
+#miscellaneous .header {
+  background: url("../images/bg-miscellaneous.jpg") bottom center no-repeat #545453;
 }
 
 #mobileNavButton {
@@ -377,12 +397,11 @@ img {
 }
 .header .search-and-social form .text-input {
   border: 1px solid #ffffff;
-  font-size: 1.1em;
-  padding: 2px 5px;
+  font-size: 1.0em;
+  padding: 4px 6px;
   box-sizing: border-box;
   width: 100%;
   display: inline-block;
-  font-family: "CoconLight";
   color: #ffffff;
   background-color: transparent;
 }
@@ -596,6 +615,23 @@ img {
   width: 100%;
 }
 
+#miscellaneous .site-navigation ul.sub-level {
+  background-color: #545453;
+  border: 3px solid #545453;
+}
+#miscellaneous .site-navigation ul.sub-level a {
+  background-color: #545453;
+}
+#miscellaneous .site-navigation ul.sub-level a:hover {
+  background-color: #2d2d2d;
+}
+#miscellaneous .page-padding .title {
+  color: #545453;
+}
+#miscellaneous .page-padding h3 {
+  color: #545453;
+}
+
 #contact .site-navigation ul.sub-level {
   background-color: #a37301;
   border: 3px solid #a37301;
@@ -611,6 +647,76 @@ img {
 }
 #contact .page-padding h3 {
   color: #a37301;
+}
+#contact .introduction {
+  width: 45%;
+  float: left;
+  padding-bottom: 15px;
+}
+#contact .introduction a {
+  text-decoration: none;
+  color: #3292b2;
+}
+#contact .imagery {
+  width: 45%;
+  float: right;
+  padding-bottom: 15px;
+}
+#contact .imagery #map {
+  width: 426px;
+  height: 323px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.46);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.46);
+}
+#contact address {
+  font-style: normal;
+  padding-bottom: 20px;
+}
+#contact #frmContact {
+  float: left;
+  padding: 11px 18px;
+}
+#contact #frmContact .left-block {
+  width: 47%;
+  float: left;
+}
+#contact #frmContact .right-block {
+  width: 47%;
+  float: right;
+}
+#contact #frmContact .row {
+  float: left;
+  padding-bottom: 15px;
+  width: 100%;
+}
+#contact #frmContact .text-input {
+  float: right;
+  border: 1px solid #c1c1c1;
+  font-size: 1.0em;
+  padding: 4px 6px;
+  box-sizing: border-box;
+  width: 300px;
+}
+#contact #frmContact label {
+  float: left;
+  padding-top: 4px;
+  font-size: 1.1em;
+}
+#contact #frmContact .textarea {
+  font-size: 1.0em;
+  height: 200px;
+  resize: none;
+}
+#contact #frmContact .submit {
+  text-align: right;
+  padding-top: 10px;
+}
+#contact #frmContact .submit a {
+  margin-right: 13px;
+}
+#contact .thank-you {
+  padding: 11px 18px;
 }
 
 #tea-and-health.research .introduction {
@@ -842,7 +948,7 @@ img {
 }
 .body .grey-bar.form-bar {
   border-bottom: 1px solid #dedede;
-  padding: 11px 18px;
+  padding: 11px 0;
   text-align: left;
 }
 .body .grey-bar.form-bar #frmNewsletter {
@@ -856,7 +962,7 @@ img {
   line-height: 90%;
 }
 .body .grey-bar.form-bar #frmNewsletter .row {
-  width: 48%;
+  width: 47%;
   float: left;
   box-sizing: border-box;
 }
@@ -959,9 +1065,6 @@ img {
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
-}
-.body .bx-wrapper {
-  margin-bottom: 30px;
 }
 .body .tap-carousel-link {
   background: #f5a021;
@@ -1088,7 +1191,6 @@ img {
   margin-left: 300px;
 }
 .profile-content .profile-copy .name {
-  font-family: "CoconLight";
   color: #231f20 !important;
   font-size: 1.5em;
 }
@@ -1158,7 +1260,6 @@ img {
   padding-bottom: 10px;
 }
 .profile-history h4 {
-  font-family: "CoconLight";
   font-size: 1.6em;
   color: #d0c320;
 }
@@ -1174,7 +1275,7 @@ img {
 /* profile-end */
 .forums {
   background: url("../images/bg-forums.gif") top center repeat-y;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 .forums h3 {
   color: #22b62a;
@@ -1216,10 +1317,11 @@ img {
 .forums ul li .read-more {
   display: inline;
   color: #22b62a;
+  text-decoration: underline;
 }
 .forums ul li .read-more:hover {
   color: #16761b;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .forums ul li:hover .icon i {
   color: #16761b;
@@ -1310,7 +1412,7 @@ img {
   width: auto;
 }
 #home .faqs .copy .question {
-  line-height: 80%;
+  line-height: 100%;
 }
 
 .footer {
@@ -1595,6 +1697,39 @@ img {
   #media-centre.images .images-list a {
     margin: 0 13px;
   }
+
+  #contact .introduction {
+    width: auto;
+    float: none;
+    padding-bottom: 15px;
+  }
+  #contact .imagery {
+    width: auto;
+    float: none;
+    padding-bottom: 15px;
+  }
+  #contact .imagery #map {
+    width: 100%;
+  }
+  #contact #frmContact .row {
+    float: left;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+  #contact #frmContact .text-input {
+    float: none;
+    width: 100%;
+  }
+  #contact #frmContact label {
+    float: none;
+    display: block;
+    padding-top: 0;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+  }
+  #contact #frmContact .textarea {
+    height: 250px;
+  }
 }
 @media only screen and (max-width: 730px) {
   .bodyBorder {
@@ -1741,6 +1876,7 @@ img {
 
   .forums {
     background: none;
+    margin-top: 10px;
   }
   .forums .forum-chats,
   .forums .forum-info,
@@ -1967,9 +2103,6 @@ img {
   .body .grey-bar ul li a {
     padding: 10px 20px;
   }
-  .body .grey-bar.form-bar #frmNewsletter {
-    padding: 10px 0;
-  }
 
   .forums {
     padding: 0 18px;
@@ -2006,6 +2139,31 @@ img {
   }
   #media-centre.images .images-list a {
     margin: 0 10px;
+  }
+
+  #contact #frmContact .left-block,
+  #contact #frmContact .right-block {
+    float: none;
+    width: 100%;
+  }
+  #contact #frmContact .row {
+    float: left;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+  #contact #frmContact .text-input {
+    float: none;
+    width: 100%;
+  }
+  #contact #frmContact label {
+    float: none;
+    display: block;
+    padding-top: 0;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+  }
+  #contact #frmContact .textarea {
+    height: 150px;
   }
 }
 @media only screen and (max-width: 400px) {

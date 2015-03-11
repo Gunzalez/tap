@@ -12,7 +12,7 @@
             <a href="#mobileNav" id="mobileNavButton"><i class="fa fa-fw"></i></a>
             <h1><a href="index.php">Tea Advisory Panel</a></h1>
             <div class="search-and-social">
-                <form id="frmSearch" name="frmSearch" action="some-page.php" method="post" novalidate="novalidate">
+                <form id="frmSearch" name="frmSearch" action="search.php" method="post" novalidate="novalidate">
                     <span class="input-box"><input type="text" name="" class="text-input" value="" placeholder="Search" /></span>
                     <button><i class="fa fa-fw"></i></button>
                     <div class="cleft"></div>
@@ -108,11 +108,32 @@
                 <div class="title">
                     <h2>FAQs</h2>
                 </div>
-                <a href="#" class="copy uppercase">
+                <?php
+                $rand = rand(1,3);
+                ?>
+                <?php if ($rand == 1){ ?>
+                    <a href="#" class="copy uppercase">
                     <span class="question">
                         <span class="quotes">&ldquo;</span><span class="text">Is drinking tea bad for the bones?</span><span class="quotes">&rdquo;</span>
                     </span>
-                </a>
+                    </a>
+                <?php } ?>
+
+                <?php if ($rand == 2){ ?>
+                    <a href="#" class="copy uppercase">
+                    <span class="question">
+                        <span class="quotes">&ldquo;</span><span class="text">Does tea contain nearly as much caffeine as coffee?</span><span class="quotes">&rdquo;</span>
+                    </span>
+                    </a>
+                <?php } ?>
+
+                <?php if ($rand == 3){ ?>
+                    <a href="#" class="copy uppercase">
+                    <span class="question">
+                        <span class="quotes">&ldquo;</span><span class="text">Does your tea count to your 8 cups of fluid a day?</span><span class="quotes">&rdquo;</span>
+                    </span>
+                    </a>
+                <?php } ?>
                 <div class="cboth"></div>
             </div>
         </div>
