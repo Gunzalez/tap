@@ -30,12 +30,6 @@
         init: function(){
             var self = tap;
 
-            $('body').on('click', function(){
-                if(tap.environment.isTouchDevice()){
-                    tap.siteNavigation.closeDropdowns();
-                }
-            });
-
             // window size
             self.properties.windowWidth = $(window).width();
 
@@ -48,18 +42,31 @@
                 $('html').addClass('desktop');
             }
 
-            $(window).on('scroll', function(){
-                self.siteNavigation.closeDropdowns();
+            if(tap.environment.isTouchDevice()){
+
+                $('body').on('click', function(){
+                    tap.siteNavigation.closeDropdowns();
+                });
+
+                $(window).on('scroll', function(){
+                    self.siteNavigation.closeDropdowns();
+                });
+            }
+
+            // sets up back to top button
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.back-to-top').fadeIn();
+                } else {
+                    $('.back-to-top').fadeOut();
+                }
             });
 
-            // sets up all back buttons
-            $('.back-button').on('click', function(evt) {
+            // click event to scroll to top
+            $('.back-to-top').click(function(evt){
                 evt.preventDefault();
-                if($(this).attr('href') == '#'){
-                    history.back(1);
-                } else {
-                    location.assign($(this).attr('href'));
-                }
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
             });
 
             // submitting forms with buttons or links
@@ -138,7 +145,7 @@
 
                             } else {
 
-                                // has no dropdowns
+                                // has no dropdowns, so go to url
                                 location.assign(locationHref);
                             }
                         });
@@ -224,7 +231,7 @@
             this.body.carousel.init();
             this.header.carousel.init();
 
-            // fun stuff
+            // fun stuff :)
             // ========================================================= //
             var addCommas = function(val){
                 while (/(\d+)(\d{3})/.test(val.toString())){

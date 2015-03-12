@@ -23,7 +23,7 @@
                 <p>It also as a group will be commissioning a series of study reviews and market research initiatives investigating further the ‘natural’ well-being benefits associated with black tea. TAP is supported by an unrestricted educational grant from the UK Tea Council, the trade association for the UK tea industry.</p>
             </div>
             <div class="bordered-div">
-                <p>TAP members include nutritionists, dieticians and doctors.</p>
+                <p>TAP members include nutritionists, dietitians and doctors. (Click on image to learn more)</p>
                 <ul class="members-list">
                     <li>
                         <a href="profile.php?member=1">

@@ -265,7 +265,7 @@ img {
 }
 
 #miscellaneous .header {
-  background: url("../images/bg-miscellaneous.jpg") bottom center no-repeat #545453;
+  background: url("../images/bg-miscellaneous.jpg") bottom center no-repeat #bbbbbc;
 }
 
 #mobileNavButton {
@@ -613,23 +613,35 @@ img {
 #media-centre.images .images-list img {
   display: block;
   width: 100%;
+  border: 1px solid #ffffff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#media-centre.images .images-list img:hover {
+  border: 1px solid #22b62a;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #miscellaneous .site-navigation ul.sub-level {
-  background-color: #545453;
-  border: 3px solid #545453;
+  background-color: #bbbbbc;
+  border: 3px solid #bbbbbc;
 }
 #miscellaneous .site-navigation ul.sub-level a {
-  background-color: #545453;
+  background-color: #bbbbbc;
 }
 #miscellaneous .site-navigation ul.sub-level a:hover {
   background-color: #2d2d2d;
 }
 #miscellaneous .page-padding .title {
-  color: #545453;
+  color: #2d2d2d;
 }
 #miscellaneous .page-padding h3 {
-  color: #545453;
+  color: #2d2d2d;
 }
 
 #contact .site-navigation ul.sub-level {
@@ -947,7 +959,7 @@ img {
   transition: all 0.5s;
 }
 .body .grey-bar.form-bar {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 5px solid #ffffff;
   padding: 11px 0;
   text-align: left;
 }
@@ -1458,6 +1470,20 @@ img {
   color: #231f20;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  display: none;
+}
+.back-to-top a {
+  display: block;
+  padding: 10px;
+}
+.back-to-top a i {
+  font-size: 1.6em;
+}
+
 /* responsive break points */
 @media only screen and (max-width: 1015px) {
   .container {
@@ -1512,8 +1538,8 @@ img {
     padding: 11px 20px;
   }
   .body .members-list {
-    margin: 0;
-    padding: 0 0 15px 0;
+    margin: 0 6px;
+    padding: 0 0 10px 0;
     list-style: none;
     float: left;
   }
@@ -1521,10 +1547,10 @@ img {
     position: relative;
     width: 25%;
     float: left;
-    padding-bottom: 0;
+    padding-bottom: 15px;
   }
   .body .members-list li a {
-    margin: 0;
+    margin: 0 10px;
   }
   .body .members-list li a span {
     display: none;
@@ -1797,7 +1823,7 @@ img {
   }
 
   .body .members-list li {
-    width: 50%;
+    width: 33.333337%;
   }
   .body .faqs {
     text-align: center;
@@ -2215,6 +2241,17 @@ img {
   }
   #members .search-and-social .text-input {
     background: #c67d10;
+  }
+  #members .members-list {
+    margin: 0 8px;
+    padding: 0 0 10px 0;
+  }
+  #members .members-list li {
+    width: 50%;
+    padding-bottom: 15px;
+  }
+  #members .members-list li a {
+    margin: 0 10px;
   }
 
   #tea-and-health .search-and-social form {

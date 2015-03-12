@@ -1,7 +1,7 @@
 <div class="footer">
     <div class="container">
         <div class="tea-cups-count">
-            <div class="figure">164,123,810</div>
+            <div class="figure">164,421,893</div>
             <p>Cups of tea drank in the UK so far today.</p>
         </div>
         <div class="site-map">
@@ -19,3 +19,5 @@
         <div class="cboth"></div>
     </div>
 </div>
+
+<div class="back-to-top"><a href="#"><i class="fa fa-fw"></i></a></div>

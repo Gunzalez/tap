@@ -22,26 +22,20 @@ Page stubs                                                                     1
 Profile page, complete                                                         3.5 hrs   - 08.03.2015
 Research page (50%) + sibling stubs                                            1.0 hr    - 08.03.2015 evening
 Research page (100%)                                                           3.5 hrs   - 11.03.2015
-Images page (100%) + sibling stubs                                             1.5 hrs    - 11.03.2015
+Images page (100%) + sibling stubs                                             1.5 hrs   - 11.03.2015
 Contact page (100%) + site files stubs                                         4.0 hrs   - 11.03.2015
+Back to to, padding on members, effects on images list                         1.5 hrs   - 12.03.2015
+
+Templates completed, total time taken - 65 hrs
+Charging for original estimation of 50 hrs, as agreed.
 
 
-TODO - Issues
+
+Issues
 ================================
-back to top button
-Ask about light box or image detail pages
-change members images to have padding, like images on images page, = more consistent
-
-
+None
 
 
 Better with PHP
 ================================
-
-
-
-
-
-
-Snippets
-================================
+None
