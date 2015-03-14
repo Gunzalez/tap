@@ -68,29 +68,29 @@
                         <li>
                             <img src="uploaded/carousel-slide-3.jpg" alt="slide 2" />
                             <div class="slide-copy">
-                                <h2>Golden!</h2>
+                                <h2>Fusce ac turpis quis</h2>
                                 <p>Morbi lectus riis, luctus non, massa. Fusce ac turpis quis ligsus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.</p>
                             </div>
                         </li>
                         <li>
                             <img src="uploaded/carousel-slide-2.jpg" alt="slide 3" />
                             <div class="slide-copy">
-                                <h2>Tea With Love</h2>
-                                <p>Sunday morning, I'm out in th street dancing like a mad man, until the police come to take me away, I hate it when they do that.</p>
+                                <h2>Westibulum sapien. Prperdiet</h2>
+                                <p>Sestibulum sapien. Praestibulum sapien. Prt imestibulum sapien. Prperdiet. Vestibulum sapien. Proin quam. Etiam ultat mi a equat ppk i bulum sapien. Proat.</p>
                             </div>
                         </li>
                         <li>
                             <img src="uploaded/carousel-slide-4.jpg" alt="slide 4" />
                             <div class="slide-copy">
-                                <h2>He drinks it too</h2>
-                                <p>And then he reads your emails, only kidding  Suspendisse potenti. Nunc feugiat mi a equat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.</p>
+                                <h2>Vestibulum sapien, lroin</h2>
+                                <p>Aspendisse potenti. Nunc feugiat mi a equat imperdiet. Vestibulum sapien. Proin quam. Etiam ultat mi a equat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.</p>
                             </div>
                         </li>
                         <li>
                             <img src="uploaded/carousel-slide-5.jpg" alt="slide 5" />
                             <div class="slide-copy">
-                                <h2>Fields of green!</h2>
-                                <p>Not that green you naughty boy, I mean tea. Green fields of tea plants everywhere. tra auctor, sem massa mattis sem, at interdum magna augue eget diam. </p>
+                                <h2>Suspendisse unc-feugi</h2>
+                                <p>Proin quam. Etiam ult auctor, sesse potenti. Nunc feugiat mi a equat imperdiet. Vestibulum sapie as sem, at interdum magna augue eget diam. </p>
                             </div>
                         </li>
                     </ul>
@@ -193,8 +193,8 @@
                     </div>
                     <div class="copy">
                         <h2>Who we are</h2>
-                        <p class="sub-title">Dr Pretty Lady</p>
-                        <p class="details">Dr Pretty Lady is an exercise physiologist with a scientific research background. She is currently a Professor in Ageing and Health at Glasgow Caledonian University.  She is Deputy Lead of the Later Life Research Group and also the Scottish Centre for Evidence Based Care. </p>
+                        <p class="sub-title">Dr Name Surname</p>
+                        <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sm imperdiet. Duis saed cursus ante dapibus diaquis sem at nibh elementugittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauri.</p>
                         <div class="buttons">
                             <a href="profile.php" class="button next orange">Read&nbsp;More</a><br />
                             <a href="members.php" class="button next orange">Other&nbsp;Members</a>
@@ -208,8 +208,8 @@
                     </div>
                     <div class="copy">
                         <h2>Who we are</h2>
-                        <p class="sub-title">Dr Who</p>
-                        <p class="details">Doctor Who is a British science-fiction television programme produced by the BBC from 1963 to the present day. The programme depicts the adventures of the Doctor, a Time Lord—a time-travelling humanoid alien. He explores the universe in his TARDIS, a sentient time-travelling space ship.</p>
+                        <p class="sub-title">Dr Title OtherTitle</p>
+                        <p class="details">Praesent libero. Sed cursus ante dapibus diam. Seem ipssi. Nulla quum dolor sit amet, consectetur adipiscing elit. Integer nec odio.  niis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauriv sce ne tb nhellu.</p>
                         <div class="buttons">
                             <a href="profile.php" class="button next orange">Read&nbsp;More</a><br />
                             <a href="members.php" class="button next orange">Other&nbsp;Members</a>
@@ -223,8 +223,8 @@
                     </div>
                     <div class="copy">
                         <h2>Who we are</h2>
-                        <p class="sub-title">Dr Typical Doctor</p>
-                        <p class="details">Dr Typical Doctor is a fictional character, a mercenary and anti-hero appearing in comic books published by Marvel Comics. Created by writer and artist Rob Liefeld and scripted by Fabian Nicieza.</p>
+                        <p class="sub-title">Dr Name surName</p>
+                        <p class="details">Tpsu donsectetur adipiscing elisit amet, ceger nec odilesent libero. Sef gfxnd cursus ante dapibus did nisi. Nua a quis sem at nibh el Duis sagittis ipsfesent mauri sce nec tel entum imperdiet.</p>
                         <div class="buttons">
                             <a href="profile.php" class="button next orange">Read&nbsp;More</a><br />
                             <a href="members.php" class="button next orange">Other&nbsp;Members</a>

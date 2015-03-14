@@ -22,19 +22,19 @@
             <div class="bordered-div" style="min-height: 400px">
                 <p>Select an image to view</p>
                 <ul class="images-list">
+                    <li><a href="#"><img src="uploaded/images-6.jpg" alt=""></a></li>
                     <li><a href="#"><img src="uploaded/images-1.jpg" alt=""></a></li>
                     <li><a href="#"><img src="uploaded/images-2.jpg" alt=""></a></li>
                     <li><a href="#"><img src="uploaded/images-3.jpg" alt=""></a></li>
                     <li><a href="#"><img src="uploaded/images-4.jpg" alt=""></a></li>
                     <li><a href="#"><img src="uploaded/images-5.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="uploaded/images-6.jpg" alt=""></a></li>
                     <li><a href="#"><img src="uploaded/images-7.jpg" alt=""></a></li>
                     <li><a href="#"><img src="uploaded/images-8.jpg" alt=""></a></li>
                     <li><a href="#"><img src="uploaded/images-9.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="uploaded/images-1.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="uploaded/images-2.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="uploaded/images-5.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="uploaded/images-6.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="uploaded/images-10.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="uploaded/images-11.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="uploaded/images-12.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="uploaded/images-13.jpg" alt=""></a></li>
                 </ul>
                 <div class="cleft"></div>
             </div>
