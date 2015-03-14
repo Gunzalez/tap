@@ -7,34 +7,24 @@
                 </div>
 
                 <?php
-                $rand = rand(1,3);
+                $rand = rand(1,4);
                 ?>
-
-                <?php if ($rand == 1){ ?>
                 <a href="#" class="copy uppercase">
                     <span class="question">
-                        <span class="quotes">&ldquo;</span><span class="text">Is drinking tea bad for the bones?</span><span class="quotes">&rdquo;</span>
+                        <?php if ($rand == 1){ ?>
+                            <span class="quotes">&ldquo;</span><span class="text">Is drinking tea bad for the bones?</span><span class="quotes">&rdquo;</span>
+                        <?php } ?>
+                        <?php if ($rand == 2){ ?>
+                            <span class="quotes">&ldquo;</span><span class="text">Does tea contain nearly as much caffeine as coffee?</span><span class="quotes">&rdquo;</span>
+                        <?php } ?>
+                        <?php if ($rand == 3){ ?>
+                            <span class="quotes">&ldquo;</span><span class="text">Does your tea count to your 8 cups of fluid a day?</span><span class="quotes">&rdquo;</span>
+                        <?php } ?>
+                        <?php if ($rand == 4){ ?>
+                            <span class="quotes">&ldquo;</span><span class="text">Is the high level of fluoride in tea harmful?</span><span class="quotes">&rdquo;</span>
+                        <?php } ?>
                     </span>
                 </a>
-                <?php } ?>
-
-                <?php if ($rand == 2){ ?>
-                <a href="#" class="copy uppercase">
-                    <span class="question">
-                        <span class="quotes">&ldquo;</span><span class="text">Does tea contain nearly as much caffeine as coffee?</span><span class="quotes">&rdquo;</span>
-                    </span>
-                </a>
-                <?php } ?>
-
-                <?php if ($rand == 3){ ?>
-                <a href="#" class="copy uppercase">
-                    <span class="question">
-                        <span class="quotes">&ldquo;</span><span class="text">Does your tea count to your 8 cups of fluid a day?</span><span class="quotes">&rdquo;</span>
-                    </span>
-                </a>
-                <?php } ?>
-
-
                 <div class="cboth"></div>
             </div>
         </div>
