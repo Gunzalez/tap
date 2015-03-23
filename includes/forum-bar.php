@@ -7,7 +7,7 @@
                 </div>
 
                 <?php
-                $rand = rand(1,4);
+                $rand = rand(1,5);
                 ?>
                 <a href="#" class="copy uppercase">
                     <span class="question">
@@ -22,6 +22,9 @@
                         <?php } ?>
                         <?php if ($rand == 4){ ?>
                             <span class="quotes">&ldquo;</span><span class="text">Is the high level of fluoride in tea harmful?</span><span class="quotes">&rdquo;</span>
+                        <?php } ?>
+                        <?php if ($rand == 5){ ?>
+                            <span class="long-quote"><span class="quotes">&ldquo;</span><span class="text">Does drinking tea prevent iron from being absorbed from foods resulting in iron deficiency?</span><span class="quotes">&rdquo;</span></span>
                         <?php } ?>
                     </span>
                 </a>

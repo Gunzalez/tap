@@ -28,8 +28,25 @@ a:hover {
 
 .desktop .telephone-no {
   cursor: text;
-  text-decoration: none;
+  text-decoration: none !important;
   color: #231f20 !important;
+  font-weight: normal !important;
+}
+.desktop .telephone-no:hover {
+  text-decoration: none !important;
+  color: #231f20 !important;
+  font-weight: normal !important;
+}
+
+.divider {
+  border-bottom: 1px solid #e8e8e8;
+  width: 100%;
+}
+
+.long-quote {
+  font-size: 0.9em;
+  line-height: 85%;
+  display: inline-block;
 }
 
 .cboth {
@@ -311,8 +328,9 @@ img {
 .bordered-div {
   border-top: 1px solid #e8e8e8;
   border-bottom: 1px solid #e8e8e8;
-  padding-top: 10px;
+  padding-top: 30px;
   margin: 10px 0;
+  margin-bottom: 30px;
 }
 .bordered-div p {
   padding-left: 18px;
@@ -677,9 +695,6 @@ img {
 #contact .imagery #map {
   width: 426px;
   height: 323px;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.46);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.46);
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.46);
 }
 #contact address {
   font-style: normal;
@@ -688,6 +703,10 @@ img {
 #contact #frmContact {
   float: left;
   padding: 11px 18px;
+}
+#contact #frmContact h2 {
+  font-family: "CoconLight";
+  font-size: 2.0em;
 }
 #contact #frmContact .left-block {
   width: 47%;
@@ -736,6 +755,13 @@ img {
   float: left;
   padding-bottom: 15px;
 }
+#tea-and-health.research .introduction a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+#tea-and-health.research .introduction a:hover {
+  text-decoration: none;
+}
 #tea-and-health.research .imagery {
   width: 45%;
   float: right;
@@ -767,13 +793,15 @@ img {
 }
 #tea-and-health .research-and-reviews .document-type select {
   min-width: 160px;
-  padding: 5px 7px;
+  padding: 5px 25px 5px 7px;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   float: left;
   border: 1px solid #c1c1c1;
+  background: url("../images/bg-select.gif") center right no-repeat;
+  cursor: pointer;
 }
 #tea-and-health .search-records {
   clear: both;
@@ -831,6 +859,14 @@ img {
 .body {
   /* carousel overrides */
 }
+.body .bx-pager {
+  margin-top: -50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.body .bx-viewport {
+  border-bottom: 1px solid #e8e8e8;
+}
 .body .faqs {
   font-family: "FranchiseBold";
   font-size: 4.2em;
@@ -839,8 +875,7 @@ img {
   background: url("../images/bg-faq-title.png") center center no-repeat;
   height: 86px;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 0 auto 12px auto;
   width: 249px;
 }
 .body .faqs .title h2 {
@@ -1036,11 +1071,13 @@ img {
 }
 .body .carousel .item .copy .buttons {
   padding-top: 5px;
+  text-align: right;
 }
 .body .carousel .item .copy .buttons a {
   display: inline-block;
   margin-bottom: 5px;
   text-decoration: none;
+  width: 110px;
 }
 .body .tap-prev {
   width: 0;
@@ -1171,6 +1208,7 @@ img {
   font-family: "chunkfiveroman";
   font-size: 2.8em;
   line-height: 80%;
+  padding-bottom: 30px;
 }
 .page-padding ul {
   margin: 0;
@@ -1185,7 +1223,7 @@ img {
 }
 .page-padding h3 {
   font-family: "FranchiseBold";
-  font-size: 2.7em;
+  font-size: 3.0em;
   line-height: 80%;
 }
 
@@ -1287,7 +1325,7 @@ img {
 /* profile-end */
 .forums {
   background: url("../images/bg-forums.gif") top center repeat-y;
-  margin: 30px 0;
+  margin: 40px 0;
 }
 .forums h3 {
   color: #22b62a;
@@ -1347,6 +1385,7 @@ img {
   float: left;
   width: 42%;
   padding: 0 20px;
+  text-align: center;
 }
 .forums .forum-info {
   float: right;
@@ -1822,6 +1861,11 @@ img {
     padding-bottom: 10px;
   }
 
+  .body .bx-pager {
+    margin-top: 0;
+    margin-bottom: 30px;
+    position: static;
+  }
   .body .members-list li {
     width: 33.333337%;
   }
@@ -1898,6 +1942,10 @@ img {
   }
   .body .carousel .item .copy .buttons {
     padding-top: 20px;
+    text-align: left;
+  }
+  .body .carousel .item .copy .buttons a {
+    width: auto;
   }
 
   .forums {
@@ -1922,9 +1970,6 @@ img {
     padding-bottom: 25px;
     margin-bottom: 25px;
     border-bottom: 1px solid #dedede;
-  }
-  .forums .forum-faqs {
-    padding-bottom: 10px;
   }
 
   /* profile */
@@ -2120,6 +2165,9 @@ img {
     border: 3px solid #ffffff;
   }
 
+  .body .bx-viewport {
+    border-bottom: none;
+  }
   .body .grey-bar h2 {
     font-size: 2.2em;
   }
@@ -2128,6 +2176,9 @@ img {
   }
   .body .grey-bar ul li a {
     padding: 10px 20px;
+  }
+  .body .carousel .item .copy .sub-title {
+    font-size: 1.0em;
   }
 
   .forums {

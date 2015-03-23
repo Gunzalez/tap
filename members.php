@@ -85,6 +85,7 @@
                     <li>To de-mystify health issues surrounding black tea</li>
                 </ul>
             </div>
+            <div class="divider"></div>
         </div>
 
         <?php include_once('includes/forum-bar.php'); ?>
