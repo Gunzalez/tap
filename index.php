@@ -109,7 +109,7 @@
                     <h2>FAQs</h2>
                 </div>
                 <?php
-                $rand = rand(1,4);
+                $rand = rand(1,5);
                 ?>
                 <a href="#" class="copy uppercase">
                     <span class="question">
@@ -124,6 +124,9 @@
                         <?php } ?>
                         <?php if ($rand == 4){ ?>
                             <span class="quotes">&ldquo;</span><span class="text">Is the high level of fluoride in tea harmful?</span><span class="quotes">&rdquo;</span>
+                        <?php } ?>
+                        <?php if ($rand == 5){ ?>
+                            <span class="long-quote"><span class="quotes">&ldquo;</span><span class="text">Does drinking tea prevent iron from being absorbed from foods resulting in iron deficiency?</span><span class="quotes">&rdquo;</span></span>
                         <?php } ?>
                     </span>
                 </a>
@@ -186,7 +189,7 @@
                     </div>
                     <div class="copy">
                         <h2>Who we are</h2>
-                        <p class="sub-title">Dr Name Surname</p>
+                        <p class="sub-title">Dr LongFristName LongerSurname</p>
                         <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sm imperdiet. Duis saed cursus ante dapibus diaquis sem at nibh elementugittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauri.</p>
                         <div class="buttons">
                             <a href="profile.php" class="button next orange">Read&nbsp;More</a><br />
@@ -216,7 +219,7 @@
                     </div>
                     <div class="copy">
                         <h2>Who we are</h2>
-                        <p class="sub-title">Dr Name surName</p>
+                        <p class="sub-title">Dr LongFirstName surName</p>
                         <p class="details">Tpsu donsectetur adipiscing elisit amet, ceger nec odilesent libero. Sef gfxnd cursus ante dapibus did nisi. Nua a quis sem at nibh el Duis sagittis ipsfesent mauri sce nec tel entum imperdiet.</p>
                         <div class="buttons">
                             <a href="profile.php" class="button next orange">Read&nbsp;More</a><br />

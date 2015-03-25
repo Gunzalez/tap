@@ -39,8 +39,9 @@ a:hover {
 }
 
 .divider {
-  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .long-quote {
@@ -306,6 +307,7 @@ img {
   text-align: right;
   padding-right: 25px;
   color: #ffffff;
+  font-size: 1.2em;
 }
 #mobileNav a.mm-subclose:before {
   border-color: white;
@@ -1385,6 +1387,8 @@ img {
   float: left;
   width: 42%;
   padding: 0 20px;
+}
+.forums .forum-faqs {
   text-align: center;
 }
 .forums .forum-info {
