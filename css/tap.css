@@ -1576,7 +1576,7 @@ img {
   }
   .header .carousel .imagery {
     float: none;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
     width: 100%;
   }
   .header .carousel .bx-controls {

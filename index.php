@@ -9,17 +9,17 @@
 <body id="home">
     <div class="header">
         <div class="container">
-            <a href="#mobileNav" id="mobileNavButton"><i class="fa fa-fw"></i></a>
+            <a href="#mobileNav" id="mobileNavButton"><i class="fa fa-fw"></i></a>
             <h1><a href="index.php">Tea Advisory Panel</a></h1>
             <div class="search-and-social">
-                <form id="frmSearch" name="frmSearch" action="search.php" method="post" novalidate="novalidate">
+                <form id="frmSearch" name="frmSearch" action="search.php" method="post" novalidate>
                     <span class="input-box"><input type="text" name="" class="text-input" value="" placeholder="Search" /></span>
-                    <button><i class="fa fa-fw"></i></button>
+                    <button><i class="fa fa-fw"></i></button>
                     <div class="cleft"></div>
                 </form>
                 <ul>
-                    <li><a href="#"><i class="fa fa-fw"></i></a></li>
-                    <li><a href="#"><i class="fa fa-fw"></i></a></li>
+                    <li><a href="#"><i class="fa fa-fw"></i></a></li>
+                    <li><a href="#"><i class="fa fa-fw"></i></a></li>
                 </ul>
             </div>
             <div class="site-navigation">
@@ -68,7 +68,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="uploaded/new-slide-2.png" alt="slide 1" />
+                            <img src="uploaded/new-slide-2.png" alt="slide 2" />
                             <div class="slide-copy">
                                 <h2>Fusce ac turpis quis</h2>
                                 <div class="text">
@@ -77,7 +77,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="uploaded/new-slide-3.png" alt="slide 1" />
+                            <img src="uploaded/new-slide-3.png" alt="slide 3" />
                             <div class="slide-copy">
                                 <h2>Everton vs. Arsenal</h2>
                                 <div class="text">
@@ -93,69 +93,43 @@
         </div>
     </div>
     <div class="body">
-        <div class="container">
-            <div class="faqs">
-                <div class="title">
-                    <h2>FAQs</h2>
-                </div>
-                <?php
-                $rand = rand(1,5);
-                ?>
-                <a href="#" class="copy uppercase">
-                    <span class="question">
-                        <?php if ($rand == 1){ ?>
-                            <span class="quotes">&ldquo;</span><span class="text">Is drinking tea bad for the bones?</span><span class="quotes">&rdquo;</span>
-                        <?php } ?>
-                        <?php if ($rand == 2){ ?>
-                            <span class="quotes">&ldquo;</span><span class="text">Does tea contain nearly as much caffeine as coffee?</span><span class="quotes">&rdquo;</span>
-                        <?php } ?>
-                        <?php if ($rand == 3){ ?>
-                            <span class="quotes">&ldquo;</span><span class="text">Does your tea count to your 8 cups of fluid a day?</span><span class="quotes">&rdquo;</span>
-                        <?php } ?>
-                        <?php if ($rand == 4){ ?>
-                            <span class="quotes">&ldquo;</span><span class="text">Is the high level of fluoride in tea harmful?</span><span class="quotes">&rdquo;</span>
-                        <?php } ?>
-                        <?php if ($rand == 5){ ?>
-                            <span class="long-quote"><span class="quotes">&ldquo;</span><span class="text">Does drinking tea prevent iron from being absorbed from foods resulting in iron deficiency?</span><span class="quotes">&rdquo;</span></span>
-                        <?php } ?>
-                    </span>
-                </a>
-                <div class="cboth"></div>
+
+    <div class="container">
+        <div class="carousel-thumbs">
+            <div class="what-we-do-new">
+               <div class="carousel-bit">
+					<h2>What we do</h2>
+					<ul class="switcher">
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+					</ul>
+					<div class="whatWeDo active">Stuff 1</div>
+					<div class="whatWeDo">Stuff 2</div>
+					<div class="whatWeDo">Stuff 3</div>
+				</div>                
             </div>
-        </div>
-        <div class="grey-bar">
-            <div class="container">
-                <h2 class="title uppercase">What we do.</h2>
-                <p>The Tea Advisory Panel is an expert organisation which can:</p>
+            <div class="video-thumbs">
                 <ul>
-                    <li>
-                        <a href="#">
-                            <span class="item">
-                                <span class="icon"><i class="fa fa-fw"></i></span>
-                                <span class="intro">Provide independent and objective information about the latest health benefits regarding black tea.</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="item">
-                                <span class="icon"><i class="fa fa-fw"></i></span>
-                                <span class="intro">Answer all of your nutrition and hydration questions about black tea.</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="item">
-                                <span class="icon"><i class="fa fa-fw"></i></span>
-                                <span class="intro">Set the record straight on ‘science’ myths associated with black tea.</span>
-                            </span>
-                        </a>
-                    </li>
+                    <li><a href="#"><img src="uploaded/video-thumb-1.png" alt="video 1" /></a></li>
+                    <li><a href="#"><img src="uploaded/video-thumb-2.png" alt="video 1" /></a></li>
+                    <li><a href="#"><img src="uploaded/video-thumb-3.png" alt="video 1" /></a></li>
+                    <li><a href="#"><img src="uploaded/video-thumb-4.png" alt="video 1" /></a></li>
+                    <li><a href="#"><img src="uploaded/video-thumb-5.png" alt="video 1" /></a></li>
+                    <li><a href="#"><img src="uploaded/video-thumb-6.png" alt="video 1" /></a></li>
                 </ul>
-                <div class="cleft"></div>
             </div>
         </div>
+        <div class="cleft"></div>
+    </div>
+
+
+
+
+
+
+
+
         <div class="container">
             <ul id="body-carousel" class="carousel">
                 <li class="item">
@@ -227,14 +201,14 @@
                     <ul>
                         <li>
                             <span href="#">
-                                <div class="bubble"><i class="fa fa-fw"></i></div>
+                                <div class="bubble"><i class="fa fa-fw"></i></div>
                                 <div class="copy"><p><strong>Go put the kettle on</strong><br>
                                     Much oh this knitted lynx crane gross suddenly jeez reined unsafely hence and some less oversold goodness far cringed up far advantageous and crane some anathematically severe</p></div>
                             </span>
                         </li>
                         <li>
                             <span href="#">
-                                <div class="bubble"><i class="fa fa-fw"></i></div>
+                                <div class="bubble"><i class="fa fa-fw"></i></div>
                                 <div class="copy"><p><strong>Research reveals black tea can improve body weight</strong>
                                 unlocked exorbitant smooched. Much oh this knitted lynx crane gross suddenly jeez reined</p></div>
                             </span>
@@ -248,19 +222,19 @@
                     <h3 class="uppercase">What you need to know</h3>
                     <ul>
                         <li>
-                            <div class="icon"><i class="fa fa-fw"></i></div>
+                            <div class="icon"><i class="fa fa-fw"></i></div>
                             <div class="copy">
                                 <p><strong>Tea drinkers are a reduced risk of breast cancer</strong><br />lemming sank momentous much irrespective willful unlocked exorbitant smooched. <a href="#" class="read-more">Read&nbsp;More</a></p>
                             </div>
                         </li>
                         <li>
-                            <div class="icon"><i class="fa fa-fw"></i></div>
+                            <div class="icon"><i class="fa fa-fw"></i></div>
                             <div class="copy">
                                 <p>Drinking tea is associated with reduced stiffness of the arteries - lemming sank momentous much irrespective willful unlocked exorbitant smooched. <a href="#" class="read-more">Read&nbsp;More</a></p>
                             </div>
                         </li>
                         <li>
-                            <div class="icon"><i class="fa fa-fw"></i></div>
+                            <div class="icon"><i class="fa fa-fw"></i></div>
                             <div class="copy">
                                 <p><strong>Tea drinkers are a reduced risk of breast cancer</strong><br />Kicking footballs and smelling nice, check please! It's the hurt locker. <a href="#" class="read-more">Read&nbsp;More</a></p>
                             </div>

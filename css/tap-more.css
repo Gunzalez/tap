@@ -1,0 +1,46 @@
+.carousel-thumbs {
+  float: left;
+  box-sizing: border-box;
+  background-color: #916083;
+  border-left: 10px solid #ffffff;
+  border-bottom: 10px solid #ffffff; }
+  .carousel-thumbs .what-we-do-new {
+    float: left;
+    width: 32%;
+    height: 100%; }
+    .carousel-thumbs .what-we-do-new h2 {
+      font-family: "chunkfiveroman";
+      font-size: 3.6em;
+      color: #ffffff;
+      line-height: 110%;
+      text-transform: uppercase; }
+    .carousel-thumbs .what-we-do-new .carousel-bit {
+      padding: 20px;
+      border-top: 10px solid #ffffff;
+      border-bottom: 0; }
+  .carousel-thumbs .swticher {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .carousel-thumbs .video-thumbs {
+    float: left;
+    width: 68%; }
+    .carousel-thumbs .video-thumbs ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      float: left;
+      border-top: 10px solid #ffffff;
+      border-left: 10px solid #ffffff;
+      margin-bottom: -10px; }
+    .carousel-thumbs .video-thumbs li {
+      float: left;
+      box-sizing: border-box;
+      width: 33.333%;
+      border-right: 10px solid #ffffff;
+      border-bottom: 10px solid #ffffff; }
+    .carousel-thumbs .video-thumbs a {
+      display: block; }
+      .carousel-thumbs .video-thumbs a img {
+        width: 100%;
+        display: block; }
