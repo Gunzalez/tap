@@ -174,13 +174,13 @@
         header: {
             carousel: {
                 $html: $('#header-carousel'),
-                $pagination: $('#carousel-pagination'),
+                //$pagination: $('#carousel-pagination'),
                 $description: $('#carousel-description'),
-                updateDetails: function(index){
-                    var self = this;
-                    var cloneCopy = $('li', self.$html).eq(index).find('.slide-copy').clone();
-                    self.$description.html(cloneCopy.html());
-                },
+                //updateDetails: function(index){
+                //    var self = this;
+                //    var cloneCopy = $('li', self.$html).eq(index).find('.slide-copy').clone();
+                //    self.$description.html(cloneCopy.html());
+                //},
                 init: function(){
                     var self = this;
                     if(this.$html.length > 0){
@@ -192,13 +192,13 @@
                             infiniteLoop: true,
                             randomStart: true,
                             controls: false,
-                            autoHover: true,
-                            onSlideBefore: function($slideElement, oldIndex, newIndex){
-                                self.updateDetails(newIndex);
-                            },
-                            onSliderLoad:function(currentIndex){
-                                self.updateDetails(currentIndex);
-                            }
+                            autoHover: true //,
+                            //onSlideBefore: function($slideElement, oldIndex, newIndex){
+                            //    self.updateDetails(newIndex);
+                            //},
+                            //onSliderLoad:function(currentIndex){
+                            //    self.updateDetails(currentIndex);
+                            //}
                         });
                     }
                 }

@@ -59,21 +59,44 @@
                 <div class="imagery">
                     <ul id="header-carousel">
                         <li>
-                            <img src="uploaded/new-slide-1.png" alt="slide 1" />
+                            <img src="uploaded/carousel-slide-1.jpg" alt="slide 1" />
                             <div class="slide-copy">
                                 <h2>Is it important?</h2>
                                 <p>Tea is the most commonly consumed beverage in the world after water. In the UK it has been drunk for over 350 years. Today, 77% of British adults drink tea and of the tea consumed in the UK, 95% is black tea.</p>
                             </div>
                         </li>
                         <li>
-                            <img src="uploaded/new-slide-2.png" alt="slide 1" />
+                            <img src="uploaded/carousel-slide-3.jpg" alt="slide 2" />
                             <div class="slide-copy">
                                 <h2>Fusce ac turpis quis</h2>
                                 <p>Morbi lectus riis, luctus non, massa. Fusce ac turpis quis ligsus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.</p>
                             </div>
                         </li>
-
+                        <li>
+                            <img src="uploaded/carousel-slide-2.jpg" alt="slide 3" />
+                            <div class="slide-copy">
+                                <h2>Westibulum sapien. Prperdiet</h2>
+                                <p>Sestibulum sapien. Praestibulum sapien. Prt imestibulum sapien. Prperdiet. Vestibulum sapien. Proin quam. Etiam ultat mi a equat ppk i bulum sapien. Proat.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="uploaded/carousel-slide-4.jpg" alt="slide 4" />
+                            <div class="slide-copy">
+                                <h2>Vestibulum sapien, lroin</h2>
+                                <p>Aspendisse potenti. Nunc feugiat mi a equat imperdiet. Vestibulum sapien. Proin quam. Etiam ultat mi a equat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="uploaded/carousel-slide-5.jpg" alt="slide 5" />
+                            <div class="slide-copy">
+                                <h2>Suspendisse unc-feugi</h2>
+                                <p>Proin quam. Etiam ult auctor, sesse potenti. Nunc feugiat mi a equat imperdiet. Vestibulum sapie as sem, at interdum magna augue eget diam. </p>
+                            </div>
+                        </li>
                     </ul>
+                </div>
+                <div class="copy">
+                    <div id="carousel-description" class="description"></div>
                 </div>
             </div>
             <div class="cleft"></div>
