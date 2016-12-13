@@ -62,21 +62,27 @@
                             <img src="uploaded/new-slide-1.png" alt="slide 1" />
                             <div class="slide-copy">
                                 <h2>Is it important?</h2>
-                                <p>Tea is the most commonly consumed beverage in the world after water. In the UK it has been drunk for over 350 years. Today, 77% of British adults drink tea and of the tea consumed in the UK, 95% is black tea.</p>
+                                <div class="text">
+                                    <p>Tea is the most commonly consumed beverage in the world after water. In the UK it has been drunk for over 350 years. Today, 77% of British adults drink tea and of the tea consumed in the UK, 95% is black tea.</p>
+                                </div>
                             </div>
                         </li>
                         <li>
                             <img src="uploaded/new-slide-2.png" alt="slide 1" />
                             <div class="slide-copy">
                                 <h2>Fusce ac turpis quis</h2>
-                                <p>Morbi lectus riis, luctus non, massa. Fusce ac turpis quis ligsus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.</p>
+                                <div class="text">
+                                    <p>Morbi lectus riis, luctus non, massa. Fusce ac turpis quis ligsus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.</p>
+                                </div>
                             </div>
                         </li>
                         <li>
                             <img src="uploaded/new-slide-3.png" alt="slide 1" />
                             <div class="slide-copy">
                                 <h2>Everton vs. Arsenal</h2>
-                                <p>Game is one right now ce ac turpis quis ligsus, iaculis vel, susc orbi lectus riis, luctus non, massa, turpis quis ligula lacinia aliquet. Mauris ipsumusce ac turpis quis ligsus, iaculis vel, suscipit quis, luctus non, massa a misscue usce ac.</p>
+                                <div class="text">
+                                    <p>Game is one right now ce ac turpis quis ligsus, iaculis vel, susc orbi lectus riis, luctus non, massa, turpis quis ligula lacinia aliquet. Mauris ipsumusce ac turpis quis ligsus, iaculis vel, suscipit quis, luctus non, massa a misscue usce ac.</p>
+                                </div>
                             </div>
                         </li>
 

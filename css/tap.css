@@ -486,7 +486,7 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  width: 310px;
+  width: 32%;
   height: 100%;
   background-color: #000000;
   background-color: rgba(0,0,0,0.6);
@@ -494,6 +494,26 @@ img {
   padding: 35px;
   box-sizing: border-box;
 }
+
+@media only screen and (max-width: 730px) {
+  .header .carousel #header-carousel li .slide-copy {
+    top: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header .carousel #header-carousel li .slide-copy .text {
+    display: none;
+  }
+}
+
 .header .carousel .imagery {
   float: left;
   width: 100%;
