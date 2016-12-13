@@ -100,13 +100,13 @@
                <div class="carousel-bit">
 					<h2>What we do</h2>
 					<ul class="switcher">
-						<li class="active"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
+						<li class="active"><a href="#"><i class="fa fa-fw"></i></a></li>
+						<li><a href="#"><i class="fa fa-fw"></i></a></li>
+						<li><a href="#"><i class="fa fa-fw"></i></a></li>
 					</ul>
-					<div class="whatWeDo active">Stuff 1</div>
-					<div class="whatWeDo">Stuff 2</div>
-					<div class="whatWeDo">Stuff 3</div>
+					<div class="whatWeDo active">Provide independent and objective information about the latest health benefits regarding black tea.</div>
+					<div class="whatWeDo">Answer all of your nutrition and hydration questions about black tea.</div>
+					<div class="whatWeDo">Set the record straight on ‘science’ myths associated with black tea.</div>
 				</div>                
             </div>
             <div class="video-thumbs">
