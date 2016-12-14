@@ -256,7 +256,7 @@
         },
 
         init: function(){
-            this.body.carousel.init();
+            //this.body.carousel.init();
             this.header.carousel.init();
             this.whatWeDo.init();
             this.bios.init();

@@ -128,8 +128,8 @@
     	<div id="bio-stage" class="stage">
 			<div class="bio active">
 				<div class="copy">
-					<h2>Who we are</h2>
-					<h3 class="title">Dr Catherine Hood</h3>
+					<h2>Who we are?</h2>
+					<h3 class="title">Dr Catherine Hood:</h3>
 					<div class="text">						
 						<p>Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five's prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
 					</div>
@@ -143,8 +143,8 @@
 			</div>
 			<div class="bio">
 				<div class="copy">
-					<h2>Who we are</h2>
-					<h3 class="title">Dr Title OtherTitle</h3>
+					<h2>Who we are?</h2>
+					<h3 class="title">Dr Title OtherTitle:</h3>
 					<div class="text">						
 						<p>Praesent libero. Sed cursus ante dapibus diam. Seem ipssi. Nulla quum dolor sit amet, consectetur adipiscing elit. Integer nec odio. niis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauriv sce ne </p>
 					</div>
@@ -157,8 +157,8 @@
 			</div>  
 			<div class="bio">
 				<div class="copy">
-					<h2>Who we are</h2>
-					<h3 class="title">Mr FristName Surname</h3>
+					<h2>Who we are?</h2>
+					<h3 class="title">Mr FristName Surname:</h3>
 					<div class="text">						
 						<p>Dibero, mouts liquic wfed cursus ante dapm dolor sit amet, consectetur adipiscing elit. Integer nec odio. niis sem at nibh elemibPraeus diam. Seem ipssi. Nulla quiet. Duuentupis sagim impis sagittis iperdis sagittis ipsum.</p>
 					</div>
@@ -176,79 +176,8 @@
 			</ul>    		
     	</div>    	
     </div>
-
-
-
-
-
-
-
-
-        <div class="container">
-            <ul id="body-carousel" class="carousel">
-                <li class="item">
-                    <div class="imagery">
-                        <img src="uploaded/dr-catherine-hood.png" alt="" />
-                    </div>
-                    <div class="copy">
-                        <h2>Who we are</h2>
-                        <p class="sub-title">Dr Catherine Hood</p>
-                        <p class="details">Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five’s prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
-                        <div class="buttons">
-                            <a href="profile.php" class="button next orange">Read&nbsp;More</a><br />
-                            <a href="members.php" class="button next orange">Other&nbsp;Members</a>
-                        </div>
-                    </div>
-                    <div class="cboth"></div>
-                </li>
-                <li class="item">
-                    <div class="imagery">
-                        <img src="uploaded/dr-pretty-woman.png" alt="" />
-                    </div>
-                    <div class="copy">
-                        <h2>Who we are</h2>
-                        <p class="sub-title">Dr LongFristName LongerSurname</p>
-                        <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sm imperdiet. Duis saed cursus ante dapibus diaquis sem at nibh elementugittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauri.</p>
-                        <div class="buttons">
-                            <a href="profile.php" class="button next orange">Read&nbsp;More</a><br />
-                            <a href="members.php" class="button next orange">Other&nbsp;Members</a>
-                        </div>
-                    </div>
-                    <div class="cboth"></div>
-                </li>
-                <li class="item">
-                    <div class="imagery">
-                        <img src="uploaded/dr-who.png" alt="" />
-                    </div>
-                    <div class="copy">
-                        <h2>Who we are</h2>
-                        <p class="sub-title">Dr Title OtherTitle</p>
-                        <p class="details">Praesent libero. Sed cursus ante dapibus diam. Seem ipssi. Nulla quum dolor sit amet, consectetur adipiscing elit. Integer nec odio.  niis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauriv sce ne tb nhellu.</p>
-                        <div class="buttons">
-                            <a href="profile.php" class="button next orange">Read&nbsp;More</a><br />
-                            <a href="members.php" class="button next orange">Other&nbsp;Members</a>
-                        </div>
-                    </div>
-                    <div class="cboth"></div>
-                </li>
-                <li class="item">
-                    <div class="imagery">
-                        <img src="uploaded/dr-typical-hood.png" alt="" />
-                    </div>
-                    <div class="copy">
-                        <h2>Who we are</h2>
-                        <p class="sub-title">Dr LongFirstName surName</p>
-                        <p class="details">Tpsu donsectetur adipiscing elisit amet, ceger nec odilesent libero. Sef gfxnd cursus ante dapibus did nisi. Nua a quis sem at nibh el Duis sagittis ipsfesent mauri sce nec tel entum imperdiet.</p>
-                        <div class="buttons">
-                            <a href="profile.php" class="button next orange">Read&nbsp;More</a><br />
-                            <a href="members.php" class="button next orange">Other&nbsp;Members</a>
-                        </div>
-                    </div>
-                    <div class="cboth"></div>
-                </li>
-            </ul>
-        </div>
-        <div class="container">
+		
+    <div class="container">
             <div class="forums">
                 <div class="forum-chats">
                     <h3 class="uppercase">Our chat...</h3>
@@ -298,6 +227,7 @@
                 <div class="cboth"></div>
             </div>
         </div>
+        
     </div>
 
     <?php include_once('includes/footer-html.php'); ?>
