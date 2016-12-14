@@ -1,15 +1,15 @@
 <div class="container">
-    <a href="#mobileNav" id="mobileNavButton"><i class="fa fa-fw"></i></a>
+    <a href="#mobileNav" id="mobileNavButton"><i class="fa fa-fw"></i></a>
     <h1><a href="index.php">Tea Advisory Panel</a></h1>
     <div class="search-and-social">
         <form id="frmSearch" name="frmSearch" action="search.php" method="post" novalidate="novalidate">
             <span class="input-box"><input type="text" name="" class="text-input" value="" placeholder="Search" /></span>
-            <button><i class="fa fa-fw"></i></button>
+            <button><i class="fa fa-fw"></i></button>
             <div class="cleft"></div>
         </form>
         <ul>
-            <li><a href="#"><i class="fa fa-fw"></i></a></li>
-            <li><a href="#"><i class="fa fa-fw"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw"></i></a></li>
+            <li><a href="#"><i class="fa fa-fw"></i></a></li>
         </ul>
     </div>
     <div class="site-navigation">
@@ -46,5 +46,4 @@
         </ul>
     </div>
     <div class="cleft"></div>
-    <div class="bodyBorder"></div>
 </div>

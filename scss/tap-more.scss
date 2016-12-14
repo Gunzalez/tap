@@ -122,7 +122,7 @@
 	}
 	
 	.copy {
-		padding: 15px;
+		padding: 20px 15px;
 		width: 68%;
 		float: left;
 		box-sizing: border-box;
@@ -224,5 +224,45 @@
 			}
 		}
 	}
+}
+
+
+.forums .imagery {
+    position: absolute;
+    width: 37px;
+    height: 43px;
+}
+
+.forums {
+	h4 {
+		font-weight: bold;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 730px){
+	.forums {
+		margin-top: 20px;
+	}
+}
+
+
+// ---- headers
+.body {
+	padding-top: 10px;
+	
+}
+#members .header {
+    background: #ed991c;
+}
+#tea-and-health .header {
+    background: #9a5d88;
+}
+#media-centre .header {
+    background: #1ad74a;
+}
+#contact .header {
+    background: #a37301;
 }
 

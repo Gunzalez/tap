@@ -100,7 +100,7 @@
                <div class="carousel-bit">
 					<h2>What we do</h2>
 					<ul class="switcher">
-						<li><a href="#" class="active">1<span class="icon"><i class="fa fa-fw" aria-hidden="true"></i></span></a></li>
+						<li><a href="#" class="active"><span class="icon"><i class="fa fa-fw"></i></span></a></li>
 						<li><a href="#"><span class="icon">2<i class="fa fa-fw"></i></span></a></li>
 						<li><a href="#"><span class="icon">3<i class="fa fa-fw"></i></span></a></li>
 					</ul>
@@ -178,55 +178,46 @@
     </div>
 		
     <div class="container">
-            <div class="forums">
-                <div class="forum-chats">
-                    <h3 class="uppercase">Our chat...</h3>
-                    <ul>
-                        <li>
-                            <span href="#">
-                                <div class="bubble"><i class="fa fa-fw"></i></div>
-                                <div class="copy"><p><strong>Go put the kettle on</strong><br>
-                                    Much oh this knitted lynx crane gross suddenly jeez reined unsafely hence and some less oversold goodness far cringed up far advantageous and crane some anathematically severe</p></div>
-                            </span>
-                        </li>
-                        <li>
-                            <span href="#">
-                                <div class="bubble"><i class="fa fa-fw"></i></div>
-                                <div class="copy"><p><strong>Research reveals black tea can improve body weight</strong>
-                                unlocked exorbitant smooched. Much oh this knitted lynx crane gross suddenly jeez reined</p></div>
-                            </span>
-                        </li>
-                    </ul>
-                    <div class="buttons">
-                        <a href="#" class="button next green">Join us on Twitter</a>
-                    </div>
-                </div>
-                <div class="forum-info">
-                    <h3 class="uppercase">What you need to know</h3>
-                    <ul>
-                        <li>
-                            <div class="icon"><i class="fa fa-fw"></i></div>
-                            <div class="copy">
-                                <p><strong>Tea drinkers are a reduced risk of breast cancer</strong><br />lemming sank momentous much irrespective willful unlocked exorbitant smooched. <a href="#" class="read-more">Read&nbsp;More</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon"><i class="fa fa-fw"></i></div>
-                            <div class="copy">
-                                <p>Drinking tea is associated with reduced stiffness of the arteries - lemming sank momentous much irrespective willful unlocked exorbitant smooched. <a href="#" class="read-more">Read&nbsp;More</a></p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon"><i class="fa fa-fw"></i></div>
-                            <div class="copy">
-                                <p><strong>Tea drinkers are a reduced risk of breast cancer</strong><br />Kicking footballs and smelling nice, check please! It's the hurt locker. <a href="#" class="read-more">Read&nbsp;More</a></p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="cboth"></div>
-            </div>
-        </div>
+		<div class="forums">
+			<div class="forum-chats">
+				<h3 class="uppercase">Our chat...</h3>
+				<img src="images/twitter-feed-sample.jpg" alt="" style="width: 100%;" />
+			</div>
+			<div class="forum-info">
+				<h3 class="uppercase">What you need to know</h3>
+				<ul>
+					<li>
+						<div class="imagery">
+							<img src="uploaded/news-story-image.jpg" alt="Dr Catherine Hood" width="37" height="43" />
+						</div>
+						<div class="copy">
+							<h4>Reduced Mortality</h4>
+							<p>lemming sank momentous much irrespective willful unlocked exorbitant smooched. <a href="#" class="read-more">Read&nbsp;More</a></p>
+						</div>
+					</li>
+					<li>
+						<div class="imagery">
+							<img src="uploaded/news-story-image-2.jpg" alt="Dr Title OtherTitle" width="37" height="43" />
+						</div>
+						<div class="copy">
+							<h4>Diabetes</h4>
+							<p>Drinking tea is associated with reduced stiffness of the arteries - lemming sank momentous much irrespective willful unlocked exorbitant smooched. <a href="#" class="read-more">Read&nbsp;More</a></p>
+						</div>
+					</li>
+					<li>
+						<div class="imagery">
+							<img src="uploaded/news-story-image.jpg" alt="Dr Catherine Hood" width="37" height="43" />
+						</div>
+						<div class="copy">
+							<h4>Reduced Mortality</h4>
+							<p>Patting me on the head , so kicking footballs and smelling nice, check please! It's the hurt locker. <a href="#" class="read-more">Read&nbsp;More</a></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="cboth"></div>
+		</div>
+	</div>
         
     </div>
 
