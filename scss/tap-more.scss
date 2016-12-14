@@ -1,0 +1,129 @@
+.carousel-thumbs {
+	float: left;
+	box-sizing: border-box;
+	background: url('../images/whatwedo-videos.png') top left repeat-y;
+	border-left: 10px solid #ffffff;
+	border-bottom: 10px solid #ffffff;
+	
+		
+	@media only screen and (max-width: 730px) {
+		background: none;
+		border: none;
+	}
+
+	.what-we-do-new {
+		float: left;
+		width: 32%;
+		color: #ffffff;
+		
+		h2 {
+			font-family: "chunkfiveroman";
+			font-size: 3.6em;
+			color: #ffffff;
+			line-height: 100%;
+			text-transform: uppercase;
+		}
+		
+		.carousel-bit {
+			padding: 20px;
+			border-top: 10px solid #ffffff;
+			border-bottom: 0;
+		}
+		
+		
+		@media only screen and (max-width: 730px) {
+			float: none;
+			width: 100%;
+			background-color: #916083;
+			border-bottom: 10px solid #ffffff;			
+		}
+	}
+	
+	.swticher {		
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.video-thumbs {
+		float: left;
+		width: 68%;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			float: left;
+			border-top: 10px solid #ffffff;
+			border-left: 10px solid #ffffff;
+			margin-bottom: -10px;
+		}
+
+		li {
+			float: left;		
+			box-sizing: border-box;
+			width: 33.333%;
+			border-right: 10px solid #ffffff;
+			border-bottom: 10px solid #ffffff;
+		}
+
+		a {
+			display: block;
+			
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+		
+		@media only screen and (max-width: 730px) {
+			width: 100%;
+			ul {
+				margin-bottom: 0;
+				border: none;
+			}
+			
+			li {
+				
+				border: none;
+			}			
+		}
+	}
+}
+
+
+// for js
+.explanation {
+	display: none;
+	
+	&.active {
+		display: block;
+	}
+}
+
+.switcher {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0 0 15px 0;
+	
+	li {
+		float: left;
+		padding-right: 10px;
+		
+		a {
+			display: block;
+			padding: 5px;
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			background-color: rgba(255,255,255, 0.5);
+			
+			&.active {
+				cursor: default;
+				background-color: rgba(255,255,255, 1);
+			}
+		}
+	}
+}
+
