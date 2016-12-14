@@ -213,6 +213,25 @@
 				});
 			}
 		},
+		
+		bios: {
+			$html: $('#bio-stage'),
+			
+			init: function(){
+				var self = this;
+				var $buttons = $('.switcher a', this.$html);
+				$buttons.on('click', function(evt){
+					evt.preventDefault();
+					if(!$(this).hasClass('active')){
+						var index = $buttons.index($(this));
+						$buttons.removeAttr('class');
+						$(this).addClass('active');
+						self.$html.find('.bio').removeClass('active');
+						self.$html.find('.bio').eq(index).addClass('active');
+					}
+				});
+			}
+		},
 
         body: {
             carousel: {
@@ -240,6 +259,7 @@
             this.body.carousel.init();
             this.header.carousel.init();
             this.whatWeDo.init();
+            this.bios.init();
 
             // fun stuff :)
             // ========================================================= //

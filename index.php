@@ -125,7 +125,7 @@
     </div>
     
     <div class="container">
-    	<div class="stage">
+    	<div id="bio-stage" class="stage">
 			<div class="bio active">
 				<div class="copy">
 					<h2>Who we are</h2>
@@ -151,12 +151,24 @@
 					<a href="profile.php" class="find-out-more">Find out more</a>
 				</div>
 				<div class="imagery">
-				<img src="uploaded/profile-image-2.png" alt="Dr Title OtherTitle" />
-					
+					<img src="uploaded/profile-image-2.png" alt="Dr Title OtherTitle" />					
 				</div>
         		<div class="cboth"></div>
-			</div>
-   		
+			</div>  
+			<div class="bio">
+				<div class="copy">
+					<h2>Who we are</h2>
+					<h3 class="title">Mr FristName Surname</h3>
+					<div class="text">						
+						<p>Dibero, mouts liquic wfed cursus ante dapm dolor sit amet, consectetur adipiscing elit. Integer nec odio. niis sem at nibh elemibPraeus diam. Seem ipssi. Nulla quiet. Duuentupis sagim impis sagittis iperdis sagittis ipsum.</p>
+					</div>
+					<a href="profile.php" class="find-out-more">Find out more</a>
+				</div>
+				<div class="imagery">
+					<img src="uploaded/profile-image-3.png" alt="Dr LongFristName LongerSurname" />					
+				</div>
+        		<div class="cboth"></div>
+			</div> 		
     		<ul class="switcher">
 				<li><a href="#" class="active">1</a></li>
 				<li><a href="#">2</a></li>

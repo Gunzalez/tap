@@ -83,8 +83,8 @@
   .stage .title {
     font-size: 2em; }
   .stage .copy {
-    padding: 20px;
-    width: 67%;
+    padding: 15px;
+    width: 68%;
     float: left;
     box-sizing: border-box; }
   .stage .imagery {
@@ -113,6 +113,11 @@
       width: 3px;
       height: 3px;
       text-indent: -9000px; }
+    @media only screen and (max-width: 730px) {
+      .stage .switcher {
+        left: 20px; }
+        .stage .switcher li {
+          padding-right: 10px; } }
   @media only screen and (max-width: 730px) {
     .stage h2 {
       font-size: 3em; }
