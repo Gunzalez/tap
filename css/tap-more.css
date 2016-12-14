@@ -167,16 +167,69 @@
 .body {
   padding-top: 10px; }
 
-#members .header {
+#members .header, #members .footer {
   background: #ed991c; }
 
-#tea-and-health .header {
+#tea-and-health .header, #tea-and-health .footer {
+  background: #9a5d88; }
+
+#infusions-and-health .header, #infusions-and-health .footer {
   background: #cc2d46; }
-#tea-and-health h2.title {
+#infusions-and-health h2.title {
   color: #cc2d46 !important; }
 
-#media-centre .header {
+#media-centre .header, #media-centre .footer {
   background: #1ad74a; }
 
-#contact .header {
+#contact .header, #contact .footer {
   background: #a37301; }
+
+.footer .tea-cups-count {
+  padding-left: 0;
+  padding-top: 10px;
+  background: none;
+  min-height: 100px;
+  margin-left: 18px;
+  color: #ffffff; }
+
+.footer .container {
+  border-top: 20px solid #ffffff; }
+
+#home .footer {
+  background: #cec11f !important; }
+
+.footer .site-map ul li a,
+.footer .tea-cups-count .figure {
+  color: #ffffff; }
+
+.grey-bar.form-bar.new-design {
+  background: none; }
+  .grey-bar.form-bar.new-design .container {
+    background: #916083;
+    color: #ffffff; }
+
+.body .grey-bar.form-bar #frmNewsletter h3 {
+  color: #ffffff; }
+
+#submitButton {
+  font-family: "FranchiseBold";
+  font-size: 2.2em;
+  text-decoration: none;
+  color: #ffffff; }
+
+.button-on-right {
+  text-align: right; }
+
+#infusions-and-health .site-navigation ul.sub-level {
+  background-color: #cc2d46;
+  border: 3px solid #cc2d46; }
+
+#infusions-and-health .site-navigation ul.sub-level a {
+  background-color: #cc2d46; }
+
+#infusions-and-health .site-navigation ul.sub-level a:hover {
+  background-color: #51121c !important; }
+
+.inner-container {
+  border-left: 20px solid #ffffff;
+  border-right: 20px solid #ffffff; }
