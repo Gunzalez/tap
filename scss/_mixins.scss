@@ -1,0 +1,44 @@
+@mixin border-radius($radius: 0px){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transitions($speed: 0.25s){
+    -webkit-transition: all $speed;
+    -moz-transition: all $speed;
+    -o-transition: all $speed;
+    transition: all $speed;
+}
+
+@mixin transition-background($speed: 0.2s){
+    -webkit-transition: background $speed;
+    -moz-transition: background $speed;
+    -o-transition: background $speed;
+    transition: background $speed;
+}
+
+@mixin transitions-height($distance: 0.5s){
+    -webkit-transition: height $distance;
+    -moz-transition: height $distance;
+    -o-transition: height $distance;
+    transition: height $distance;
+}
+
+@mixin clearfix {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+@mixin dropshadow {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+}
+
+@mixin rotate($degree: 380deg) {
+    -ms-transform: rotate($degree);
+    -webkit-transform: rotate($degree);
+    transform: rotate($degree);
+}

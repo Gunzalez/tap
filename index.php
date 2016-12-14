@@ -123,6 +123,47 @@
         </div>
         <div class="cleft"></div>
     </div>
+    
+    <div class="container">
+    	<div class="stage">
+			<div class="bio active">
+				<div class="copy">
+					<h2>Who we are</h2>
+					<h3 class="title">Dr Catherine Hood</h3>
+					<div class="text">						
+						<p>Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five's prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
+					</div>
+					<a href="profile.php" class="find-out-more">Find out more</a>
+				</div>
+				<div class="imagery">
+				<img src="uploaded/profile-image.png" alt="Dr Catherine Hood" />
+					
+				</div>
+        		<div class="cboth"></div>
+			</div>
+			<div class="bio">
+				<div class="copy">
+					<h2>Who we are</h2>
+					<h3 class="title">Dr Title OtherTitle</h3>
+					<div class="text">						
+						<p>Praesent libero. Sed cursus ante dapibus diam. Seem ipssi. Nulla quum dolor sit amet, consectetur adipiscing elit. Integer nec odio. niis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauriv sce ne </p>
+					</div>
+					<a href="profile.php" class="find-out-more">Find out more</a>
+				</div>
+				<div class="imagery">
+				<img src="uploaded/profile-image-2.png" alt="Dr Title OtherTitle" />
+					
+				</div>
+        		<div class="cboth"></div>
+			</div>
+   		
+    		<ul class="switcher">
+				<li><a href="#" class="active">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>    		
+    	</div>    	
+    </div>
 
 
 
