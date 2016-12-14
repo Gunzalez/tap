@@ -14,7 +14,7 @@
 
         <div class="container">
             <div class="page-padding">
-                <h2 class="title uppercase">Tea and Health</h2>
+                <h2 class="title uppercase">Infusions and Health</h2>
                 <div style="height: 600px"></div>
             </div>
         </div>

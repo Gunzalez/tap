@@ -256,9 +256,23 @@
 #members .header {
     background: #ed991c;
 }
-#tea-and-health .header {
-    background: #9a5d88;
+#tea-and-health {
+	
+	.header {
+    	background: #cc2d46;		
+	}
+	
+	h2 {
+		&.title {
+			color: #cc2d46 !important;
+		}
+	}
 }
+
+
+//#tea-and-health .page-padding .title {
+//    color: #9a5d88;
+//}
 #media-centre .header {
     background: #1ad74a;
 }

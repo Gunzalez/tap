@@ -171,7 +171,9 @@
   background: #ed991c; }
 
 #tea-and-health .header {
-  background: #9a5d88; }
+  background: #cc2d46; }
+#tea-and-health h2.title {
+  color: #cc2d46 !important; }
 
 #media-centre .header {
   background: #1ad74a; }
