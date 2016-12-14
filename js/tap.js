@@ -1,5 +1,6 @@
 // JavaScript Document
 (function ($, window) {
+	"use strict";
 	
 	var tap = {};
 
@@ -174,15 +175,8 @@
         header: {
             carousel: {
                 $html: $('#header-carousel'),
-                //$pagination: $('#carousel-pagination'),
                 $description: $('#carousel-description'),
-                //updateDetails: function(index){
-                //    var self = this;
-                //    var cloneCopy = $('li', self.$html).eq(index).find('.slide-copy').clone();
-                //    self.$description.html(cloneCopy.html());
-                //},
                 init: function(){
-                    var self = this;
                     if(this.$html.length > 0){
                         this.$html.bxSlider({
                             mode: 'fade',
@@ -192,18 +186,33 @@
                             infiniteLoop: true,
                             randomStart: true,
                             controls: false,
-                            autoHover: true //,
-                            //onSlideBefore: function($slideElement, oldIndex, newIndex){
-                            //    self.updateDetails(newIndex);
-                            //},
-                            //onSliderLoad:function(currentIndex){
-                            //    self.updateDetails(currentIndex);
-                            //}
+                            autoHover: true
                         });
                     }
                 }
             }
         },
+		
+		whatWeDo: {
+			$html: $('.carousel-thumbs'),
+			$carousel: $('.carousel-bit'),
+			$video: $('.video-thumbs'),
+			
+			init: function(){
+				var self = this;
+				var $buttons = $('.switcher a', this.$carousel);
+				$buttons.on('click', function(evt){
+					evt.preventDefault();
+					if(!$(this).hasClass('active')){
+						var index = $buttons.index($(this));
+						$buttons.removeAttr('class');
+						$(this).addClass('active');
+						self.$html.find('.explanation').removeClass('active');
+						self.$html.find('.explanation').eq(index).addClass('active');
+					}
+				});
+			}
+		},
 
         body: {
             carousel: {
@@ -230,6 +239,7 @@
         init: function(){
             this.body.carousel.init();
             this.header.carousel.init();
+            this.whatWeDo.init();
 
             // fun stuff :)
             // ========================================================= //
@@ -269,7 +279,7 @@
 			var newWidth = $(window).width(),
                 oldWidth = tap.properties.windowWidth;
 
-			if(oldWidth != newWidth){
+			if(oldWidth !== newWidth){
                 tap.properties.windowWidth = newWidth;
 				tap.resize();
 			}
