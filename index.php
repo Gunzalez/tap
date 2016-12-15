@@ -14,12 +14,12 @@
             <div class="search-and-social">
                 <form id="frmSearch" name="frmSearch" action="search.php" method="post" novalidate>
                     <span class="input-box"><input type="text" name="" class="text-input" value="" placeholder="Search" /></span>
-                    <button><i class="fa fa-fw"></i></button>
+                    <button><i class="fa fa-fw" aria-hidden="true"></i></button>
                     <div class="cleft"></div>
                 </form>
                 <ul>
-                    <li><a href="#"><i class="fa fa-fw"></i></a></li>
-                    <li><a href="#"><i class="fa fa-fw"></i></a></li>
+                    <li><a href="#"><i class="fa fa-fw" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-fw" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
             <div class="site-navigation">

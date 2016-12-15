@@ -80,7 +80,7 @@
                             </div>
                         </div>
                         <div class="row submit">
-                            <a href="#" id="submitButton" class="button next brown">Send form</a>
+                            <a href="#" id="submitButton" class="brown">Send form</a>
                         </div>
                     </form>
                     <div class="cleft"></div>
