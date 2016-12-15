@@ -115,9 +115,9 @@
                <div class="carousel-bit">
 					<h2>What we do</h2>
 					<ul class="switcher">
-						<li><a href="#" class="active"><span class="icon"><i class="fa fa-fw"></i></span></a></li>
-						<li><a href="#"><span class="icon">2<i class="fa fa-fw"></i></span></a></li>
-						<li><a href="#"><span class="icon">3<i class="fa fa-fw"></i></span></a></li>
+						<li><a href="#" class="active"><i class="fa fa-fw" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-fw" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-fw" aria-hidden="true"></i></a></li>
 					</ul>
         			<div class="cleft"></div>
 					<div class="explanation active">Provide independent and objective information about the latest health benefits regarding black tea.</div>
@@ -148,7 +148,7 @@
 					<div class="text">						
 						<p>Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five's prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
 					</div>
-					<a href="profile.php" class="find-out-more">Find out more</a>
+					<a href="profile.php" class="find-out-more">Find out more <i class="fa fa-fw" aria-hidden="true" title="Copy to use chevron-right"></i></a>
 				</div>
 				<div class="imagery">
 				<img src="uploaded/profile-image.png" alt="Dr Catherine Hood" />
@@ -163,7 +163,7 @@
 					<div class="text">						
 						<p>Praesent libero. Sed cursus ante dapibus diam. Seem ipssi. Nulla quum dolor sit amet, consectetur adipiscing elit. Integer nec odio. niis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauriv sce ne </p>
 					</div>
-					<a href="profile.php" class="find-out-more">Find out more</a>
+					<a href="profile.php" class="find-out-more">Find out more <i class="fa fa-fw" aria-hidden="true" title="Copy to use chevron-right"></i></a>
 				</div>
 				<div class="imagery">
 					<img src="uploaded/profile-image-2.png" alt="Dr Title OtherTitle" />					
@@ -177,7 +177,7 @@
 					<div class="text">						
 						<p>Dibero, mouts liquic wfed cursus ante dapm dolor sit amet, consectetur adipiscing elit. Integer nec odio. niis sem at nibh elemibPraeus diam. Seem ipssi. Nulla quiet. Duuentupis sagim impis sagittis iperdis sagittis ipsum.</p>
 					</div>
-					<a href="profile.php" class="find-out-more">Find out more</a>
+					<a href="profile.php" class="find-out-more">Find out more <i class="fa fa-fw" aria-hidden="true" title="Copy to use chevron-right"></i></a>
 				</div>
 				<div class="imagery">
 					<img src="uploaded/profile-image-3.png" alt="Dr LongFristName LongerSurname" />					

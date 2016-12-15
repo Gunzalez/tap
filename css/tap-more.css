@@ -101,6 +101,8 @@
     line-height: 100%;
     text-transform: uppercase;
     text-decoration: none; }
+    .stage .find-out-more i {
+      font-size: 0.8em; }
   @media only screen and (max-width: 1015px) {
     .stage .text {
       display: none; } }
@@ -111,14 +113,14 @@
     margin: 0;
     padding: 0; }
     .stage .switcher a {
-      width: 3px;
-      height: 3px;
+      width: 12px;
+      height: 12px;
       text-indent: -9000px; }
     @media only screen and (max-width: 730px) {
       .stage .switcher {
         left: 20px; }
         .stage .switcher li {
-          padding-right: 10px; } }
+          padding-right: 15px; } }
   @media only screen and (max-width: 730px) {
     .stage h2 {
       font-size: 3em; }
@@ -142,14 +144,17 @@
     padding-right: 10px; }
     .switcher li a {
       display: block;
-      padding: 5px;
-      width: 28px;
-      height: 28px;
+      width: 33px;
+      height: 33px;
       border-radius: 50%;
       background-color: rgba(255, 255, 255, 0.5); }
       .switcher li a.active {
         cursor: default;
         background-color: white; }
+      .switcher li a i {
+        font-size: 2em;
+        padding-top: 3px;
+        color: #946285; }
 
 .forums .imagery {
   position: absolute;
