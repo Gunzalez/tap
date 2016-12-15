@@ -247,7 +247,9 @@
 
                 if(self.auto){
                     self.timer = setInterval(function(){
-                        // set up auto play from here
+                        
+						
+
 
 
 
