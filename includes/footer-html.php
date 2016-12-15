@@ -20,4 +20,4 @@
     </div>
 </div>
 
-<div class="back-to-top"><a href="#"><i class="fa fa-fw"></i></a></div>
+<div class="back-to-top"><a href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></div>
