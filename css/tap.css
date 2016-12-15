@@ -215,6 +215,7 @@ img {
 #home .header {
   background: url("../images/bg-home.jpg") bottom center no-repeat #cec11f; }
 
+/*
 #members .header {
   background: url("../images/bg-members.jpg") bottom center no-repeat #ED991C; }
 
@@ -229,6 +230,7 @@ img {
 
 #miscellaneous .header {
   background: url("../images/bg-miscellaneous.jpg") bottom center no-repeat #bbbbbc; }
+*/
 
 #mobileNavButton {
   position: absolute;

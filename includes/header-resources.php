@@ -1,6 +1,6 @@
 <meta charset="utf-8">
-<meta name="keywords" content="" />
-<meta name="description" content="Description goes here" />
+<meta name="keywords" content="The Tea Advisory Panel, TAP, health group, tea, public health, nutrition, diet">
+<meta name="description" content="The Tea Advisory Panel (TAP) is a novel health group, bringing together experts in the areas of public health, general practice, nutrition and diet. Its objective is to provide informed ‘advice’ about the essential health, hydration and dietary role that black tea can provide in our daily diets.">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">

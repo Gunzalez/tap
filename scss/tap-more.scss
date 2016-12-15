@@ -295,6 +295,14 @@
 }
 
 
+#miscellaneous {
+	.header, .footer {	
+    	background: #969696 !important;
+	}
+}
+
+
+
 // footer business
 .footer .tea-cups-count {
     padding-left: 0;
@@ -308,6 +316,7 @@
 .footer {
 	.container {
 		border-top: 20px solid #ffffff;
+		text-transform: uppercase;
 	}
 }
 
@@ -322,6 +331,11 @@
 .footer .site-map ul li a,
 .footer .tea-cups-count .figure {
     color: #ffffff;
+}
+
+.footer .tea-cups-count p {
+      font-family: "FranchiseBold" !important;
+		font-size: 2.5em;
 }
 
 
@@ -375,6 +389,101 @@
 	border-left: 20px solid #ffffff;
 	border-right: 20px solid #ffffff;
 }
+
+
+
+@media only screen and (max-width: 1015px) {
+	
+	#mobileNavButton {
+    display: block; }
+
+  .header .site-navigation {
+    display: none; }
+	
+	.header .search-and-social {
+    position: absolute;
+    top: 121px;
+    right: 0; }
+	
+    .header .search-and-social ul {
+      display: none; }
+}
+
+
+@media only screen and (max-width: 540px){
+	.header .search-and-social {
+		top: 82px !important;
+	}
+}
+
+
+@media only screen and (max-width: 400px){
+	.header .search-and-social {
+		position: static !important;
+		float: none !important;
+		padding: 0 18px 15px 18px !important;
+	}
+}
+
+
+@media only screen and (max-width: 400px){
+	.slide-copy {
+		.text {
+			display: none;
+		}
+	}
+}
+
+
+// carousel fix
+.header .carousel #header-carousel li .slide-copy {
+    width: 32%;
+	background: rgba(0,0,0,0.6)
+}
+
+
+.header .carousel .bx-controls {
+    bottom: 0;
+    right: 10px;
+    z-index: 70;
+}
+
+
+.header .carousel .bx-controls .bx-pager .bx-pager-link {
+    margin: 0 7px;
+    background: #e8e8e8;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-decoration: none;
+    text-indent: -9000px;
+    display: inline-block;
+    border: none !important;
+}
+
+.body {
+	padding-top: 0;
+}
+
+
+
+@media only screen and (max-width: 730px) {
+	
+	.header .carousel #header-carousel li .slide-copy {
+		width: 100%;
+		left: 0;
+		top: auto;
+		bottom: 0;
+		right: 0;
+		height: auto;
+	}
+}
+
+
+
+
 
 
 
