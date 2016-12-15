@@ -216,6 +216,20 @@
 		
 		bios: {
 			$html: $('#bio-stage'),
+			timer: undefined,
+            auto: true,
+			delay: 4, // for 6 seconds
+
+            switch: function(index, obj){
+                var self = this;
+                var $buttons = $('.switcher a', this.$html);
+                // buttons
+                $buttons.removeAttr('class');
+                obj.addClass('active');
+                // bio
+                self.$html.find('.bio').removeClass('active');
+                self.$html.find('.bio').eq(index).addClass('active');
+            },
 			
 			init: function(){
 				var self = this;
@@ -224,12 +238,21 @@
 					evt.preventDefault();
 					if(!$(this).hasClass('active')){
 						var index = $buttons.index($(this));
-						$buttons.removeAttr('class');
-						$(this).addClass('active');
-						self.$html.find('.bio').removeClass('active');
-						self.$html.find('.bio').eq(index).addClass('active');
+						self.switch(index, $(this));
+                        if(self.timer !== undefined){
+                            clearInterval(self.timer);
+                        }
 					}
 				});
+
+                if(self.auto){
+                    self.timer = setInterval(function(){
+                        // set up auto play from here
+
+
+
+                    }, self.delay * 1000);
+                }
 			}
 		},
 

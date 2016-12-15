@@ -127,12 +127,48 @@
             </div>
             <div class="video-thumbs">
                 <ul>
-                    <li><a href="#"><img src="uploaded/video-thumb-1.png" alt="video 1" /></a></li>
-                    <li><a href="#"><img src="uploaded/video-thumb-2.png" alt="video 1" /></a></li>
-                    <li><a href="#"><img src="uploaded/video-thumb-3.png" alt="video 1" /></a></li>
-                    <li><a href="#"><img src="uploaded/video-thumb-4.png" alt="video 1" /></a></li>
-                    <li><a href="#"><img src="uploaded/video-thumb-5.png" alt="video 1" /></a></li>
-                    <li><a href="#"><img src="uploaded/video-thumb-6.png" alt="video 1" /></a></li>
+                    <li><a href="#">
+                    		<img src="uploaded/video-thumb-1.png" alt="video 1" />
+                    		<span class="shade">
+                    			<i class="fa fa-fw" aria-hidden="true"></i>                    		
+                    		</span>
+                    	</a>
+                    </li>
+                    <li><a href="#">
+                   			<img src="uploaded/video-thumb-2.png" alt="video 1" />
+                    		<span class="shade">
+                    			<i class="fa fa-fw" aria-hidden="true"></i>                    		
+                    		</span>
+                    	</a>
+                    </li>
+                    <li><a href="#">
+                   			<img src="uploaded/video-thumb-3.png" alt="video 1" />
+                    		<span class="shade">
+                    			<i class="fa fa-fw" aria-hidden="true"></i>                    		
+                    		</span>
+                    	</a>
+                    </li>
+                    <li><a href="#">
+                   			<img src="uploaded/video-thumb-4.png" alt="video 1" />
+                    		<span class="shade">
+                    			<i class="fa fa-fw" aria-hidden="true"></i>                    		
+                    		</span>
+                    	</a>
+                    </li>
+                    <li><a href="#">
+                   			<img src="uploaded/video-thumb-5.png" alt="video 1" />
+                    		<span class="shade">
+                    			<i class="fa fa-fw" aria-hidden="true"></i>                    		
+                    		</span>
+                    	</a>
+                    </li>
+                    <li><a href="#">
+                   			<img src="uploaded/video-thumb-6.png" alt="video 1" />
+                    		<span class="shade">
+                    			<i class="fa fa-fw" aria-hidden="true"></i>                    		
+                    		</span>
+                    	</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -141,10 +177,10 @@
     
     <div class="container">
     	<div id="bio-stage" class="stage">
-			<div class="bio active">
+			<div class="bio">
 				<div class="copy">
 					<h2>Who we are?</h2>
-					<h3 class="title">Dr Catherine Hood:</h3>
+					<h3 class="title">Dr Catherine Hood</h3>
 					<div class="text">						
 						<p>Dr Catherine Hood is a health broadcaster and writer. She presented Channel Five's prime time series A Girl's Guide to 21st Century Sex and regularly appears on The Wright Stuff discussing all aspects of general medicine.</p>
 					</div>
@@ -156,10 +192,10 @@
 				</div>
         		<div class="cboth"></div>
 			</div>
-			<div class="bio">
+			<div class="bio active">
 				<div class="copy">
 					<h2>Who we are?</h2>
-					<h3 class="title">Dr Title OtherTitle:</h3>
+					<h3 class="title">Dr Title OtherTitle</h3>
 					<div class="text">						
 						<p>Praesent libero. Sed cursus ante dapibus diam. Seem ipssi. Nulla quum dolor sit amet, consectetur adipiscing elit. Integer nec odio. niis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauriv sce ne </p>
 					</div>
@@ -173,7 +209,7 @@
 			<div class="bio">
 				<div class="copy">
 					<h2>Who we are?</h2>
-					<h3 class="title">Mr FristName Surname:</h3>
+					<h3 class="title">Mr FristName Surname</h3>
 					<div class="text">						
 						<p>Dibero, mouts liquic wfed cursus ante dapm dolor sit amet, consectetur adipiscing elit. Integer nec odio. niis sem at nibh elemibPraeus diam. Seem ipssi. Nulla quiet. Duuentupis sagim impis sagittis iperdis sagittis ipsum.</p>
 					</div>
@@ -185,8 +221,8 @@
         		<div class="cboth"></div>
 			</div> 		
     		<ul class="switcher">
-				<li><a href="#" class="active">1</a></li>
-				<li><a href="#">2</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#" class="active">2</a></li>
 				<li><a href="#">3</a></li>
 			</ul>    		
     	</div>    	
@@ -225,7 +261,7 @@
 						</div>
 						<div class="copy">
 							<h4>Reduced Mortality</h4>
-							<p>Patting me on the head , so kicking footballs and smelling nice, check please! It's the hurt locker. <a href="#" class="read-more">Read&nbsp;More</a></p>
+							<p>Pattming s's the hentous much irrespective willful unloc cg mh qlipsum cse! Iturt hoclka msi qui. <a href="#" class="read-more">Read&nbsp;More</a></p>
 						</div>
 					</li>
 				</ul>

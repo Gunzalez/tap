@@ -50,10 +50,25 @@
       border-right: 10px solid #ffffff;
       border-bottom: 10px solid #ffffff; }
     .carousel-thumbs .video-thumbs a {
-      display: block; }
+      display: block;
+      position: relative; }
       .carousel-thumbs .video-thumbs a img {
         width: 100%;
         display: block; }
+      .carousel-thumbs .video-thumbs a .shade {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        padding-top: 35px;
+        opacity: 0;
+        transition: opacity 0.5s; }
+        .carousel-thumbs .video-thumbs a .shade i {
+          font-size: 10em;
+          color: #ffffff; }
     @media only screen and (max-width: 730px) {
       .carousel-thumbs .video-thumbs {
         width: 100%; }
@@ -300,6 +315,9 @@
   border: none !important; }
 
 .body {
+  padding-top: 10px; }
+
+#home .body {
   padding-top: 0; }
 
 @media only screen and (max-width: 730px) {
@@ -310,3 +328,5 @@
     bottom: 0;
     right: 0;
     height: auto; } }
+.desktop a .shade:hover {
+  opacity: 1; }
