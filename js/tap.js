@@ -218,14 +218,14 @@
 			$html: $('#bio-stage'),
 			timer: undefined,
             auto: true,
-			delay: 4, // for 6 seconds
+			delay: 5, // for 5 seconds
 
-            switch: function(index, obj){
+            switch: function(index){
                 var self = this;
                 var $buttons = $('.switcher a', this.$html);
                 // buttons
                 $buttons.removeAttr('class');
-                obj.addClass('active');
+				$buttons.eq(index).addClass('active');
                 // bio
                 self.$html.find('.bio').removeClass('active');
                 self.$html.find('.bio').eq(index).addClass('active');
@@ -247,12 +247,21 @@
 
                 if(self.auto){
                     self.timer = setInterval(function(){
+                        var $buttons = $('#profile-switcher a');
+                        var activeButton;
                         
+						$buttons.each(function(i, obj){
+							if($(obj).hasClass('active')){
+								activeButton = i;
+							}
+						});
 						
-
-
-
-
+						activeButton++;
+						if(activeButton === $buttons.length){
+							activeButton = 0;
+						}
+						self.switch(activeButton);
+						
                     }, self.delay * 1000);
                 }
 			}

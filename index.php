@@ -177,7 +177,7 @@
     
     <div class="container">
     	<div id="bio-stage" class="stage">
-			<div class="bio">
+			<div class="bio active">
 				<div class="copy">
 					<h2>Who we are?</h2>
 					<h3 class="title">Dr Catherine Hood</h3>
@@ -192,7 +192,7 @@
 				</div>
         		<div class="cboth"></div>
 			</div>
-			<div class="bio active">
+			<div class="bio">
 				<div class="copy">
 					<h2>Who we are?</h2>
 					<h3 class="title">Dr Title OtherTitle</h3>
@@ -220,9 +220,9 @@
 				</div>
         		<div class="cboth"></div>
 			</div> 		
-    		<ul class="switcher">
-				<li><a href="#">1</a></li>
-				<li><a href="#" class="active">2</a></li>
+    		<ul id="profile-switcher" class="switcher">
+				<li><a href="#" class="active">1</a></li>
+				<li><a href="#">2</a></li>
 				<li><a href="#">3</a></li>
 			</ul>    		
     	</div>    	
