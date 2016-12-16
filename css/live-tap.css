@@ -630,80 +630,86 @@ a.brown.prev:hover::after, li.brown.prev a:hover::after {
   background: #ffffff;
   padding: 11px 11px 0 11px;
   box-sizing: border-box;
-  overflow: hidden; }
-  .header .carousel #header-carousel {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    .header .carousel #header-carousel li {
-      position: relative; }
-      .header .carousel #header-carousel li .slide-copy {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 300px;
-        height: 100%;
-        background: #000000;
-        color: #ffffff;
-        padding: 20px;
-        box-sizing: border-box; }
-  .header .carousel .imagery {
-    float: left;
-    width: 100%; }
-    .header .carousel .imagery img {
-      width: 100%;
-      display: block; }
-  .header .carousel .bx-controls {
-    position: absolute;
-    bottom: 0;
-    right: -290px;
-    z-index: 2; }
-    .header .carousel .bx-controls .bx-pager {
-      padding: 12px 10px; }
-      .header .carousel .bx-controls .bx-pager .bx-pager-link {
-        margin: 0 4px;
-        background: #e8e8e8;
-        width: 18px;
-        height: 18px;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        text-decoration: none;
-        text-indent: -9000px;
-        display: inline-block;
-        border: 3px solid #666666;
-        -webkit-transition: all 0.25s;
-        -moz-transition: all 0.25s;
-        -o-transition: all 0.25s;
-        transition: all 0.25s; }
-        .header .carousel .bx-controls .bx-pager .bx-pager-link:hover, .header .carousel .bx-controls .bx-pager .bx-pager-link.active {
-          background: #ffffff;
-          border: 3px solid #ffffff;
-          -webkit-transition: all 0.25s;
-          -moz-transition: all 0.25s;
-          -o-transition: all 0.25s;
-          transition: all 0.25s; }
-    .header .carousel .bx-controls ul {
-      margin: 0;
-      padding: 0 10px 12px 0;
-      list-style: none; }
-      .header .carousel .bx-controls ul li {
-        display: inline;
-        padding: 0 4px; }
-  .header .carousel .copy {
-    width: 290px;
-    background: #666666;
-    position: relative;
-    height: 369px;
-    float: right; }
-    .header .carousel .copy .description {
-      padding: 20px;
-      color: #ffffff; }
-      .header .carousel .copy .description h2 {
-        font-size: 1.6em; }
-      .header .carousel .copy .description p {
-        font-size: 1.1em; }
+  overflow: hidden;
+}
+.header .carousel #header-carousel {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header .carousel #header-carousel li .slide-copy {
+  display: none;
+}
+.header .carousel .imagery {
+  float: left;
+  width: 660px;
+}
+.header .carousel .imagery img {
+  width: 100%;
+  display: block;
+}
+.header .carousel .bx-controls {
+  position: absolute;
+  bottom: 0;
+  right: -290px;
+  z-index: 2;
+}
+.header .carousel .bx-controls .bx-pager {
+  padding: 12px 10px;
+}
+.header .carousel .bx-controls .bx-pager .bx-pager-link {
+  margin: 0 4px;
+  background: #e8e8e8;
+  width: 18px;
+  height: 18px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-decoration: none;
+  text-indent: -9000px;
+  display: inline-block;
+  border: 3px solid #666666;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.header .carousel .bx-controls .bx-pager .bx-pager-link:hover, .header .carousel .bx-controls .bx-pager .bx-pager-link.active {
+  background: #ffffff;
+  border: 3px solid #ffffff;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.header .carousel .bx-controls ul {
+  margin: 0;
+  padding: 0 10px 12px 0;
+  list-style: none;
+}
+.header .carousel .bx-controls ul li {
+  display: inline;
+  padding: 0 4px;
+}
+.header .carousel .copy {
+  width: 290px;
+  background: #666666;
+  position: relative;
+  height: 369px;
+  float: right;
+}
+.header .carousel .copy .description {
+  padding: 20px;
+  color: #ffffff;
+}
+.header .carousel .copy .description h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.header .carousel .copy .description p {
+  font-size: 1.1em;
+}
 
 #home .site-navigation ul.sub-level {
   background-color: #cec11f;
@@ -965,7 +971,6 @@ label.error {
 .faq .introduction {
     width: 55%;
 }
-
 .faq .imagery {
     width: 40%;
 }
@@ -1548,7 +1553,6 @@ dd p {
 }
 .twitter-box ul li span {
   position: relative;
-
   color: #231f20;
   display: block;
   text-decoration: none;

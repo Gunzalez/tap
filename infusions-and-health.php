@@ -6,7 +6,7 @@
     <?php include_once('includes/header-resources.php'); ?>
 
 </head>
-<body id="infusions-and-health">
+<body id="infusions-health">
     <div class="header">
         <?php include_once('includes/header-content.php'); ?>
     </div>

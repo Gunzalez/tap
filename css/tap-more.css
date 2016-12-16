@@ -22,6 +22,8 @@
       padding: 20px;
       border-top: 10px solid #ffffff;
       border-bottom: 0; }
+      .carousel-thumbs .what-we-do-new .carousel-bit h2 {
+        font-family: "chunkfiveregular"; }
     @media only screen and (max-width: 730px) {
       .carousel-thumbs .what-we-do-new {
         float: none;
@@ -194,9 +196,9 @@
 #tea-and-health .header, #tea-and-health .footer {
   background: #9a5d88; }
 
-#infusions-and-health .header, #infusions-and-health .footer {
+#infusions-health .header, #infusions-health .footer {
   background: #cc2d46; }
-#infusions-and-health h2.title {
+#infusions-health h2.title {
   color: #cc2d46 !important; }
 
 #media-centre .header, #media-centre .footer {
@@ -254,14 +256,14 @@
 .button-on-right {
   text-align: right; }
 
-#infusions-and-health .site-navigation ul.sub-level {
+#infusions-health .site-navigation ul.sub-level {
   background-color: #cc2d46;
   border: 3px solid #cc2d46; }
 
-#infusions-and-health .site-navigation ul.sub-level a {
+#infusions-health .site-navigation ul.sub-level a {
   background-color: #cc2d46; }
 
-#infusions-and-health .site-navigation ul.sub-level a:hover {
+#infusions-health .site-navigation ul.sub-level a:hover {
   background-color: #51121c !important; }
 
 .inner-container {
