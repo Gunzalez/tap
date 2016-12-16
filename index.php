@@ -130,42 +130,42 @@
                     <li><a href="#">
                     		<img src="uploaded/video-thumb-1.png" alt="video 1" />
                     		<span class="shade">
-                    			<i class="fa fa-fw" aria-hidden="true"></i>                    		
+                    			<i class="fa fa-play-circle-o" aria-hidden="true"></i>                    		
                     		</span>
                     	</a>
                     </li>
                     <li><a href="#">
                    			<img src="uploaded/video-thumb-2.png" alt="video 1" />
                     		<span class="shade">
-                    			<i class="fa fa-fw" aria-hidden="true"></i>                    		
+                    			<i class="fa fa-play-circle-o" aria-hidden="true"></i>                    		
                     		</span>
                     	</a>
                     </li>
                     <li><a href="#">
                    			<img src="uploaded/video-thumb-3.png" alt="video 1" />
                     		<span class="shade">
-                    			<i class="fa fa-fw" aria-hidden="true"></i>                    		
+                    			<i class="fa fa-play-circle-o" aria-hidden="true"></i>                   		
                     		</span>
                     	</a>
                     </li>
                     <li><a href="#">
                    			<img src="uploaded/video-thumb-4.png" alt="video 1" />
                     		<span class="shade">
-                    			<i class="fa fa-fw" aria-hidden="true"></i>                    		
+                    			<i class="fa fa-play-circle-o" aria-hidden="true"></i>                    		
                     		</span>
                     	</a>
                     </li>
                     <li><a href="#">
                    			<img src="uploaded/video-thumb-5.png" alt="video 1" />
                     		<span class="shade">
-                    			<i class="fa fa-fw" aria-hidden="true"></i>                    		
+                    			<i class="fa fa-play-circle-o" aria-hidden="true"></i>                    		
                     		</span>
                     	</a>
                     </li>
                     <li><a href="#">
                    			<img src="uploaded/video-thumb-6.png" alt="video 1" />
                     		<span class="shade">
-                    			<i class="fa fa-fw" aria-hidden="true"></i>                    		
+                    			<i class="fa fa-play-circle-o" aria-hidden="true"></i>                   		
                     		</span>
                     	</a>
                     </li>
